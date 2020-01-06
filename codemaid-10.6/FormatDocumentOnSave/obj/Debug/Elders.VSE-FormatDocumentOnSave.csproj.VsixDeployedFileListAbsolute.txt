@@ -1,0 +1,7 @@
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\Elders.VSE_FormatDocumentOnSave.dll
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\EditorConfig.Core.dll
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\envdte.dll
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\stdole.dll
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\Elders.VSE_FormatDocumentOnSave.pkgdef
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\extension.vsixmanifest
+C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\Elders\Format document on Save\1.24\\Elders.VSE_FormatDocumentOnSave.pdb

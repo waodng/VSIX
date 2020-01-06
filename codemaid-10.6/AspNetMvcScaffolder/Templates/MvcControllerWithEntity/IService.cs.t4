@@ -1,0 +1,33 @@
+﻿<#@ template language="C#" HostSpecific="True" Debug="True" #>
+<#@ output extension="cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ ScaffoldingAssembly Processor="ScaffoldingAssemblyLoader" #>
+<#@ parameter type="System.String" name="ModelTypeName" #>
+<#@ parameter type="System.String" name="ModelVariable" #>
+<#@ parameter type="System.String" name="ServiceName" #>
+<#@ parameter type="System.String" name="ServiceNamespace" #>
+<#@ parameter type="System.Collections.Generic.HashSet<System.String>" name="RequiredNamespaces" #>
+
+<# foreach (var namespaceName in RequiredNamespaces) { #>
+using <#= namespaceName #>;
+<# } #>
+
+namespace <#= ServiceNamespace #>
+{
+    public interface I<#=ServiceName#>
+    {
+        <#=ModelTypeName#> Get<#=ModelTypeName#>(int <#=ModelVariable#>ID);
+
+        void Update<#=ModelTypeName#>(<#=ModelTypeName#> <#=ModelVariable#>);
+
+        void Create<#=ModelTypeName#>(<#=ModelTypeName#> <#=ModelVariable#>);
+
+        void Delete<#=ModelTypeName#>(<#=ModelTypeName#> <#=ModelVariable#>);
+
+        IPagedList<<#=ModelTypeName#>> Get<#=ModelTypeName#>s(int pageNumber, int pageSize);
+    }
+}

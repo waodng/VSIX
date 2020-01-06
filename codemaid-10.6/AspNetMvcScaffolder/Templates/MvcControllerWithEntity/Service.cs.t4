@@ -1,0 +1,55 @@
+﻿<#@ template language="C#" HostSpecific="True" Debug="True" #>
+<#@ output extension="cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ ScaffoldingAssembly Processor="ScaffoldingAssemblyLoader" #>
+<#@ parameter type="System.String" name="ModelTypeName" #>
+<#@ parameter type="System.String" name="ModelVariable" #>
+<#@ parameter type="System.String" name="ServiceName" #>
+<#@ parameter type="System.String" name="ServiceNamespace" #>
+<#@ parameter type="System.Collections.Generic.HashSet<System.String>" name="RequiredNamespaces" #>
+
+<# foreach (var namespaceName in RequiredNamespaces) { #>
+using <#= namespaceName #>;
+<# } #>
+
+namespace <#= ServiceNamespace #>
+{
+    public class <#=ServiceName#> : I<#=ServiceName#>
+    {
+        private readonly IRepository<<#=ModelTypeName#>> <#=ModelVariable#>Repository;
+
+        public <#=ModelTypeName#>Service(IRepository<<#=ModelTypeName#>> <#=ModelVariable#>Repository)
+        {
+            this.<#=ModelVariable#>Repository = <#=ModelVariable#>Repository;
+        }
+
+        public void Create<#=ModelTypeName#>(<#=ModelTypeName#> <#=ModelVariable#>)
+        {
+            <#=ModelVariable#>Repository.Insert(<#=ModelVariable#>);
+        }
+
+        public void Delete<#=ModelTypeName#>(<#=ModelTypeName#> <#=ModelVariable#>)
+        {
+            <#=ModelVariable#>Repository.Delete(<#=ModelVariable#>);
+        }
+
+        public <#=ModelTypeName#> Get<#=ModelTypeName#>(int <#=ModelVariable#>ID)
+        {
+            return <#=ModelVariable#>Repository.GetById(<#=ModelVariable#>ID);
+        }
+
+        public IPagedList<<#=ModelTypeName#>> Get<#=ModelTypeName#>s(int pageNumber, int pageSize)
+        {
+            return <#=ModelVariable#>Repository.Table.ToPagedList(m => m.ID, pageNumber, pageSize);
+        }
+
+        public void Update<#=ModelTypeName#>(<#=ModelTypeName#> <#=ModelVariable#>)
+        {
+            <#=ModelVariable#>Repository.Update(<#=ModelVariable#>);
+        }
+    }
+}

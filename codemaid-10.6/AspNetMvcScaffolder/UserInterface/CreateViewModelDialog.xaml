@@ -1,0 +1,57 @@
+﻿<?xml version="1.0"?>
+<ui:ValidatingDialogWindow x:Class="AspNetMvcScaffolder.UserInterface.CreateViewModelDialog" x:ClassModifier="internal" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:ui="clr-namespace:AspNetMvcScaffolder.UserInterface" xmlns:res="clr-namespace:AspNetMvcScaffolder" xmlns:mvc="clr-namespace:AspNetMvcScaffolder" mc:Ignorable="d" Title="新建视图模型" WindowStartupLocation="CenterOwner" ResizeMode="CanResize"   Width="{Binding DialogWidth, Mode=TwoWay}" ui:WindowAutoSizeBehavior.IsEnabled="True" ui:FocusFirstElementBehavior.IsEnabled="True">
+    <Window.Resources>
+        <ResourceDictionary Source="StyleResources.xaml" />
+    </Window.Resources>
+    <Grid Style="{StaticResource PanelStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Content="视图模型类型名称(_M):" Target="{Binding ElementName=modelTypeComboBox}" Grid.Column="0" />
+        <TextBox Name="viewModelTextBox" VerticalContentAlignment="Center"  Text="{Binding ViewModelTypeName, UpdateSourceTrigger=PropertyChanged}" ui:SelectOnFocusBehavior.SelectOnFocus="{x:Static mvc:MvcProjectUtil.ViewModelNameRegex}" Grid.Column="2" />
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding ViewModelPropertys}" Grid.Row="1" Grid.ColumnSpan="3"  CanUserAddRows="False"  CanUserDeleteRows="False"  RowHeaderWidth="0" HorizontalGridLinesBrush="#FFBDC1C5" ColumnWidth="*"  SelectionMode="Single"  VerticalGridLinesBrush="#FFBDC1C5"  BorderThickness="0.5" HorizontalAlignment="Center" SelectionUnit="FullRow"   AutoGenerateColumns="False" VerticalContentAlignment="Center"   VerticalAlignment="Top" BorderBrush="#FFBDC1C5">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.HeaderStyle>
+                        <Style TargetType="DataGridColumnHeader">
+                            <Setter Property="HorizontalContentAlignment" Value="Center" />
+                        </Style>
+                    </DataGridTemplateColumn.HeaderStyle>
+                    <DataGridTemplateColumn.HeaderTemplate>
+                        <DataTemplate>
+                            <CheckBox HorizontalAlignment="Center"  IsChecked="True" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.HeaderTemplate>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox HorizontalAlignment="Center" IsChecked="{Binding Path=Checked, UpdateSourceTrigger=PropertyChanged}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn IsReadOnly="True"  Binding="{Binding Path=EntityPropertyName}" Header="实体列名"/>
+                <DataGridTextColumn  Binding="{Binding Path=ViewModelPropertyName}" Header="模型列名"/>
+                <DataGridTextColumn Binding="{Binding Path=ViewModelDisplayName}" Header="显示名"/>
+                <DataGridTemplateColumn  Header="可空">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <CheckBox HorizontalAlignment="Center" IsChecked="{Binding Path=Nullable, UpdateSourceTrigger=PropertyChanged}" />
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Binding="{Binding Path=Minimal}" Header="最小值"/>
+                <DataGridTextColumn Binding="{Binding Path=Maximum}" Header="最大值"/>
+                <DataGridTextColumn IsReadOnly="True" Binding="{Binding Path=PropertyType}" Header="类型"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2"  Grid.ColumnSpan="3" Style="{StaticResource AddCancelStackPanel}">
+            <ui:AddCancelButtonControl Padding="0,20,0,10" AddButtonClick="AddButton_Click"  />
+        </StackPanel>
+    </Grid>
+</ui:ValidatingDialogWindow>

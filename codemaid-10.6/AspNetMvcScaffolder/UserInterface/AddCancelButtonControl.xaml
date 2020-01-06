@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<UserControl x:Class="AspNetMvcScaffolder.UserInterface.AddCancelButtonControl" x:ClassModifier="internal" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:res="clr-namespace:AspNetMvcScaffolder">
+    <UserControl.Resources>
+        <ResourceDictionary Source="StyleResources.xaml"></ResourceDictionary>
+    </UserControl.Resources>
+    <StackPanel Orientation="Horizontal">
+        <Button Content="{x:Static res:Resources.AddButtonText}" Style="{StaticResource AddButtonStyle}" IsEnabled="{Binding IsValid}" Click="AddButton_Click"></Button>
+        <Button Content="{x:Static res:Resources.CancelButtonText}" Style="{StaticResource CancelButtonStyle}" />
+    </StackPanel>
+</UserControl>

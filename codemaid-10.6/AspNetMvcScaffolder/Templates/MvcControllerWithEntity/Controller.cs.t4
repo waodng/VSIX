@@ -1,0 +1,96 @@
+﻿<#@ template language="C#" HostSpecific="True" Debug="True" #>
+<#@ output extension="cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data.Linq" #>
+<#@ ScaffoldingAssembly Processor="ScaffoldingAssemblyLoader" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="Microsoft.AspNet.Scaffolding.Core.Metadata" #>
+<#@ parameter type="System.String" name="ControllerName" #>
+<#@ parameter type="System.String" name="ControllerNamespace" #>
+<#@ parameter type="System.String" name="ModelTypeName" #>
+<#@ parameter type="System.String" name="ModelVariable" #>
+<#@ parameter type="System.Boolean" name="UseAsync" #>
+<#@ parameter type="System.String" name="ServiceShortTypeName" #>
+<#@ parameter type="System.String" name="ViewModelShortTypeName" #>
+<#@ parameter type="System.Collections.Generic.HashSet<System.String>" name="RequiredNamespaces" #>
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.Entity;
+using System.Linq;
+using System.Net;
+using System.Web;
+using System.Web.Mvc;
+<# foreach (var namespaceName in RequiredNamespaces) { #>
+using <#= namespaceName #>;
+<# } #>
+
+namespace <#= ControllerNamespace #>
+{
+    public class <#= ControllerName #> : BaseController
+    {
+        private readonly IMapper mapper;
+
+        private readonly <#= ServiceShortTypeName #> <#= ModelVariable #>Service;
+
+        public <#= ModelTypeName #>Controller(<#= ServiceShortTypeName #> <#= ModelVariable #>Service, IMapper mapper)
+        {
+            this.mapper = mapper;
+            this.<#= ModelVariable #>Service = <#= ModelVariable #>Service;
+        }
+
+        public ActionResult Index(string keyword, int page = 1)
+        {
+            IPagedList<<#= ModelTypeName #>> <#= ModelVariable #>s = <#= ModelVariable #>Service.Get<#= ModelTypeName #>s(keyword, page, 15);
+            var <#= ModelVariable #>Models = mapper.Map<IEnumerable<<#= ModelTypeName #>>, IEnumerable<<#= ViewModelShortTypeName #>>>(<#= ModelVariable #>s);
+            var viewModel = new StaticPagedList<<#= ViewModelShortTypeName #>>(<#= ModelVariable #>Models, <#= ModelVariable #>s.GetMetaData());
+            return Request.IsAjaxRequest() ? (ActionResult)PartialView("<#= ModelTypeName #>ListPartial", viewModel) : View(viewModel);
+        }
+
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        [ModelStateValidFilter, HttpPost]
+        public ActionResult Create(<#= ViewModelShortTypeName #> model)
+        {
+            <#= ModelTypeName #> <#= ModelVariable #> = mapper.Map<<#= ViewModelShortTypeName #>, <#= ModelTypeName #>>(model);
+            <#= ModelVariable #>Service.Create<#= ModelTypeName #>(<#= ModelVariable #>);
+            return View();
+        }
+
+        public ActionResult Delete(int id)
+        {
+            return View(mapper.Map<<#= ModelTypeName #>, <#= ViewModelShortTypeName #>>(<#= ModelVariable #>Service.Get<#= ModelTypeName #>(id)));
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            <#= ModelVariable #>Service.Delete<#= ModelTypeName #>(id);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            return View(mapper.Map<<#= ModelTypeName #>, <#= ViewModelShortTypeName #>>(<#= ModelVariable #>Service.Get<#= ModelTypeName #>(id)));
+        }
+
+        [ModelStateValidFilter, HttpPost]
+        public ActionResult Edit(<#= ViewModelShortTypeName #> model)
+        {
+            <#= ModelTypeName #> <#= ModelVariable #> = mapper.Map<<#= ViewModelShortTypeName #>, <#= ModelTypeName #>>(model);
+            <#= ModelVariable #>Service.Update<#= ModelTypeName #>(<#= ModelVariable #>);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Details(int id)
+        {
+            return View(mapper.Map<<#= ModelTypeName #>, <#= ViewModelShortTypeName #>>(<#= ModelVariable #>Service.Get<#= ModelTypeName #>(id)));
+        }
+	}
+}

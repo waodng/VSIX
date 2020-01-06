@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AreaIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AreaIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControllerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ControllerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControllerWithViewsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ControllerWithViewsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ViewsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="AddAreaWindowTitle" xml:space="preserve">
+    <value>添加区域</value>
+  </data>
+  <data name="AddButtonText" xml:space="preserve">
+    <value>添加</value>
+  </data>
+  <data name="AddControllerWindowTitle" xml:space="preserve">
+    <value>添加控制器</value>
+  </data>
+  <data name="AddMvcDependenciesWindowTitle" xml:space="preserve">
+    <value>添加 MVC 依赖项</value>
+  </data>
+  <data name="AddNewDbContext" xml:space="preserve">
+    <value>新建数据上下文...</value>
+  </data>
+  <data name="AddViewWindowTitle" xml:space="preserve">
+    <value>添加视图</value>
+  </data>
+  <data name="AreaExistsMessage" xml:space="preserve">
+    <value>无法添加区域，因为同名的区域已存在。</value>
+  </data>
+  <data name="AreaNameLabel" xml:space="preserve">
+    <value>区域名称(_N):</value>
+  </data>
+  <data name="ArgumentNullOrEmpty" xml:space="preserve">
+    <value>参数 {0} 必须非空且非 null。</value>
+  </data>
+  <data name="AsyncControllerActionsHelpLabel" xml:space="preserve">
+    <value>升级到 Entity Framework 6 或更高版本可使用异步控制器操作。</value>
+  </data>
+  <data name="AsyncControllerActionsLabel" xml:space="preserve">
+    <value>使用异步控制器操作(_A)</value>
+  </data>
+  <data name="BrowseFiles" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="ChooseLayoutPage" xml:space="preserve">
+    <value>选择布局页</value>
+  </data>
+  <data name="ControllerNameLabel" xml:space="preserve">
+    <value>控制器名称(_C):</value>
+  </data>
+  <data name="DataContextClassLabel" xml:space="preserve">
+    <value>数据上下文类(_D):</value>
+  </data>
+  <data name="DataContextExistsMessage" xml:space="preserve">
+    <value>无法添加 {0}，因为同名的数据上下文已存在。</value>
+  </data>
+  <data name="DirectoryAccessErrorMessage" xml:space="preserve">
+    <value>无法创建/访问目录 {0}。</value>
+  </data>
+  <data name="EFNotAvailable" xml:space="preserve">
+    <value>Entity Framework Code First 不可用。</value>
+  </data>
+  <data name="EmptyAreaName" xml:space="preserve">
+    <value>区域名称必须非空。</value>
+  </data>
+  <data name="EmptyControllerName" xml:space="preserve">
+    <value>控制器名称必须非空。</value>
+  </data>
+  <data name="EmptyDbContextName" xml:space="preserve">
+    <value>数据库上下文类型名称必须非空。</value>
+  </data>
+  <data name="EmptyModelName" xml:space="preserve">
+    <value>模型名称必须非空。</value>
+  </data>
+  <data name="EmptyTemplateName" xml:space="preserve">
+    <value>模板名称必须非空。</value>
+  </data>
+  <data name="EmptyViewName" xml:space="preserve">
+    <value>视图名称必须非空。</value>
+  </data>
+  <data name="FailedToOpenFile" xml:space="preserve">
+    <value>无法打开文件“{0}”。</value>
+  </data>
+  <data name="GenerateViewsCheckLabel" xml:space="preserve">
+    <value>生成视图(_V)</value>
+  </data>
+  <data name="GenericDialogTitle" xml:space="preserve">
+    <value>Microsoft Visual Studio</value>
+  </data>
+  <data name="InvalidAreaName" xml:space="preserve">
+    <value>区域名称无效。</value>
+  </data>
+  <data name="InvalidControllerName" xml:space="preserve">
+    <value>控制器名称无效。</value>
+  </data>
+  <data name="InvalidDbContextName" xml:space="preserve">
+    <value>数据库上下文类型名称无效。</value>
+  </data>
+  <data name="InvalidIdentifierCharacters" xml:space="preserve">
+    <value>不允许名称包含以下任何字符: {0}</value>
+  </data>
+  <data name="InvalidIdentifierEmpty" xml:space="preserve">
+    <value>此名称无效，因为它为空。</value>
+  </data>
+  <data name="InvalidIdentifierReservedName" xml:space="preserve">
+    <value>此名称无效，因为它是保留名称。</value>
+  </data>
+  <data name="InvalidIdentifierWhitespaces" xml:space="preserve">
+    <value>此名称无效，因为它包含空格。</value>
+  </data>
+  <data name="InvalidModelName" xml:space="preserve">
+    <value>模型名称无效。</value>
+  </data>
+  <data name="InvalidTemplateName" xml:space="preserve">
+    <value>模板名称无效。</value>
+  </data>
+  <data name="InvalidViewName" xml:space="preserve">
+    <value>视图名称无效。</value>
+  </data>
+  <data name="InvalidWebConfigErrorMessage" xml:space="preserve">
+    <value>web.config 文件包含无效的 XML 或具有无效的根元素。</value>
+  </data>
+  <data name="LayoutPageInstructionsLabel" xml:space="preserve">
+    <value>(如果在 Razor __viewstart 文件中设置了此选项，则留空)</value>
+  </data>
+  <data name="LayoutPageSelectorHeading" xml:space="preserve">
+    <value>选择布局页</value>
+  </data>
+  <data name="MasterPageCsHtmlFilter" xml:space="preserve">
+    <value>Layout Pages (*.cshtml)|*.cshtml</value>
+  </data>
+  <data name="MasterPageVbHtmlFilter" xml:space="preserve">
+    <value>Layout Pages (*.vbhtml)|*.vbhtml</value>
+  </data>
+  <data name="ModelClassLabel" xml:space="preserve">
+    <value>模型类(_M):</value>
+  </data>
+  <data name="Mvc5AddArea" xml:space="preserve">
+    <value>添加 MVC 5 区域</value>
+  </data>
+  <data name="MvcActionsControllerTitle" xml:space="preserve">
+    <value>包含空读/写操作的 MVC 5 控制器</value>
+  </data>
+  <data name="MvcContextControllerTitle" xml:space="preserve">
+    <value>包含读/写操作和视图的 MVC 5 控制器(使用 Entity Framework)</value>
+  </data>
+  <data name="MvcEmptyControllerTitle" xml:space="preserve">
+    <value>MVC 5 空控制器</value>
+  </data>
+  <data name="NewDataContextLabel" xml:space="preserve">
+    <value>新建数据上下文类型(_C):</value>
+  </data>
+  <data name="NewDataContextWindowTitle" xml:space="preserve">
+    <value>新建数据上下文</value>
+  </data>
+  <data name="NoKeyDefinedError" xml:space="preserve">
+    <value>未定义实体类型“{0}”的键。请为此实体类型定义一个键。</value>
+  </data>
+  <data name="OKButtonText" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OverpostingWarningMessage" xml:space="preserve">
+    <value>为了防止“过多发布”攻击，请启用要绑定到的特定属性，有关 
+详细信息，请参阅 {0}。</value>
+  </data>
+  <data name="OverwriteMessage" xml:space="preserve">
+    <value>名为 {0} 的文件已存在。是否要替换它?</value>
+  </data>
+  <data name="PartialViewsCheckLabel" xml:space="preserve">
+    <value>创建为分部视图 (_C)</value>
+  </data>
+  <data name="ReferenceScriptLibrariesCheckLabel" xml:space="preserve">
+    <value>引用脚本库(_R)</value>
+  </data>
+  <data name="ScaffolderAuthor" xml:space="preserve">
+    <value>Microsoft</value>
+  </data>
+  <data name="ScaffoldFullSet" xml:space="preserve">
+    <value>全部集合</value>
+  </data>
+  <data name="ScaffoldingGenericError" xml:space="preserve">
+    <value>搭建基架失败:“{0}”</value>
+  </data>
+  <data name="ScaffoldLanguageNotSupported" xml:space="preserve">
+    <value>不支持项目语言。</value>
+  </data>
+  <data name="ScaffoldMvcArea_Description" xml:space="preserve">
+    <value>一个 MVC 区域，它可以包含自己的模型、视图、控制器和路由。</value>
+  </data>
+  <data name="ScaffoldMvcArea_Name" xml:space="preserve">
+    <value>MVC 5 区域</value>
+  </data>
+  <data name="ScaffoldMvcCodeSnippetMessage" xml:space="preserve">
+    <value>3. 在 Application_Start 方法的末尾添加以下行:</value>
+  </data>
+  <data name="ScaffoldMvcControllerActions_Description" xml:space="preserve">
+    <value>一个 MVC 控制器，其中包含用于创建、读取、更新、删除和列出条目的操作。</value>
+  </data>
+  <data name="ScaffoldMvcControllerActions_Name" xml:space="preserve">
+    <value>包含读/写操作的 MVC 5 控制器</value>
+  </data>
+  <data name="ScaffoldMvcControllerContext_Description" xml:space="preserve">
+    <value>一个 MVC 控制器，其中包含用于从 Entity Framework 数据上下文创建、读取、更新、删除和列出条目的操作与 Razor 视图。</value>
+  </data>
+  <data name="ScaffoldMvcControllerContext_Name" xml:space="preserve">
+    <value>包含视图的 MVC 5 控制器(使用 Entity Framework)</value>
+  </data>
+  <data name="ScaffoldMvcControllerEmpty_Description" xml:space="preserve">
+    <value>空 MVC 控制器。</value>
+  </data>
+  <data name="ScaffoldMvcControllerEmpty_Name" xml:space="preserve">
+    <value>MVC 5 控制器 - 空</value>
+  </data>
+  <data name="ScaffoldMvcDependenciesFull_Description" xml:space="preserve">
+    <value>向你的应用程序添加程序包和配置，以及默认布局、错误页、脚本库和脚本捆绑。</value>
+  </data>
+  <data name="ScaffoldMvcDependenciesFull_Name" xml:space="preserve">
+    <value>全部依赖项(_F)</value>
+  </data>
+  <data name="ScaffoldMvcDependenciesMinimal_Description" xml:space="preserve">
+    <value>添加最小程序包和引用以开始使用 ASP.NET MVC。</value>
+  </data>
+  <data name="ScaffoldMvcDependenciesMinimal_Name" xml:space="preserve">
+    <value>最小依赖项(_M)</value>
+  </data>
+  <data name="ScaffoldMvcDependencies_Description" xml:space="preserve">
+    <value>向项目添加 MVC 依赖项。包括程序包、配置、脚本库和默认布局。</value>
+  </data>
+  <data name="ScaffoldMvcDependencies_Name" xml:space="preserve">
+    <value>MVC 5 依赖项</value>
+  </data>
+  <data name="ScaffoldMvcMinimalSet" xml:space="preserve">
+    <value>最小集合</value>
+  </data>
+  <data name="ScaffoldMvcView_Description" xml:space="preserve">
+    <value>具有或不具有强类型模型的 MVC 视图</value>
+  </data>
+  <data name="ScaffoldMvcView_Name" xml:space="preserve">
+    <value>MVC 5 视图</value>
+  </data>
+  <data name="ScaffoldNamespaceMessage" xml:space="preserve">
+    <value>1. 添加以下命名空间引用:</value>
+  </data>
+  <data name="ScaffoldNewFunctionMessage" xml:space="preserve">
+    <value>2. 如果代码尚未定义 Application_Start 方法，请添加以下方法:</value>
+  </data>
+  <data name="ScaffoldODataActions_Description" xml:space="preserve">
+    <value>A Web API 2 OData v3 controller with CRUD actions to create, read, update, delete, and list entities.</value>
+  </data>
+  <data name="ScaffoldODataActions_Name" xml:space="preserve">
+    <value>Web API 2 OData v3 Controller with read/write actions</value>
+  </data>
+  <data name="ScaffoldODataContext_Description" xml:space="preserve">
+    <value>A Web API 2 OData v3 controller with CRUD actions to create, read, update, delete, and list entities from an Entity Framework data context.</value>
+  </data>
+  <data name="ScaffoldODataContext_Name" xml:space="preserve">
+    <value>Web API 2 OData v3 Controller with actions, using Entity Framework</value>
+  </data>
+  <data name="ScaffoldODataModificationMessage" xml:space="preserve">
+    <value>在为此控制器添加路由之前，WebApiConfig 类可能要求你做出其他更改。请适当地将这些语句合并到 WebApiConfig 类的 Register 方法中。请注意 OData URL 区分大小写。</value>
+  </data>
+  <data name="ScaffoldODataReadMeText" xml:space="preserve">
+    <value>必须针对基架创建的每个 OData 控制器更新 Web API 配置。生成的控制器中提供说明。</value>
+  </data>
+  <data name="ScaffoldReadMeHeading" xml:space="preserve">
+    <value>Visual Studio 已向项目“{2}”添加 {1} 的 {0} 个依赖项。
+
+项目中的 {3} 文件可能需要其他更改才能启用 {4}。</value>
+  </data>
+  <data name="ScaffoldWebApiActions_Description" xml:space="preserve">
+    <value>一个 Web API 控制器，其中包含用于创建、读取、更新、删除和列出条目的 REST 操作。</value>
+  </data>
+  <data name="ScaffoldWebApiActions_Name" xml:space="preserve">
+    <value>包含读/写操作的 Web API 2 控制器</value>
+  </data>
+  <data name="ScaffoldWebApiCodeSnippetMessage" xml:space="preserve">
+    <value>3. 在 Application_Start 方法的开头添加以下行:</value>
+  </data>
+  <data name="ScaffoldWebApiContext_Description" xml:space="preserve">
+    <value>一个 Web API 控制器，其中包含用于从 Entity Framework 数据上下文创建、读取、更新、删除和列出条目的 REST 操作。</value>
+  </data>
+  <data name="ScaffoldWebApiContext_Name" xml:space="preserve">
+    <value>包含操作的 Web API 2 控制器(使用 Entity Framework)</value>
+  </data>
+  <data name="ScaffoldWebApiEmpty_Description" xml:space="preserve">
+    <value>一个空 Web API 控制器。</value>
+  </data>
+  <data name="ScaffoldWebApiEmpty_Name" xml:space="preserve">
+    <value>Web API 2 控制器 - 空</value>
+  </data>
+  <data name="SpecifyLayoutPage" xml:space="preserve">
+    <value>指定布局页</value>
+  </data>
+  <data name="TemplateNameLabel" xml:space="preserve">
+    <value>模板(_T):</value>
+  </data>
+  <data name="UseLayoutPageCheckLabel" xml:space="preserve">
+    <value>使用布局页(_U):</value>
+  </data>
+  <data name="VersionsFileMissing" xml:space="preserve">
+    <value>安装的模板文件夹中缺少 {0} 文件。</value>
+  </data>
+  <data name="ViewNameLabel" xml:space="preserve">
+    <value>视图名称(_N):</value>
+  </data>
+  <data name="ViewOptions" xml:space="preserve">
+    <value>选项:</value>
+  </data>
+  <data name="ViewsLabel" xml:space="preserve">
+    <value>视图:</value>
+  </data>
+  <data name="ViewTemplateWithoutModel" xml:space="preserve">
+    <value>(不具有模型)</value>
+  </data>
+  <data name="ViewWithoutModelTooltip" xml:space="preserve">
+    <value>此功能仅适用于具有强类型模型的视图。</value>
+  </data>
+</root>

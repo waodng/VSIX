@@ -1,0 +1,68 @@
+﻿<#@ template language="C#" HostSpecific="True" Debug="True" #>
+<#@ output extension="cs" #>
+<#@ assembly name="System.Core" #>
+<#@ assembly name="System.Data.Linq" #>
+<#@ ScaffoldingAssembly Processor="ScaffoldingAssemblyLoader" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="AspNetMvcScaffolder" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="Microsoft.AspNet.Scaffolding.Core.Metadata" #>
+<#@ parameter type="System.String" name="ModelTypeName" #>
+<#@ parameter type="System.String" name="ViewModelShortTypeName" #>
+<#@ parameter type="System.String" name="ModelVariable" #>
+<#@ parameter type="System.String" name="ViewModelNamespace" #>
+<#@ parameter type="System.String" name="ValidatorNamespace" #>
+<#@ parameter type="System.Collections.Generic.HashSet<System.String>" name="RequiredNamespaces" #>
+<#@ parameter type="System.Collections.Generic.List<AspNetMvcScaffolder.ViewModelProperty>" name="ViewModelPropertys" #>
+using FluentValidation;
+using <#=ViewModelNamespace #>;
+
+namespace <#=ValidatorNamespace #>
+{
+    public class <#=ViewModelShortTypeName #>Validator : AbstractValidator<<#=ViewModelShortTypeName #>>
+    {
+        public <#=ViewModelShortTypeName #>Validator()
+        {
+<#foreach (ViewModelProperty property in ViewModelPropertys) {#>
+            <#=BuildExpression(property,ModelVariable)#>
+
+<#}#>
+        }
+    }
+}
+
+<#+
+        string BuildExpression(ViewModelProperty properyModel, string modelVariable)
+        {
+            StringBuilder expression = new StringBuilder();
+            expression.AppendFormat("RuleFor({0} => {0}.{1})", modelVariable, properyModel.ViewModelPropertyName);
+            if (!properyModel.Nullable)
+            {
+                expression.Append(".NotNull()");
+            }
+            if (properyModel.PropertyType.ToLower().Contains("string"))
+            {
+                if (properyModel.Minimal != null && properyModel.Maximum != null)
+                {
+                    expression.AppendFormat(".Length({0}, {1})", properyModel.Minimal, properyModel.Maximum);
+                }
+            }
+            else
+            {
+                if (properyModel.Minimal != null)
+                {
+                    expression.AppendFormat(".GreaterThanOrEqualTo({0})", properyModel.Minimal);
+                }
+
+                if (properyModel.Minimal != null)
+                {
+                    expression.AppendFormat(".LessThanOrEqualTo({0})", properyModel.Maximum);
+                }
+            }
+            expression.Append(";");
+
+            return expression.ToString();
+        }
+#>

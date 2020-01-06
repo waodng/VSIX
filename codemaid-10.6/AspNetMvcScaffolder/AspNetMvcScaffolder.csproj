@@ -1,0 +1,359 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AABF312C-B24B-49CF-ACA9-4F5FCD16ED82}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AspNetMvcScaffolder</RootNamespace>
+    <AssemblyName>AspNetMvcScaffolder</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <OutputPath>bin\Debug\</OutputPath>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="envdte80, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=1.1.0.1899, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.1.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Scaffolding.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86" />
+    <Reference Include="Microsoft.AspNet.Scaffolding.EntityFramework.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86" />
+    <Reference Include="Microsoft.VisualStudio.ComponentModelHost, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.CoreUtility, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Editor, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Immutable.10.0, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Shell.Interop.8.0, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.Text.Data, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.TextManager.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="NuGet.VisualStudio, Version=2.8.60318.667, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86">
+      <HintPath>..\packages\NuGet.VisualStudio.2.8.5\lib\net40\NuGet.VisualStudio.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Activities" />
+    <Reference Include="System.Activities.Presentation" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Activities" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VSLangProj, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyVersions.cs" />
+    <Compile Include="BitmapExtensions.cs" />
+    <Compile Include="CustomCodeTypeExtensions.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Interop\IProjectItemSelector.cs" />
+    <Compile Include="Interop\IProjectItemSelector_Class.cs" />
+    <Compile Include="Interop\ProjectItemSelectorFlags.cs" />
+    <Compile Include="MvcViewTemplates.cs" />
+    <Compile Include="NativeMethods.cs" />
+    <Compile Include="NuGetPackages.cs" />
+    <Compile Include="OleServiceProviderExtensions.cs" />
+    <Compile Include="PackageVersions.cs" />
+    <Compile Include="ProjectReferences.cs" />
+    <Compile Include="ReadMe\MvcScaffolderReadMe.cs" />
+    <Compile Include="Resources.zh-CN.Designer.cs">
+      <DependentUpon>Resources.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="SavedSettingsKeys.cs" />
+    <Compile Include="ScaffolderIcons.cs" />
+    <Compile Include="Scaffolders\AddDependencyUtil.cs" />
+    <Compile Include="Scaffolders\CodeTypeFilter.cs" />
+    <Compile Include="Scaffolders\CommonFilenames.cs" />
+    <Compile Include="Scaffolders\CommonFolderNames.cs" />
+    <Compile Include="CoreScaffoldingUtil.cs" />
+    <Compile Include="Scaffolders\ContextKeys.cs" />
+    <Compile Include="Scaffolders\ControllerScaffolder.cs" />
+    <Compile Include="Scaffolders\ControllerScaffolderModel.cs" />
+    <Compile Include="Scaffolders\ControllerWithContextScaffolder.cs" />
+    <Compile Include="Scaffolders\CustomScaffolder\ControllerWithEntityScaffolder.cs" />
+    <Compile Include="Scaffolders\CustomScaffolder\ControllerWithEntityScaffolderModel.cs" />
+    <Compile Include="Scaffolders\CustomScaffolder\NamespaceUtil.cs" />
+    <Compile Include="Scaffolders\CustomScaffolder\ViewModelProperty.cs" />
+    <Compile Include="Scaffolders\DependencyInstaller.cs" />
+    <Compile Include="Scaffolders\FrameworkDependencyStatus.cs" />
+    <Compile Include="Scaffolders\IFrameworkDependency.cs" />
+    <Compile Include="Scaffolders\InteractiveScaffolder.cs" />
+    <Compile Include="Scaffolders\CustomScaffolder\MvcControllerWithEntityScaffolderFactory.cs" />
+    <Compile Include="Scaffolders\MvcViewScaffolderModel.cs" />
+    <Compile Include="Scaffolders\OverpostingProtection.cs" />
+    <Compile Include="Scaffolders\ScaffolderFactory.cs" />
+    <Compile Include="Scaffolders\ScaffolderFilter.cs" />
+    <Compile Include="Scaffolders\CustomScaffolder\EmptyFrameworkDependency.cs" />
+    <Compile Include="Scaffolders\StringUtil.cs" />
+    <Compile Include="Scaffolders\TelemetryEventNames.cs" />
+    <Compile Include="Scaffolders\ViewTemplate.cs" />
+    <Compile Include="SemanticVersionParser.cs" />
+    <Compile Include="ServiceProviderExtensions.cs" />
+    <Compile Include="Telemetry\CodeGenerationContextExtensions.cs" />
+    <Compile Include="Telemetry\DependencyScaffolderOptions.cs" />
+    <Compile Include="Telemetry\ScaffoldingTelemetry.cs" />
+    <Compile Include="Telemetry\TelemetrySharedKeys.cs" />
+    <Compile Include="Telemetry\WebApiControllerScaffolderOptions.cs" />
+    <Compile Include="UserInterface\AddCancelButtonControl.xaml.cs">
+      <DependentUpon>AddCancelButtonControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ControllerNameControl.xaml.cs">
+      <DependentUpon>ControllerNameControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ControllerWithEntityViewModelViewModel.cs" />
+    <Compile Include="UserInterface\ControllerWithEntityScaffolderViewModel.cs" />
+    <Compile Include="UserInterface\ControllerWithEntityScaffolderDialog.xaml.cs">
+      <DependentUpon>ControllerWithEntityScaffolderDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ControllerScaffolderDialog.xaml.cs">
+      <DependentUpon>ControllerScaffolderDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ControllerScaffolderViewModel.cs" />
+    <Compile Include="UserInterface\ControllerWithEntityControl.xaml.cs">
+      <DependentUpon>ControllerWithEntityControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\ControllerWithContextControl.xaml.cs">
+      <DependentUpon>ControllerWithContextControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\CreateServicetDialog.xaml.cs">
+      <DependentUpon>CreateServicetDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\CreateViewModelDialog.xaml.cs">
+      <DependentUpon>CreateViewModelDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\CreateDataContextDialog.xaml.cs">
+      <DependentUpon>CreateDataContextDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface\DataContextModelTypeComparer.cs" />
+    <Compile Include="UserInterface\DataContextViewModel.cs" />
+    <Compile Include="UserInterface\DefaultDialogSize.cs" />
+    <Compile Include="UserInterface\FocusFirstElementBehavior.cs" />
+    <Compile Include="UserInterface\IDialogHost.cs" />
+    <Compile Include="UserInterface\IDialogSettings.cs" />
+    <Compile Include="UserInterface\InverseBooleanConverter.cs" />
+    <Compile Include="UserInterface\InverseBooleanToVisibilityConverter.cs" />
+    <Compile Include="UserInterface\MultiAndBooleanConverter.cs" />
+    <Compile Include="UserInterface\NotifyPropertyChanged.cs" />
+    <Compile Include="UserInterface\ProjectItemSelector.cs" />
+    <Compile Include="UserInterface\RelayCommand.cs" />
+    <Compile Include="UserInterface\SelectOnFocusBehavior.cs" />
+    <Compile Include="UserInterface\ValidatingDialogWindow.cs" />
+    <Compile Include="UserInterface\ValidatingViewModel.cs" />
+    <Compile Include="UserInterface\ValidatorModel.cs" />
+    <Compile Include="UserInterface\ViewModel.cs" />
+    <Compile Include="UserInterface\VSPlatformDialogWindow.cs" />
+    <Compile Include="Versions\VersionFileReader.cs" />
+    <Compile Include="VisualStudio\EditorIntegration.cs" />
+    <Compile Include="VisualStudio\IEditorIntegration.cs" />
+    <Compile Include="VisualStudio\IEditorInterfaces.cs" />
+    <Compile Include="VisualStudio\INuGetRepository.cs" />
+    <Compile Include="VisualStudio\IProjectSettings.cs" />
+    <Compile Include="Scaffolders\IScaffoldingSettings.cs" />
+    <Compile Include="Metadata\CodeModelModelMetadata.cs" />
+    <Compile Include="Metadata\CodeModelPropertyMetadata.cs" />
+    <Compile Include="Metadata\TypeNames.cs" />
+    <Compile Include="MvcProjectUtil.cs" />
+    <Compile Include="ProjectItemExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Scaffolders\ScaffolderModel.cs" />
+    <Compile Include="ScaffolderVersions.cs" />
+    <Compile Include="Scaffolders\ScaffoldingGestures.cs" />
+    <Compile Include="Scaffolders\TemplateSearchDirectories.cs" />
+    <Compile Include="UserInterface\ModelType.cs" />
+    <Compile Include="Scaffolders\ValidationUril.cs" />
+    <Compile Include="VisualStudio\IVisualStudioIntegration.cs" />
+    <Compile Include="VisualStudio\NuGetRepository.cs" />
+    <Compile Include="VisualStudio\ProjectSettings.cs" />
+    <Compile Include="VisualStudio\ProjectSettingsExtensions.cs" />
+    <Compile Include="UserInterface\WindowAutoSizeBehavior.cs" />
+    <Compile Include="VisualStudio\VisualStudioIntegration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="ReferencePackages\Newtonsoft.Json.4.5.11.nupkg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="ReferencePackages\Newtonsoft.Json.6.0.4.nupkg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Service.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\IService.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Create.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Delete.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Details.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Edit.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Empty.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Imports.include.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\List.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\ModelMetadataFunctions.cs.include.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Validator.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\ViewModel.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\MvcControllerWithEntity\Controller.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\ODataControllerWithActions\Controller.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="UserInterface\ControllerWithEntityScaffolderDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInterface\ControllerWithEntityControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInterface\CreateServicetDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInterface\CreateViewModelDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInterface\StyleResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInterface\ApplicationResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserInterface\AddCancelButtonControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\ControllerNameControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\ControllerScaffolderDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\ControllerWithContextControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserInterface\CreateDataContextDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources.zh-CN.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.zh-CN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Templates\ODataControllerWithContext\Controller.cs.t4">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\PackageVersions5.2.0.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\PackageVersions5.2.2.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Templates\PackageVersions5.2.3.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ViewsIcon.png" />
+    <None Include="Resources\AreaIcon.png" />
+    <None Include="Resources\ControllerIcon.png" />
+    <None Include="Resources\ControllerWithViewsIcon.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。启用“NuGet 程序包还原”可下载这些程序包。有关详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

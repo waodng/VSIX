@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddButtonText" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddControllerWindowTitle" xml:space="preserve">
+    <value>Add Controller</value>
+  </data>
+  <data name="AddNewDbContext" xml:space="preserve">
+    <value>New data context...</value>
+  </data>
+  <data name="ArgumentNullOrEmpty" xml:space="preserve">
+    <value>Argument {0} must be non-empty and non-null.</value>
+  </data>
+  <data name="AsyncControllerActionsHelpLabel" xml:space="preserve">
+    <value>Upgrade to Entity Framework 6 or greater to use async controller actions.</value>
+  </data>
+  <data name="AsyncControllerActionsLabel" xml:space="preserve">
+    <value>Use _async controller actions</value>
+  </data>
+  <data name="BrowseFiles" xml:space="preserve">
+    <value>...</value>
+  </data>
+  <data name="CancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChooseLayoutPage" xml:space="preserve">
+    <value>Choose a layout page</value>
+  </data>
+  <data name="ControllerNameLabel" xml:space="preserve">
+    <value>_Controller name</value>
+  </data>
+  <data name="DataContextClassLabel" xml:space="preserve">
+    <value>_Data context class:</value>
+  </data>
+  <data name="EmptyControllerName" xml:space="preserve">
+    <value>Controller name must be non-empty.</value>
+  </data>
+  <data name="EmptyDbContextName" xml:space="preserve">
+    <value>Database context type name must be non-empty.</value>
+  </data>
+  <data name="EmptyModelName" xml:space="preserve">
+    <value>Model name must be non-empty.</value>
+  </data>
+  <data name="EmptyTemplateName" xml:space="preserve">
+    <value>Template name must be non-empty.</value>
+  </data>
+  <data name="EmptyViewName" xml:space="preserve">
+    <value>View name must be non-empty.</value>
+  </data>
+  <data name="GenerateViewsCheckLabel" xml:space="preserve">
+    <value>Generate _views</value>
+  </data>
+  <data name="InvalidControllerName" xml:space="preserve">
+    <value>The controller name is invalid.</value>
+  </data>
+  <data name="InvalidIdentifierCharacters" xml:space="preserve">
+    <value>The name is not allowed to contain any of these characters: {0}</value>
+  </data>
+  <data name="InvalidIdentifierEmpty" xml:space="preserve">
+    <value>The name is invalid because it is empty.</value>
+  </data>
+  <data name="InvalidIdentifierReservedName" xml:space="preserve">
+    <value>The name is invalid because it is a reserved name.</value>
+  </data>
+  <data name="InvalidIdentifierWhitespaces" xml:space="preserve">
+    <value>The name is invalid because it has white spaces.</value>
+  </data>
+  <data name="LayoutPageInstructionsLabel" xml:space="preserve">
+    <value>(Leave empty if it is set in a Razor __viewstart file)</value>
+  </data>
+  <data name="LayoutPageSelectorHeading" xml:space="preserve">
+    <value>Select a Layout Page</value>
+  </data>
+  <data name="MasterPageCsHtmlFilter" xml:space="preserve">
+    <value>Layout Pages (*.cshtml)|*.cshtml</value>
+  </data>
+  <data name="MasterPageVbHtmlFilter" xml:space="preserve">
+    <value>Layout Pages (*.vbhtml)|*.vbhtml</value>
+  </data>
+  <data name="ModelClassLabel" xml:space="preserve">
+    <value>_Model class:</value>
+  </data>
+  <data name="NewDataContextLabel" xml:space="preserve">
+    <value>New data _context type:</value>
+  </data>
+  <data name="NewDataContextWindowTitle" xml:space="preserve">
+    <value>New Data Context</value>
+  </data>
+  <data name="NoKeyDefinedError" xml:space="preserve">
+    <value>The entity type '{0}' has no key defined. Define a key for this entity type.</value>
+  </data>
+  <data name="OverwriteMessage" xml:space="preserve">
+    <value>A file with the name {0} already exists. Do you want to replace it?</value>
+  </data>
+  <data name="ReferenceScriptLibrariesCheckLabel" xml:space="preserve">
+    <value>_Reference script libraries</value>
+  </data>
+  <data name="ScaffoldLanguageNotSupported" xml:space="preserve">
+    <value>The project language is not supported.</value>
+  </data>
+  <data name="ScaffoldODataActions_Description" xml:space="preserve">
+    <value>An OData v4 Web API 2 controller with CRUD actions to create, read, update, delete, and list entities.</value>
+  </data>
+  <data name="ScaffoldODataActions_Name" xml:space="preserve">
+    <value>Microsoft OData v4 Web API Controller</value>
+  </data>
+  <data name="ScaffoldODataModificationMessage" xml:space="preserve">
+    <value>The WebApiConfig class may require additional changes to add a route for this controller. Merge these statements into the Register method of the WebApiConfig class as applicable. Note that OData URLs are case sensitive.</value>
+  </data>
+  <data name="ScaffoldODataReadMeText" xml:space="preserve">
+    <value>The Web API configuration must be updated for each OData controller created by scaffolding. Instructions are available in the generated controller.</value>
+  </data>
+  <data name="Scaffold_Auther" xml:space="preserve">
+    <value>Microsoft</value>
+  </data>
+  <data name="SpecifyLayoutPage" xml:space="preserve">
+    <value>Specify a layout page</value>
+  </data>
+  <data name="UseLayoutPageCheckLabel" xml:space="preserve">
+    <value>_Use a layout page:</value>
+  </data>
+  <data name="VersionsFileMissing" xml:space="preserve">
+    <value>The {0} file is missing from the installed template folder.</value>
+  </data>
+  <data name="ViewsLabel" xml:space="preserve">
+    <value>Views:</value>
+  </data>
+  <data name="ViewTemplateWithoutModel" xml:space="preserve">
+    <value>(without model)</value>
+  </data>
+  <data name="ViewWithoutModelTooltip" xml:space="preserve">
+    <value>This feature is only available for views with a strongly-typed model.</value>
+  </data>
+  <data name="FailedToOpenFile" xml:space="preserve">
+    <value>Unable to open file '{0}'.</value>
+  </data>
+  <data name="ScaffoldODataActions_Id" xml:space="preserve">
+    <value>ODatav4ControllerWithActionsScaffolder</value>
+  </data>
+  <data name="OverpostingWarningMessage" xml:space="preserve">
+    <value>To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+more details see {0}.</value>
+  </data>
+  <data name="ScaffoldODataContext_Description" xml:space="preserve">
+    <value>An OData v4 Web API 2 controller with CRUD actions to create, read, update, delete, and list entities from an Entity Framework data context.</value>
+  </data>
+  <data name="ScaffoldODataContext_Id" xml:space="preserve">
+    <value>ODatav4ControllerWithContextScaffolder</value>
+  </data>
+  <data name="ScaffoldODataContext_Name" xml:space="preserve">
+    <value>Microsoft OData v4 Web API Controller Using Entity Framework</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AreaIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AreaIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControllerIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ControllerIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ControllerWithViewsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ControllerWithViewsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ViewsIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ViewsIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
