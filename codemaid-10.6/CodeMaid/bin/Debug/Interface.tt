@@ -1,4 +1,0 @@
-﻿<#@parameter type="System.String" name="parameter1" #>
-<#@parameter type="System.DateTime" name="parameter2" #>
-
-Test: <#=parameter1 #>------<#=parameter2 #>
