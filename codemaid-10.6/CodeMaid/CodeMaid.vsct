@@ -289,7 +289,7 @@
     <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidCleanupOpenCode" priority="0x0200">
       <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextDocumentTabGroup" />
     </CommandPlacement>
-    <!--清理选中项目-->
+    <!--清理已选代码-->
     <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidCleanupSelectedCode" priority="0x0200">
       <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextSolutionFolderGroup" />
     </CommandPlacement>
@@ -331,7 +331,7 @@
       <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextWebItemNodeGroup" />
     </CommandPlacement>
     <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidCleanupSelectedCode" priority="0x0200">
-      <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextWebFolderGroup" />
+      <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextWebFolderGroup" /><!--web文件夹显示-->
     </CommandPlacement>
 
     <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidCloseAllReadOnly" priority="0x0200">

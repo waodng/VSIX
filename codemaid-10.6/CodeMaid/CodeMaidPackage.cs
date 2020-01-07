@@ -292,7 +292,7 @@ namespace SteveCadwallader.CodeMaid
             CleanupActiveCodeCommand.Initialize(this);//清理当前活动文档
             CleanupAllCodeCommand.Initialize(this);//清理所有的代码
             CleanupOpenCodeCommand.Initialize(this);//清理打开的代码
-            CleanupSelectedCodeCommand.Initialize(this);//清理选中的代码
+            CleanupSelectedCodeCommand.Initialize(this);//清理已选的代码
             CloseAllReadOnlyCommand.Initialize(this);
             CollapseAllSolutionExplorerCommand.Initialize(this);
             CollapseSelectedSolutionExplorerCommand.Initialize(this);

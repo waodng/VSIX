@@ -74,13 +74,17 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             //读取配置文件
             if (!Settings.Default.Formatting_AspxHtml) return;
 
-            //替换aspx中table标签，增加div标签和属性等；
-            PrcoessAspxPageList(textDocument);
-            //PrcoessAspxPageEdit(textDocument);
-
+            //判断是否是aspx页面全部都替换
+            if (Settings.Default.Cleaning_FormattingAspxCleanupAsk == 0)
+            {
+                //替换aspx中table标签，增加div标签和属性等；
+                PrcoessAspxPageList(textDocument);
+                //PrcoessAspxPageEdit(textDocument);
+            }
+           
             //正则表达式  替换aspx中的带有class的Button
             string pattern = "(?is)<asp:Button(((?!class|<asp).)*?)(\\b(class|CssClass)\\s*=\\s*\"(?(txthidden|btn)(?!)|(((?!class|<asp).)*?))\")?(?<center>((?!class|<asp).)*?)(?:width\\s*=\\s*\".*?\"\\s*height\\s*=\\s*\".*?\")?(?<footer>((?!class|<asp).)*?)/>";
-            string replaceMent = "<asp:Button $1class=\"btn btn-primary m-r-5\"${center}${footer}/>";
+            string replaceMent = "<asp:Button $1class=\"btn btn-info m-r-5\"${center}${footer}/>";
             TextDocumentHelper.SubstituteAllStringMatches(textDocument, pattern, replaceMent);
 
             //替换aspx中的带有CssClass的TextBox  DropDownList22

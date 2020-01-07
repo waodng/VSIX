@@ -2306,5 +2306,29 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Refactoring"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int Cleaning_FormattingAspxCleanupAsk {
+            get {
+                return ((int)(this["Cleaning_FormattingAspxCleanupAsk"]));
+            }
+            set {
+                this["Cleaning_FormattingAspxCleanupAsk"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool CleanupSelectedCodeForHtml {
+            get {
+                return ((bool)(this["CleanupSelectedCodeForHtml"]));
+            }
+            set {
+                this["CleanupSelectedCodeForHtml"] = value;
+            }
+        }
     }
 }

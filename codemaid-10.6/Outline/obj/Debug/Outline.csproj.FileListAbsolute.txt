@@ -1,0 +1,16 @@
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\TodoGlyph\Example.ToDoClassification.png
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Outline.dll
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Outline.pdb
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Outline.vsix
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\extension.vsixmanifest
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.CoreUtility.dll
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.Data.dll
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.Logic.dll
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.UI.dll
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.CoreUtility.xml
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.Data.xml
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.Logic.xml
+E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.UI.xml
+E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\Outline.dll
+E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\Outline.pdb
+E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\extension.vsixmanifest

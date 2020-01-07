@@ -23,6 +23,7 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Cleaning
                 new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Cleaning_AutoCleanupOnFileSave, x => AutoCleanupOnFileSave),
                 new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Cleaning_AutoSaveAndCloseIfOpenedByCleanup, x => AutoSaveAndCloseIfOpenedByCleanup),
                 new SettingToOptionMapping<bool, bool>(x => ActiveSettings.Formatting_AspxHtml, x => FormattingAspxHtmlTag),
+                new SettingToOptionMapping<int, AskYesNo>(x => ActiveSettings.Cleaning_FormattingAspxCleanupAsk, x => FormattingAspxCleanupAsk),
                 new SettingToOptionMapping<int, AskYesNo>(x => ActiveSettings.Cleaning_PerformPartialCleanupOnExternal, x => PerformPartialCleanupOnExternal)
             };
         }
@@ -71,6 +72,15 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Cleaning
         /// Gets or sets the options for performing partial cleanup on external files.
         /// </summary>
         public AskYesNo PerformPartialCleanupOnExternal
+        {
+            get { return GetPropertyValue<AskYesNo>(); }
+            set { SetPropertyValue(value); }
+        }
+
+        /// <summary>
+        /// 清理aspx页面的代码 是全部还是部分
+        /// </summary>
+        public AskYesNo FormattingAspxCleanupAsk
         {
             get { return GetPropertyValue<AskYesNo>(); }
             set { SetPropertyValue(value); }

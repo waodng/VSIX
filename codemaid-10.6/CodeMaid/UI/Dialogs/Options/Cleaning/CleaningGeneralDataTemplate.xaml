@@ -11,6 +11,11 @@
                     <CheckBox Content="{x:Static p:Resources.AutomaticallyRunCleanupOnFileSave}" IsChecked="{Binding AutoCleanupOnFileSave}" />
                     <CheckBox Content="{x:Static p:Resources.AutomaticallySaveAndCloseDocumentsOpenedByCleanup}" IsChecked="{Binding AutoSaveAndCloseIfOpenedByCleanup}" />
                     <CheckBox Content="{x:Static p:Resources.Formatting_AspxHtml}" IsChecked="{Binding FormattingAspxHtmlTag}" />
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox Content="{x:Static p:Resources.Formatting_AspxHtml}" IsChecked="{Binding FormattingAspxHtmlTag}" />
+                        <RadioButton Content="{x:Static p:Resources.All}" IsChecked="{Binding FormattingAspxCleanupAsk, Converter={x:Static cnv:EnumToBooleanConverter.Default}, ConverterParameter={x:Static enums:AskYesNo.Ask}}" />
+                        <RadioButton Content="{x:Static p:Resources.No}" IsChecked="{Binding FormattingAspxCleanupAsk, Converter={x:Static cnv:EnumToBooleanConverter.Default}, ConverterParameter={x:Static enums:AskYesNo.Yes}}" />
+                    </StackPanel>
                 </StackPanel>
             </GroupBox>
             <GroupBox Header="{x:Static p:Resources.External}">
