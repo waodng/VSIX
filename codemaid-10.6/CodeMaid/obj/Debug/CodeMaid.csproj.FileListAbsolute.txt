@@ -10,7 +10,6 @@ E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\en-US\SteveCadwallader.CodeM
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\zh-Hans\SteveCadwallader.CodeMaid.resources.dll
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\SteveCadwallader.CodeMaid.pkgdef
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\SteveCadwallader.CodeMaid.vsix
-E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\extension.vsixmanifest
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\EnvDTE.dll
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\EnvDTE80.dll
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\Microsoft.VisualStudio.Shell.11.0.dll
@@ -90,3 +89,4 @@ E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\obj\Debug\SteveCadwallader.CodeMaid.pd
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\obj\Debug\SteveCadwallader.CodeMaid.pkgdef
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\obj\Debug\SteveCadwallader.CodeMaid.latest.pkgdef
 E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\obj\Debug\extension.vsixmanifest
+E:\OpenSource\VSIX\codemaid-10.6\CodeMaid\bin\Debug\extension.vsixmanifest
