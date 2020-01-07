@@ -14,3 +14,4 @@ E:\OpenSource\VSIX\codemaid-10.6\Outline\bin\Debug\Microsoft.VisualStudio.Text.U
 E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\Outline.dll
 E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\Outline.pdb
 E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\extension.vsixmanifest
+E:\OpenSource\VSIX\codemaid-10.6\Outline\obj\Debug\Outline.csprojResolveAssemblyReference.cache
