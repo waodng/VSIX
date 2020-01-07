@@ -2318,17 +2318,5 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Cleaning_FormattingAspxCleanupAsk"] = value;
             }
         }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool CleanupSelectedCodeForHtml {
-            get {
-                return ((bool)(this["CleanupSelectedCodeForHtml"]));
-            }
-            set {
-                this["CleanupSelectedCodeForHtml"] = value;
-            }
-        }
     }
 }
