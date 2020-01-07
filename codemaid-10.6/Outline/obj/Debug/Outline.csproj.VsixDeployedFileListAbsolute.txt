@@ -1,8 +1,0 @@
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\Outline.dll
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\Microsoft.VisualStudio.CoreUtility.dll
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\Microsoft.VisualStudio.Text.Data.dll
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\Microsoft.VisualStudio.Text.Logic.dll
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\Microsoft.VisualStudio.Text.UI.dll
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\extension.vsixmanifest
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\TodoGlyph\\Example.ToDoClassification.png
-C:\Users\Administrator\AppData\Local\Microsoft\VisualStudio\12.0Exp\Extensions\waodng\CSharpOutline\2.2\\Outline.pdb
