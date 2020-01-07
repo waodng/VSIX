@@ -90,7 +90,7 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
 
             //替换aspx中的带有CssClass的TextBox  DropDownList22
             pattern = @"(?is)(<asp:(TextBox|DropDownList)((?!class|</).)*?)(\b(class|CssClass)\s*=\s*\""(?(txthidden)(?!)|(((?!class|/>).)*?))\"")?(?<footer>((?!class).)*?(</asp:\2>|/>))";
-            replaceMent = "$1 CssClass=\"form-controldiv\"${footer}";
+            replaceMent = "$1 CssClass=\"form-controlnew\"${footer}";
             TextDocumentHelper.SubstituteAllStringMatches(textDocument, pattern, replaceMent);
             
             //只有不是全部时才会按照控件gridview来替换，全部按照页面格式来替换
