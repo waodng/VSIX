@@ -91,6 +91,15 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
             pattern = @"(?is)(<asp:(TextBox|DropDownList)((?!class|</).)*?)(\b(class|CssClass)\s*=\s*\""(?(txthidden)(?!)|(((?!class|/>).)*?))\"")?(?<footer>((?!class).)*?(</asp:\2>|/>))";
             replaceMent = "$1 CssClass=\"form-controldiv\"${footer}";
             TextDocumentHelper.SubstituteAllStringMatches(textDocument, pattern, replaceMent);
+            
+            //只有不是全部时才会按照控件gridview来替换，全部按照页面格式来替换
+            if (Settings.Default.Cleaning_FormattingAspxCleanupAsk == 1)
+            {
+                //替换aspx页面中gridview中class样式
+                pattern = @"(?is)(?<dataHead><asp:GridView(((?!class|>).)*?))(?<cls>(class|CssClass)\s*=\s*\"".*?\"")?(?<dataFooter>(((?!class|>).)*?)>.*?</asp:GridView>)";
+                replaceMent = "${dataHead} class=\"table table-bordered table-hover table-striped\"${dataFooter}";
+                TextDocumentHelper.SubstituteAllStringMatches(textDocument, pattern, replaceMent);
+            }
         }
 
         /// <summary>
