@@ -82,6 +82,7 @@ namespace SteveCadwallader.CodeMaid.Logic.Cleaning
                 //PrcoessAspxPageEdit(textDocument);
             }
            
+
             //正则表达式  替换aspx中的带有class的Button
             string pattern = "(?is)<asp:Button(((?!class|<asp).)*?)(\\b(class|CssClass)\\s*=\\s*\"(?(txthidden|btn)(?!)|(((?!class|<asp).)*?))\")?(?<center>((?!class|<asp).)*?)(?:width\\s*=\\s*\".*?\"\\s*height\\s*=\\s*\".*?\")?(?<footer>((?!class|<asp).)*?)/>";
             string replaceMent = "<asp:Button $1class=\"btn btn-info m-r-5\"${center}${footer}/>";
