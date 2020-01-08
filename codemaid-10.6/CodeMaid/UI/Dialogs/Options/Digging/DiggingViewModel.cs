@@ -147,6 +147,9 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Digging
             set { SetPropertyValue(value); }
         }
 
+        /// <summary>
+        /// 将代码实现与对应接口同步 waodng
+        /// </summary>
         public bool SynchronizeRealize
         {
             get { return GetPropertyValue<bool>(); }

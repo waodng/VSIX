@@ -13,6 +13,7 @@ visual studio  the Managed Package Framework (MPF)
 * 新增支持html样式清理的容错性和性能等；
 * 优化清理已选代码的性能，清理可对部分文件类型有效；
 * 通过配置选项科配置只清理aspx文件部分或全部html标签样式；
+* 修复outling功能，支持选中单词会高亮显示当前文档中相同的字符；
 
 ### 2019-09-01
 
