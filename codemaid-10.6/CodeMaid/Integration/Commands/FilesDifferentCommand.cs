@@ -60,9 +60,7 @@ namespace SteveCadwallader.CodeMaid.Integration.Commands
             }
         }
 
-	    #endregion
-
-        private void DiffFilesUsingDefaultTool(string file1, string file2)
+         private void DiffFilesUsingDefaultTool(string file1, string file2)
         {
             // This is the guid and id for the Tools.DiffFiles command
             string diffFilesCmd = "{5D4C0442-C0A2-4BE8-9B4D-AB1C28450942}";
@@ -140,5 +138,6 @@ namespace SteveCadwallader.CodeMaid.Integration.Commands
                    let pi = item.Object as ProjectItem
                    select pi.FileNames[1];
         }
+	    #endregion
     }
 }
