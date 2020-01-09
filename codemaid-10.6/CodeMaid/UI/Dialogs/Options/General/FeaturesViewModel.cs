@@ -29,7 +29,8 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.General
                 new Mapping(x => ActiveSettings.Feature_SpadeToolWindow, x => SpadeToolWindow),
                 new Mapping(x => ActiveSettings.Feature_SwitchFile, x => SwitchFile),
                 new Mapping(x => ActiveSettings.Refactoring, x => Refactoring), //重构代码
-                new Mapping(x => ActiveSettings.NestInOutFile, x => NestInOutFile)   //嵌入嵌出文件
+                new Mapping(x => ActiveSettings.NestInOutFile, x => NestInOutFile),   //嵌入嵌出文件
+                new Mapping(x => ActiveSettings.Feature_FileDifferent, x => FileDifferent)   //文件比较
             };
         }
 
@@ -155,11 +156,22 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.General
             get => GetPropertyValue<bool>();
             set => SetPropertyValue(value);
         }
-
+        /// <summary>
+        /// 文件嵌入迁出
+        /// </summary>
         public bool NestInOutFile
         {
             get => GetPropertyValue<bool>();
             set => SetPropertyValue(value);
         }
+        /// <summary>
+        /// 文件比较
+        /// </summary>
+        public bool FileDifferent
+        {
+            get => GetPropertyValue<bool>();
+            set => SetPropertyValue(value);
+        }
+
     }
 }

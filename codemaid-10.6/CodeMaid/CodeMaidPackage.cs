@@ -322,6 +322,7 @@ namespace SteveCadwallader.CodeMaid
             NestInFileCommand.Initialize(this);//嵌入文件按钮注册
             NestOutFileCommand.Initialize(this);//移出嵌入文件按钮注册
             RefactoringCodeCommand.Initialize(this);//重构代码
+            FilesDifferentCommand.Initialize(this);//文件比较
         }
 
         /// <summary>

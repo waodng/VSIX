@@ -385,6 +385,15 @@
           <ButtonText>RefactoringCode</ButtonText>
         </Strings>
       </Button>
+
+      <Button guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidFilesDifferent" priority="0x0100" type="Button">
+        <Icon guid="GuidImageFind" id="IconFind" />
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>FilesCompare</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
   </Commands>
 </CommandTable>

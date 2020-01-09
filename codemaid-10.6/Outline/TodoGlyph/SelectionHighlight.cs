@@ -47,6 +47,7 @@ namespace Outline.TodoGlyph
             this._tagAggregator = tagAggregator;
             this._view.LayoutChanged += this.OnLayoutChanged;
             this._selection.SelectionChanged += new EventHandler(this.OnSelectionChanged);
+            //选中单词区域背景色
             Brush brush = new SolidColorBrush(Colors.DarkOrchid);
             //Brush brush = new SolidColorBrush(Colors.OrangeRed);
             brush.Freeze();

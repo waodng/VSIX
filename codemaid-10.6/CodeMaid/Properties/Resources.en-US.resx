@@ -936,4 +936,7 @@
   <data name="Refactoring" xml:space="preserve">
     <value>Refactoring code</value>
   </data>
+  <data name="FileDifferent" xml:space="preserve">
+    <value>Files compare</value>
+  </data>
 </root>

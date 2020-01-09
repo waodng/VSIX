@@ -1124,6 +1124,15 @@ namespace SteveCadwallader.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找类似 Files compare 的本地化字符串。
+        /// </summary>
+        public static string FileDifferent {
+            get {
+                return ResourceManager.GetString("FileDifferent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 File Header 的本地化字符串。
         /// </summary>
         public static string FileHeader {

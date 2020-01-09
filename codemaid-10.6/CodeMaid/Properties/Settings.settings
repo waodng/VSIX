@@ -579,5 +579,8 @@
     <Setting Name="Cleaning_FormattingAspxCleanupAsk" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="Feature_FileDifferent" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

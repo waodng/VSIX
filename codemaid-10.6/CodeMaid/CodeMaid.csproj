@@ -193,6 +193,7 @@
     <Compile Include="Helpers\SettingsContextHelper.cs" />
     <Compile Include="Helpers\RegionHelper.cs" />
     <Compile Include="Helpers\TextDocumentExtensions.cs" />
+    <Compile Include="Integration\Commands\FilesDifferentCommand.cs" />
     <Compile Include="Integration\Commands\RefactoringCodeCommand.cs" />
     <Compile Include="Integration\Commands\NestOutFileCommand.cs" />
     <Compile Include="Integration\Commands\NestInFileCommand.cs" />

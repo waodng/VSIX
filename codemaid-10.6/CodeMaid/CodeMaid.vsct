@@ -629,6 +629,14 @@
     <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidRefactoringCode" priority="0x0400">
       <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextWebItemNodeGroup" />
     </CommandPlacement>
+    
+     <!--比较文件按钮定义-->
+    <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidFilesDifferent" priority="0x0400">
+      <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextItemNodeGroup" />
+    </CommandPlacement>
+    <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidFilesDifferent" priority="0x0400">
+      <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextWebItemNodeGroup" />
+    </CommandPlacement>
   </CommandPlacements>
 
   <KeyBindings>
@@ -833,6 +841,9 @@
       <IDSymbol name="CmdIDCodeMaidNestOutFile" value="0x4100" />
       <!--重构代码-->
       <IDSymbol name="CmdIDCodeMaidRefactoringCode" value="0x4200" />
+      <!--比较文件-->
+      <IDSymbol name="CmdIDCodeMaidFilesDifferent" value="0x4300" />
+      
     </GuidSymbol>
 
     <!-- These are the guids for images -->

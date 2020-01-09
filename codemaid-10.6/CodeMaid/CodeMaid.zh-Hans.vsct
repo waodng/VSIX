@@ -385,6 +385,15 @@
           <ButtonText>重构代码-未实现</ButtonText>
         </Strings>
       </Button>
+
+      <Button guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidFilesDifferent" priority="0x0100" type="Button">
+        <Icon guid="GuidImageFind" id="IconFind" />
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>文件比较</ButtonText>
+        </Strings>
+      </Button>
     </Buttons>
   </Commands>
 </CommandTable>

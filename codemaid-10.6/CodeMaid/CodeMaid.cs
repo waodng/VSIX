@@ -184,6 +184,9 @@ namespace SteveCadwallader.CodeMaid
         public const int CmdIDCodeMaidNestOutFile = 0x4100;
         //重构代码
         public const int CmdIDCodeMaidRefactoringCode = 0x4200;
+        //比较文件
+        public const int CmdIDCodeMaidFilesDifferent = 0x4300;
+        
 
         public const int IconCleanup = 0x0001;
         public const int IconCleanupAll = 0x0001;

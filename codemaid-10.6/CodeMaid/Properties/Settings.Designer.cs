@@ -2318,5 +2318,17 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Cleaning_FormattingAspxCleanupAsk"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Feature_FileDifferent {
+            get {
+                return ((bool)(this["Feature_FileDifferent"]));
+            }
+            set {
+                this["Feature_FileDifferent"] = value;
+            }
+        }
     }
 }
