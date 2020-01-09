@@ -218,25 +218,30 @@ Learn more about on MSDN about [customizing item templates]
 
 #### Included extensions:
 
-​        CaretMargin         http://visualstudiogallery.msdn.microsoft.com/en-us/a893687b-f488-49eb-ad91-c59d86daad34.
-​        ErrorsToMarks       http://visualstudiogallery.msdn.microsoft.com/en-us/0fc52c83-0ab3-485d-a917-2006966eec7a.
-​        MarkersToMarks      http://visualstudiogallery.msdn.microsoft.com/en-us/89deee06-0ed0-4347-81a6-942a3f2874af.
-​        OverviewMarginImpl  http://visualstudiogallery.msdn.microsoft.com/en-us/2e9f37b7-5a1f-4c47-930b-379b2d0fd596.
-​        StructureAdornment  http://visualstudiogallery.msdn.microsoft.com/en-us/203f22f4-3e9f-4dbb-befc-f2606835834e.
-​        StructureMargin     http://visualstudiogallery.msdn.microsoft.com/en-us/fe432eb5-c538-47a9-9919-fba1a8f5b261. 
+* CaretMargin         http://visualstudiogallery.msdn.microsoft.com/en-us/a893687b-f488-49eb-ad91-c59d86daad34.
+* ErrorsToMarks       http://visualstudiogallery.msdn.microsoft.com/en-us/0fc52c83-0ab3-485d-a917-2006966eec7a.
+* MarkersToMarks      http://visualstudiogallery.msdn.microsoft.com/en-us/89deee06-0ed0-4347-81a6-942a3f2874af.
+* OverviewMarginImpl  http://visualstudiogallery.msdn.microsoft.com/en-us/2e9f37b7-5a1f-4c47-930b-379b2d0fd596.
+* StructureAdornment  http://visualstudiogallery.msdn.microsoft.com/en-us/203f22f4-3e9f-4dbb-befc-f2606835834e.
+*  StructureMargin     http://visualstudiogallery.msdn.microsoft.com/en-us/fe432eb5-c538-47a9-9919-fba1a8f5b261. 
 
-   BlockTagger         The definition of an API to get the structure of a code file.
-   BlockTaggerImpl     An implementation of the BlockTaggerAPI for C/C# and VB files.
-    
-   OverviewMargin      The definition of an API for creating margins that map to the entire file.
-    
-   SettingsStore       The definition of an API to load and save editor options across sessions.
-   SettingsStoreImpl   An implementation of the SettingStore API that uses IVsSettingsStore to access the system registry.
+* BlockTagger         The definition of an API to get the structure of a code file.
 
-* Usage:
-      See other extensions.
-* Options:
-      None.
+* BlockTaggerImpl     An implementation of the BlockTaggerAPI for C/C# and VB files.
+
+* OverviewMargin      The definition of an API for creating margins that map to the entire file.
+
+*  SettingsStore       The definition of an API to load and save editor options across sessions.
+
+* SettingsStoreImpl   An implementation of the SettingStore API that uses IVsSettingsStore to access the system registry.
+
+  
+
+  * Usage:
+        See other extensions.
+
+  * Options:
+        None.
 
 #### Notes:
 
