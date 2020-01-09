@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>CloudServicePlugin</DefaultName>
+    <Name>Windows Azure Cloud Service Plugin</Name>
+    <Description>A template to create a plugin which extends the Virtual Studio SDK for Cloud Services.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Icon>azure-icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>84267075-d2ee-49d7-9e6e-528fc32f54dc</TemplateID>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$safeitemname$.csplugin">CloudServicePlugin.csplugin</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Windows Azure Cloud Service Plugin" />
+      <CustomParameter Name="$TemplateID$" Value="fa60804d-24ba-4888-9523-c632a247c476" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

@@ -1,0 +1,51 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Browser Link Extension</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>BrowserLinkProject</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>logo.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>ef6a77bd-0dd7-452f-a423-b82b6ed5b408</TemplateID>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.csproj" File="BrowserLinkExtensionTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$.vsct">BrowserLinkExtensionTemplate.vsct</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Package.cs">BrowserLinkExtensionTemplatePackage.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Guids.cs">Guids.cs</ProjectItem>
+      <Folder Name="Intellisense" TargetFolderName="Intellisense">
+        <ProjectItem ReplaceParameters="false" TargetFileName="browserlink.intellisense.js">browserlink.intellisense.js</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="jquery-1.8.2.intellisense.js">jquery-1.8.2.intellisense.js</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="jquery-1.8.2.js">jquery-1.8.2.js</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Extension.cs" OpenInEditor="true">MyExtension.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="PkgCmdID.cs">PkgCmdID.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="false" TargetFileName="Images.png">Images.png</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Package.ico">Package.ico</ProjectItem>
+      </Folder>
+      <Folder Name="Scripts" TargetFolderName="Scripts">
+        <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$Extension.js" OpenInEditor="true">MyExtension.js</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest">_source.extension.vsixmanifest</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="VSPackage.resx">VSPackage.resx</ProjectItem>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Browser Link Extension" />
+      <CustomParameter Name="$TemplateID$" Value="976d7a6f-f3c0-4848-965c-39d3ed0e147d" />
+      <CustomParameter Name="$TemplateType$" Value="Project" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

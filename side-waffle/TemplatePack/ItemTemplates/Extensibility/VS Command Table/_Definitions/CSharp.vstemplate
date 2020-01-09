@@ -1,0 +1,86 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>Package.vsct</DefaultName>
+    <Name>VS Command Table (.vsct)</Name>
+    <Description>A standard .vsct file with a button. Also includes Guids.cs and PkgCmdID.cs</Description>
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>a39b11ad-6d1b-4cdc-b683-54682af765b3</TemplateID>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <References>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.OLE.Interop</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Interop</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Interop.8.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Interop.9.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Interop.10.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Interop.11.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.TextManager.Interop</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.11.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Immutable.10.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.Shell.Immutable.11.0</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>EnvDTE</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>EnvDTE100</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>EnvDTE80</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>EnvDTE90</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Design</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>System.Core</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>Microsoft.VisualStudio.CommandBars</Assembly>
+      </Reference>
+      <Reference>
+        <Assembly>stdole</Assembly>
+      </Reference>
+    </References>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$rootnamespace$.vsct">VSPackage.vsct</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$rootnamespace$Package.cs">VSPackagePackage.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="Guids.cs">Guids.cs</ProjectItem>
+    <ProjectItem ReplaceParameters="true" TargetFileName="PkgCmdID.cs">PkgCmdID.cs</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="VS Command Table (.vsct)" />
+      <CustomParameter Name="$TemplateID$" Value="94537de7-457a-4bdd-9fc2-06675f0e3c04" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

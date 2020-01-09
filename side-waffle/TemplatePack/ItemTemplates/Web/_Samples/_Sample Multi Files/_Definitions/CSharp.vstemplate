@@ -1,0 +1,31 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>multifile</DefaultName>
+    <Name>Multi file template sample</Name>
+    <Description>Adds a few different files in one item template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <SortOrder>1000</SortOrder>
+    <TemplateID>0ef132c2-3034-4d52-b665-5374ec2ae0ba</TemplateID>
+    <AppliesTo>!VB</AppliesTo>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem TargetFileName="I$safeitemname$Controller.cs" ReplaceParameters="true">ISearchController.cs</ProjectItem>
+    <ProjectItem TargetFileName="$safeitemname$Controller.cs" ReplaceParameters="true">SearchController.cs</ProjectItem>
+    <ProjectItem TargetFileName="WorkerService\$safeitemname$WorkerService.cs" ReplaceParameters="true">WorkerService\SearchWorkerService.cs</ProjectItem>
+    <ProjectItem TargetFileName="WorkerService\I$safeitemname$WorkerService.cs" ReplaceParameters="true">WorkerService\ISearchWorkerService.cs</ProjectItem>
+    <ProjectItem TargetFileName="Views\readme.txt" ReplaceParameters="true">Views\readme.txt</ProjectItem>
+    <ProjectItem TargetFileName="ViewModels\readme.txt" ReplaceParameters="true">ViewModels\readme.txt</ProjectItem>
+    <ProjectItem TargetFileName="InputModels\$safeitemname$\$safeitemname$.txt" ReplaceParameters="true">InputModels\Search\readme.txt</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Multi file template sample" />
+      <CustomParameter Name="$TemplateID$" Value="a255ad24-0c6d-4452-9ac7-f34aac2b5453" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

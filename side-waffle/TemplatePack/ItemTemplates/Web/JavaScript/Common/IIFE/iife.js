@@ -1,0 +1,5 @@
+﻿(function (undefined) {
+
+    'use strict';
+
+})();

@@ -1,0 +1,33 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Windows Azure WebJobs Console Application</Name>
+    <Description>Windows Azure WebJobs Console Application</Description>
+    <DefaultName>WebJobsHelloWorld</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>azure-icon-256x256.png</Icon>
+    <PreviewImage>azure-icon-256x256.png</PreviewImage>
+    <!-- Indicates how many parent folders this item template should appear in -->
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>e3b60c9f-323e-4ef9-bb5b-9ddf21febbca</TemplateID>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="WebJobsHelloWorld.csproj" File="WebJobsHelloWorld.csproj" ReplaceParameters="true">
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Windows Azure WebJobs Console Application" />
+      <CustomParameter Name="$TemplateID$" Value="852cf592-6159-4ea4-b66d-32b2bfbbd7cf" />
+      <CustomParameter Name="$TemplateType$" Value="Project" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

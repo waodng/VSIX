@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <ProjectType>VisualBasic</ProjectType>
+    <DefaultName>_preprocess.xml</DefaultName>
+    <Name>_preprocess.xml</Name>
+    <Description>Creates a _preprocess.xml file which is used by SideWaffle/TemplateBuilder.</Description>
+    <Icon>file-icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>4e0a1de1-3954-421d-80b3-7de8cbdb5c04</TemplateID>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="false" TargetFileName="_preprocess.xml" OpenInEditor="true">_preprocess.xml</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="_preprocess.xml" />
+      <CustomParameter Name="$TemplateID$" Value="87bdc190-ebaa-487c-ad52-b85b4bb69d41" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

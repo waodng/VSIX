@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets
+    xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Angular Directive</Title>
+      <Author>John Papa</Author>
+      <Description>Template for adding an Angular Directive</Description>
+      <Shortcut>ngdir</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>module</ID>
+          <ToolTip>Replace with a module name variable.</ToolTip>
+          <Default>app</Default>
+        </Literal>
+        <Literal>
+          <ID>directive</ID>
+          <ToolTip>Replace with the string name of the directive.</ToolTip>
+          <Default>customDirective</Default>
+        </Literal>
+        <Literal>
+          <ID>dependency</ID>
+          <ToolTip>Replace with the dependency for the directive.</ToolTip>
+          <Default>$window</Default>
+        </Literal>
+        <Literal>
+          <ID>replace</ID>
+          <ToolTip>If true, hides the directive HTML tag in the root of HTML template.</ToolTip>
+          <Default>true</Default>
+        </Literal>
+        <Literal>
+          <ID>filePath</ID>
+          <ToolTip>The source of the HTML file template.</ToolTip>
+          <Default>app/myDirective/myDirective.html</Default>
+        </Literal>
+        <Literal>
+          <ID>controller</ID>
+          <ToolTip>The name of the controller of the directive.</ToolTip>
+          <Default>customController</Default>
+        </Literal>
+        <Literal>
+          <ID>controllerAlias</ID>
+          <ToolTip>The variable of the controller to be used in the template.</ToolTip>
+          <Default>custom</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="JavaScript">
+        <![CDATA[
+        (function() {
+            angular.module('$module$')
+                   .directive('$directive$', $directive$);
+
+            $directive$.$$inject = ['$dependency$'];
+
+            function $directive$($dependency$) {
+                // Usage:
+                // 
+                // Creates:
+                // 
+                var directive = {
+                    link: link,
+                    restrict: 'EA',
+                    replace : $replace$,
+                    templateUrl : '$filePath$',
+                    controller : '$controller$',
+                    controllerAs : '$controllerAlias$'
+                };
+                return directive;
+
+                function link(scope, element, attrs) {
+                }
+            };
+        })();
+                ]]>
+      </Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,26 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>Dockerfile</DefaultName>
+    <Name>Dockerfile</Name>
+    <Description>A file with commands describing how to build a docker image.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>6ccbfbf8-1589-4629-943f-8eedfe2e86f6</TemplateID>
+    <AppliesTo>!VB</AppliesTo>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem>Dockerfile</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Dockerfile" />
+      <CustomParameter Name="$TemplateID$" Value="fcdc9ef0-af57-4774-95ed-97594061bb16" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

@@ -1,0 +1,24 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>BlobUploadHelper</DefaultName>
+    <Name>Windows Azure Blob Upload Helper</Name>
+    <Description>Adds a class file to any existing VSIX project that provides convenience utilities for upload files to Windows Azure Blob Storage.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Icon>azure-icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>7d861199-4bba-43e5-92f9-768186d5d77e</TemplateID>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectItem ReplaceParameters="true" TargetFileName="$safeitemname$.cs">BlobUploadHelper.cs</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Windows Azure Blob Upload Helper" />
+      <CustomParameter Name="$TemplateID$" Value="7361535b-f602-40b0-a5c2-3e49f8cae5a9" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

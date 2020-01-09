@@ -1,0 +1,26 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <DefaultName>app.manifest</DefaultName>
+    <Name>FirefoxOS manifest</Name>
+    <Description>An Open Web App manifest contains information that a Web browser needs to interact with an app.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <Icon>icon.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>02304e4e-8fa2-4c33-897d-698ea3449788</TemplateID>
+    <AppliesTo>!VB</AppliesTo>
+    <SortOrder>1000</SortOrder>
+  </TemplateData>
+  <TemplateContent>
+    <References />
+    <ProjectItem ReplaceParameters="true">app.manifest</ProjectItem>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="FirefoxOS manifest" />
+      <CustomParameter Name="$TemplateID$" Value="af6e3131-271b-48b8-8565-457fe1602148" />
+      <CustomParameter Name="$TemplateType$" Value="Item" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

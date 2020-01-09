@@ -1,0 +1,40 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Code Snippet Extension</Name>
+    <Description>Makes it easy to distribute code snippets in a VSIX</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>MySnippets</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>logo.png</Icon>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
+    <TemplateID>23d02026-39d1-4c5e-b040-343ffea4810a</TemplateID>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$projectname$.csproj" File="MySnippets.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="README.txt" OpenInEditor="true">README.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="registry.pkgdef">registry.pkgdef</ProjectItem>
+      <Folder Name="Snippets" TargetFolderName="Snippets">
+        <Folder Name="CSharp" TargetFolderName="CSharp">
+          <Folder Name="MySnippets" TargetFolderName="$safeprojectname$">
+            <ProjectItem ReplaceParameters="false" TargetFileName="Dispose.Snippet">Dispose.Snippet</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="WCFUsing.Snippet">WCFUsing.Snippet</ProjectItem>
+          </Folder>
+        </Folder>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="source.extension.vsixmanifest">_source.extension.vsixmanifest</ProjectItem>
+    </Project>
+    <CustomParameters>
+      <CustomParameter Name="$TemplateName$" Value="Code Snippet Extension" />
+      <CustomParameter Name="$TemplateID$" Value="c9563bc4-4d0b-41cd-9e54-2fd29ae5f5e7" />
+      <CustomParameter Name="$TemplateType$" Value="Project" />
+    </CustomParameters>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>LigerShark.Templates, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>LigerShark.Templates.GoogleAnalyticsWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
