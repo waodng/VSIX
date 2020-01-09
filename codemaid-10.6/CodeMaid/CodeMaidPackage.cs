@@ -6,6 +6,7 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using SteveCadwallader.CodeMaid.Helpers;
 using SteveCadwallader.CodeMaid.Integration.Commands;
+using SteveCadwallader.CodeMaid.Integration.Package;
 using SteveCadwallader.CodeMaid.Integration.Events;
 using SteveCadwallader.CodeMaid.Model;
 using SteveCadwallader.CodeMaid.Properties;
@@ -36,7 +37,7 @@ namespace SteveCadwallader.CodeMaid
     /// </summary>
     [PackageRegistration(UseManagedResourcesOnly = true)] // Tells Visual Studio utilities that this is a package that needs registered.
     [InstalledProductRegistration("#110", "#112", Vsix.Version, IconResourceID = 400, LanguageIndependentName = "CodeMaid")] // VS Help/About details (Name, Description, Version, Icon).
-    [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_string)] // Force CodeMaid to load so menu items can determine their state.
+    [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_string)] // Force CodeMaid to load so menu items can determine their state. CodeMaid插件在什么情况下加载
     [ProvideBindingPath]
     [ProvideMenuResource("Menus.ctmenu", 1)] // This attribute is needed to let the shell know that this package exposes some menus.
     [ProvideToolWindow(typeof(BuildProgressToolWindow), MultiInstances = false, Height = 40, Width = 500, Style = VsDockStyle.Tabbed, Orientation = ToolWindowOrientation.Bottom, Window = EnvDTE.Constants.vsWindowKindMainWindow)]
@@ -193,6 +194,16 @@ namespace SteveCadwallader.CodeMaid
         {
             Trace.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this));
             base.Initialize();
+
+            #region 初始化业务
+            //vs菜单隐藏
+            if (Settings.Default.Feature_HideVsMenu)
+	        {
+                HideVsMenuPack.Initialize(this);
+	        }
+
+	        #endregion
+
             //注册所有的命令
             RegisterCommands();
             //注册所有的监听和事件
@@ -323,6 +334,7 @@ namespace SteveCadwallader.CodeMaid
             NestOutFileCommand.Initialize(this);//移出嵌入文件按钮注册
             RefactoringCodeCommand.Initialize(this);//重构代码
             FilesDifferentCommand.Initialize(this);//文件比较
+            
         }
 
         /// <summary>

@@ -28,6 +28,7 @@
                     <CheckBox Content="{x:Static p:Resources.ReorganizeActiveDocument}" IsChecked="{Binding ReorganizeActiveCode}" />
                     <CheckBox Content="{x:Static p:Resources.SortLines}" IsChecked="{Binding SortLines}" />
                     <CheckBox Content="{x:Static p:Resources.SwitchFile_no_alt}" IsChecked="{Binding SwitchFile}" />
+                    <CheckBox Content="{x:Static p:Resources.HideVsMenu}" IsChecked="{Binding HideVsMenu}" />
                     <CheckBox Content="{x:Static p:Resources.Refactoring}" IsChecked="{Binding Refactoring}" />
                     <CheckBox Content="{x:Static p:Resources.FileDifferent}" IsChecked="{Binding FileDifferent}" />
                     <CheckBox Content="{x:Static p:Resources.NestInOutFile}" IsChecked="{Binding NestInOutFile}" />

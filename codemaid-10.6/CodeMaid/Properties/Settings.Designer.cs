@@ -2330,5 +2330,17 @@ namespace SteveCadwallader.CodeMaid.Properties {
                 this["Feature_FileDifferent"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Feature_HideVsMenu {
+            get {
+                return ((bool)(this["Feature_HideVsMenu"]));
+            }
+            set {
+                this["Feature_HideVsMenu"] = value;
+            }
+        }
     }
 }

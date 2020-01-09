@@ -30,6 +30,7 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.General
                 new Mapping(x => ActiveSettings.Feature_SwitchFile, x => SwitchFile),
                 new Mapping(x => ActiveSettings.Refactoring, x => Refactoring), //重构代码
                 new Mapping(x => ActiveSettings.NestInOutFile, x => NestInOutFile),   //嵌入嵌出文件
+                new Mapping(x => ActiveSettings.Feature_HideVsMenu, x => HideVsMenu),   //隐藏vs菜单栏
                 new Mapping(x => ActiveSettings.Feature_FileDifferent, x => FileDifferent)   //文件比较
             };
         }
@@ -173,5 +174,13 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.General
             set => SetPropertyValue(value);
         }
 
+        /// <summary>
+        /// 隐藏vs菜单
+        /// </summary>
+        public bool HideVsMenu
+        {
+            get => GetPropertyValue<bool>();
+            set => SetPropertyValue(value);
+        }
     }
 }

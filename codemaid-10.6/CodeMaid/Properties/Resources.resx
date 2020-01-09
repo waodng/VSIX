@@ -939,4 +939,7 @@
   <data name="FileDifferent" xml:space="preserve">
     <value>Files compare</value>
   </data>
+  <data name="HideVsMenu" xml:space="preserve">
+    <value>hide visual studio menu ( vs menu show shortcut ALT , restart use )</value>
+  </data>
 </root>

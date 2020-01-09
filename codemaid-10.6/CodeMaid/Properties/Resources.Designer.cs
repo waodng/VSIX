@@ -1232,6 +1232,15 @@ namespace SteveCadwallader.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找类似 hide visual studio menu ( vs menu show shortcut ALT , restart use ) 的本地化字符串。
+        /// </summary>
+        public static string HideVsMenu {
+            get {
+                return ResourceManager.GetString("HideVsMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Icons 的本地化字符串。
         /// </summary>
         public static string Icons {
