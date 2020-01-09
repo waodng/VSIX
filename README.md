@@ -10,7 +10,7 @@ visual studio  the Managed Package Framework (MPF)
 ### 2010-01-09
 
 * 新增特性文件比较功能，支持两个文件比较；
-* 
+* 新增特性打开VS加载完全加载解决方案后会隐藏菜单栏；
 
 
 
@@ -124,3 +124,34 @@ ZenCoding also support [PlaceHold.it](http://placehold.it/) if you prefer blank 
 ![Example5](E:/OpenSource/VSIX/ZenCodingVS/art/example5.png)
 
 You can choose the background color by adding the hexadecimal value after the size like this `place-150x240-EEEDDD`. You can even add text to the image by using `place-150x240-EEE-t=This%20is%20some%20text`.
+
+
+
+# SideWaffle for Visual Studio
+
+[SideWaffle.com](http://sidewaffle.com) - download the extension 自定义模板项目
+
+## The ultimate web developer template pack
+
+A collection of Item Templates for Visual Studio 2012/2013/2015 
+that makes any web developer's life much easier.
+
+![The result of a search for "angular" in the "Add new item" dialog](C:/Users/Administrator/Desktop/side-waffle/screenshot.png)
+The result of a search for "angular" in the "Add new item" dialog
+
+## Add new templates
+
+1. Fork the project
+2. Clone it to your computer
+3. Install the [Visual Studio 2012 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=30668), 
+   [Visual Studio 2013 SDK](http://www.microsoft.com/en-us/download/details.aspx?id=40758), or 
+   [Visual Studio 2015 SDK](https://msdn.microsoft.com/en-us/library/bb166441(v=vs.140).aspx).
+4. Open the solution in Visual Studio
+5. Watch [this video tutorial](http://youtu.be/h4VaORKgrOw)
+6. After adding your templates, send us a pull request
+
+ **Only high quality templates with broad appeal will be accepted**
+
+SideWaffle templates can be installed in Visual Studio 2012, 2013 and 2015, regardless of the version you use for creating new templates.
+
+Learn more about on MSDN about [customizing item templates](
