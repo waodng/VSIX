@@ -3,7 +3,7 @@ visual studio  the Managed Package Framework (MPF)
 
 
 
-## CodeMaid 10.6
+## CodeMaid 10.8
 
 基于CodeMaid二次开发的VS 2013插件项目，其中包含outline，Emmet语法，OverviewMargin2012预览方法虚线连接，hightWord，TODO高亮等个性化的功能.
 
