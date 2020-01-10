@@ -12,6 +12,8 @@ visual studio  the Managed Package Framework (MPF)
 * 新增特性文件比较功能，支持两个文件比较；
 * 新增特性打开VS加载完全加载解决方案后会隐藏菜单栏；
 * 新增插件OverviewMargin功能；
+* 新增第三方包代码段添加和编辑等；
+* 优化outline和高亮代码显示；
 
 
 
