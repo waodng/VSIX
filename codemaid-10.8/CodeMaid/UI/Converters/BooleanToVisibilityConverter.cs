@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows;
 using System.Windows.Data;
 
-namespace SteveCadwallader.CodeMaid.UI.Converters
+namespace Waodng.CodeMaid.UI.Converters
 {
     /// <summary>
     /// Converts a boolean value into a visiblity enumeration result.

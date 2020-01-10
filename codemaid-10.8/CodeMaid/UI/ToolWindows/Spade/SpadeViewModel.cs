@@ -1,13 +1,13 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Logic.Digging;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Model.CodeTree;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Logic.Digging;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeTree;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Windows.Threading;
 
-namespace SteveCadwallader.CodeMaid.UI.ToolWindows.Spade
+namespace Waodng.CodeMaid.UI.ToolWindows.Spade
 {
     /// <summary>
     /// The view model representing the state and commands available to Spade.

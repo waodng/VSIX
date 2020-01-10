@@ -1,9 +1,9 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Model
+namespace Waodng.CodeMaid.Model
 {
     /// <summary>
     /// A builder class for generating code models.

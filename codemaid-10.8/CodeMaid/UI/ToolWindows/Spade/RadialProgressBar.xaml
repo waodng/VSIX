@@ -1,11 +1,11 @@
-﻿<UserControl x:Class="SteveCadwallader.CodeMaid.UI.ToolWindows.Spade.RadialProgressBar"
+﻿<UserControl x:Class="Waodng.CodeMaid.UI.ToolWindows.Spade.RadialProgressBar"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:SteveCadwallader.CodeMaid.UI.ToolWindows.Spade"
-             xmlns:ui="clr-namespace:SteveCadwallader.CodeMaid.UI"
-             xmlns:p="clr-namespace:SteveCadwallader.CodeMaid.Properties"
+             xmlns:local="clr-namespace:Waodng.CodeMaid.UI.ToolWindows.Spade"
+             xmlns:ui="clr-namespace:Waodng.CodeMaid.UI"
+             xmlns:p="clr-namespace:Waodng.CodeMaid.Properties"
 
              mc:Ignorable="d"
              x:Name="MainVindow"
@@ -14,7 +14,7 @@
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/SteveCadwallader.CodeMaid;component/UI/Themes/CodeMaidCoreTheme.xaml" />
+                <ResourceDictionary Source="/Waodng.CodeMaid;component/UI/Themes/CodeMaidCoreTheme.xaml" />
                 <ResourceDictionary Source="CodeItemTemplates.xaml" />
                 <ResourceDictionary Source="CodeItemToolTipTemplates.xaml" />
             </ResourceDictionary.MergedDictionaries>

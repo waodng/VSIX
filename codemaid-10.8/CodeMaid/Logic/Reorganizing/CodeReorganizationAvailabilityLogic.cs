@@ -1,11 +1,11 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Prompts;
-using SteveCadwallader.CodeMaid.UI.Enumerations;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Dialogs.Prompts;
+using Waodng.CodeMaid.UI.Enumerations;
 using System;
 
-namespace SteveCadwallader.CodeMaid.Logic.Reorganizing
+namespace Waodng.CodeMaid.Logic.Reorganizing
 {
     /// <summary>
     /// A class for determining if reorganization can/should occur on specified items.

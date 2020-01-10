@@ -2,7 +2,7 @@
 using System.Configuration;
 using System.Xml;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// This class handles customizing the settings persistance.

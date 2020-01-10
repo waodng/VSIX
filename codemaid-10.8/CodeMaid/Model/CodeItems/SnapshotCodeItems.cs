@@ -1,6 +1,6 @@
 using EnvDTE;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeItems
+namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// A snapshot of a document and its associated code items at a point in time.

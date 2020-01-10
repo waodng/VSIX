@@ -1,7 +1,7 @@
-using SteveCadwallader.CodeMaid.Model.CodeTree;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Model.CodeTree;
+using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Digging
+namespace Waodng.CodeMaid.UI.Dialogs.Options.Digging
 {
     /// <summary>
     /// The view model for digging options.

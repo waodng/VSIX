@@ -1,9 +1,9 @@
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Windows;
 using System.Windows.Shell;
 
-namespace SteveCadwallader.CodeMaid.UI.ToolWindows.BuildProgress
+namespace Waodng.CodeMaid.UI.ToolWindows.BuildProgress
 {
     /// <summary>
     /// The view model representing the state and commands for showing build progress.

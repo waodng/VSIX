@@ -1,10 +1,10 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.Comments;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.Comments;
+using Waodng.CodeMaid.Properties;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Logic.Formatting
+namespace Waodng.CodeMaid.Logic.Formatting
 {
     /// <summary>
     /// A class for encapsulating comment formatting logic.

@@ -1,4 +1,4 @@
-﻿namespace SteveCadwallader.CodeMaid.Integration
+﻿namespace Waodng.CodeMaid.Integration
 {
     internal interface ISwitchableFeature
     {

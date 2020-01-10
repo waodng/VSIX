@@ -1,16 +1,16 @@
-<platformUI:DialogWindow x:Class="SteveCadwallader.CodeMaid.UI.Dialogs.Options.OptionsWindow"
+<platformUI:DialogWindow x:Class="Waodng.CodeMaid.UI.Dialogs.Options.OptionsWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
-        xmlns:local="clr-namespace:SteveCadwallader.CodeMaid.UI.Dialogs.Options"
+        xmlns:local="clr-namespace:Waodng.CodeMaid.UI.Dialogs.Options"
         xmlns:platformUI="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.12.0"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-        xmlns:ui="clr-namespace:SteveCadwallader.CodeMaid.UI"
-        xmlns:cnv="clr-namespace:SteveCadwallader.CodeMaid.UI.Converters"
-        xmlns:p="clr-namespace:SteveCadwallader.CodeMaid.Properties"
+        xmlns:ui="clr-namespace:Waodng.CodeMaid.UI"
+        xmlns:cnv="clr-namespace:Waodng.CodeMaid.UI.Converters"
+        xmlns:p="clr-namespace:Waodng.CodeMaid.Properties"
         d:DataContext="{d:DesignInstance local:OptionsViewModel, IsDesignTimeCreatable=True}"
-        Icon="/SteveCadwallader.CodeMaid;component/source.extension.ico" Title="{x:Static p:Resources.CodeMaidOptions}"
+        Icon="/Waodng.CodeMaid;component/source.extension.ico" Title="{x:Static p:Resources.CodeMaidOptions}"
         MinHeight="480" MinWidth="640" Height="768" Width="1024"
         Background="#FFF0F0F0" TextElement.FontFamily="{Binding General_Font, Source={x:Static p:Settings.Default}}" TextElement.FontSize="14"
         ShowInTaskbar="False" WindowStartupLocation="CenterScreen"
@@ -18,7 +18,7 @@
     <platformUI:DialogWindow.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="/SteveCadwallader.CodeMaid;component/UI/Themes/CodeMaidLightTheme.xaml" />
+                <ResourceDictionary Source="/Waodng.CodeMaid;component/UI/Themes/CodeMaidLightTheme.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </platformUI:DialogWindow.Resources>

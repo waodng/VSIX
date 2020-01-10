@@ -1,7 +1,7 @@
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Enumerations;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Enumerations;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Reorganizing
+namespace Waodng.CodeMaid.UI.Dialogs.Options.Reorganizing
 {
     /// <summary>
     /// The view model for reorganizing general options.

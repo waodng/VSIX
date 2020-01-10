@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.CleanupProgress
+namespace Waodng.CodeMaid.UI.Dialogs.CleanupProgress
 {
     /// <summary>
     /// Interaction logic for CleanupProgressWindow.xaml

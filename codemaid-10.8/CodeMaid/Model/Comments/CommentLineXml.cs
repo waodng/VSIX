@@ -1,5 +1,5 @@
-﻿using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
 
-namespace SteveCadwallader.CodeMaid.Model.Comments
+namespace Waodng.CodeMaid.Model.Comments
 {
     internal class CommentLineXml : CommentLine
     {

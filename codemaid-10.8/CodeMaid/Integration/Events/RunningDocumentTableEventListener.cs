@@ -2,11 +2,11 @@ using EnvDTE;
 using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Integration.Events
+namespace Waodng.CodeMaid.Integration.Events
 {
     /// <summary>
     /// A class that listens for running document table events.

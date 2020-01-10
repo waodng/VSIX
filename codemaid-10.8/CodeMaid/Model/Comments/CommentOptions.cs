@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace SteveCadwallader.CodeMaid.Model.Comments
+namespace Waodng.CodeMaid.Model.Comments
 {
     /// <summary>
     /// Comment specific options for the formatter.

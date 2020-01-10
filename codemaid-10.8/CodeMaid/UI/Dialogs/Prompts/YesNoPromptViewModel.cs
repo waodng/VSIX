@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Interop;
 using System.Windows.Media.Imaging;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Prompts
+namespace Waodng.CodeMaid.UI.Dialogs.Prompts
 {
     /// <summary>
     /// A view model for providing a yes no prompt.

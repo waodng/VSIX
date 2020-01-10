@@ -1,11 +1,11 @@
-using SteveCadwallader.CodeMaid;
+using Waodng.CodeMaid;
 using System;
 using System.Reflection;
 using System.Resources;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyCompany(Vsix.Author)]
-[assembly: AssemblyCopyright("Copyright 2007-2018 Steve Cadwallader (LGPL v3)")]
+[assembly: AssemblyCopyright("Copyright 2019-2020 Waodng (LGPL v3)")]
 [assembly: AssemblyDescription(Vsix.Description)]
 [assembly: AssemblyFileVersion(Vsix.Version)]
 [assembly: AssemblyProduct(Vsix.Name)]

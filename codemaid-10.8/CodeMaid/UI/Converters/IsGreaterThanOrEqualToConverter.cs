@@ -4,7 +4,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Data;
 
-namespace SteveCadwallader.CodeMaid.UI.Converters
+namespace Waodng.CodeMaid.UI.Converters
 {
     /// <summary>
     /// A converter for performing is greater than or equal to comparisons between two specified values.

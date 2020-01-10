@@ -1,11 +1,11 @@
 ﻿using EnvDTE;
 using EnvDTE80;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A static helper class for working with the UI hierarchies.

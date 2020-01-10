@@ -12,7 +12,7 @@ using System.Threading.Tasks;
  * 创 建 者：wgd
  * 功能描述：WorkerLogic  
  * ==============================================================================*/
-namespace SteveCadwallader.CodeMaid.Logic.NestIn
+namespace Waodng.CodeMaid.Logic.NestIn
 {
     /// <summary>
     /// 本方法用于文件嵌套，和移除文件嵌套显示功能

@@ -1,9 +1,9 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Logic.Formatting;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Logic.Formatting;
+using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary 注释代码格式化>
     /// A command that provides for formatting the current comment.

@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeItems
+namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// The representation of a code delegate.

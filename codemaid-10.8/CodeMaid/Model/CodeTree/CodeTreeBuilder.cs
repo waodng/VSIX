@@ -1,11 +1,11 @@
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeTree
+namespace Waodng.CodeMaid.Model.CodeTree
 {
     /// <summary>
     /// A helper class for performing code tree building.

@@ -1,7 +1,7 @@
 using EnvDTE;
 using Microsoft.VisualStudio.Shell.Interop;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for launching the Spade tool window.

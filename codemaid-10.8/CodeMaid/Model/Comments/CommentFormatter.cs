@@ -1,11 +1,11 @@
-﻿using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace SteveCadwallader.CodeMaid.Model.Comments
+namespace Waodng.CodeMaid.Model.Comments
 {
     /// <summary>
     /// Class to handle the actual wrapping and formatting of a comment.

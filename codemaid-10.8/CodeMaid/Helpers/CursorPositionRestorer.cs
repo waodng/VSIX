@@ -1,7 +1,7 @@
 ﻿using EnvDTE;
 using System;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A class that handles tracking the cursor position and restoring it, typically in a using

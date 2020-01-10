@@ -1,6 +1,6 @@
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Reorganizing
+namespace Waodng.CodeMaid.UI.Dialogs.Options.Reorganizing
 {
     /// <summary>
     /// The view model for reorganizing regions options.

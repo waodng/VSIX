@@ -1,7 +1,7 @@
 using EnvDTE;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for closing all read-only files.

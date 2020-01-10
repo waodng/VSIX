@@ -1,10 +1,10 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.IO;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for toggling the read only attribute of a file.

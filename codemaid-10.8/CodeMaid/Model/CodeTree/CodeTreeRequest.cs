@@ -1,7 +1,7 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeItems;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeTree
+namespace Waodng.CodeMaid.Model.CodeTree
 {
     /// <summary>
     /// A simple class for containing a request to build a code tree.

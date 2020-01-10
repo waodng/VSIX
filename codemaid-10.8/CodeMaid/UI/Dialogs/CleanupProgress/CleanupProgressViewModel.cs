@@ -1,9 +1,9 @@
-using SteveCadwallader.CodeMaid.Logic.Cleaning;
+using Waodng.CodeMaid.Logic.Cleaning;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.CleanupProgress
+namespace Waodng.CodeMaid.UI.Dialogs.CleanupProgress
 {
     /// <summary>
     /// The view model representing the state and commands available for cleanup progress.

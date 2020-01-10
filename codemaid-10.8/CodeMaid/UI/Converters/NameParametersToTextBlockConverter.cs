@@ -1,6 +1,6 @@
-﻿using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -9,7 +9,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Documents;
 
-namespace SteveCadwallader.CodeMaid.UI.Converters
+namespace Waodng.CodeMaid.UI.Converters
 {
     /// <summary>
     /// Converts a code item into a single TextBlock object containing its name and optionally its parameters.

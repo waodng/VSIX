@@ -1,11 +1,11 @@
-﻿using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options
+namespace Waodng.CodeMaid.UI.Dialogs.Options
 {
     /// <summary>
     /// A model class for mapping a setting and an option together, with optional overrides for how

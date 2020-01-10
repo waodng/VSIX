@@ -1,7 +1,7 @@
 ﻿using EnvDTE;
 using EnvDTE80;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A helper class for identifying explicit interface implementations.

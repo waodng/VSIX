@@ -9,7 +9,7 @@ using System.Threading.Tasks;
  * 创 建 者：wgd
  * 功能描述：FileItem  
  * ==============================================================================*/
-namespace SteveCadwallader.CodeMaid.Logic.NestIn
+namespace Waodng.CodeMaid.Logic.NestIn
 {
     public class FileItem
     {

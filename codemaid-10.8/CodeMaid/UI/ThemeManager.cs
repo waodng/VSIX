@@ -1,14 +1,14 @@
 ﻿using EnvDTE80;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Enumerations;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 using System.Windows.Media;
 
-namespace SteveCadwallader.CodeMaid.UI
+namespace Waodng.CodeMaid.UI
 {
     /// <summary>
     /// A helper class for managing the active theme.
@@ -75,7 +75,7 @@ namespace SteveCadwallader.CodeMaid.UI
 
                     foreach (ThemeMode theme in Enum.GetValues(typeof(ThemeMode)))
                     {
-                        var uriString = $@"/SteveCadwallader.CodeMaid;component/UI/Themes/CodeMaid{theme}Theme.xaml";
+                        var uriString = $@"/Waodng.CodeMaid;component/UI/Themes/CodeMaid{theme}Theme.xaml";
                         var uri = new Uri(uriString, UriKind.Relative);
 
                         _themeUris.Add(theme, uri);

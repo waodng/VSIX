@@ -1,11 +1,11 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeItems;
 using System;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 
-namespace SteveCadwallader.CodeMaid.UI.Converters
+namespace Waodng.CodeMaid.UI.Converters
 {
     /// <summary>
     /// Converts a code item into an image.
@@ -83,7 +83,7 @@ namespace SteveCadwallader.CodeMaid.UI.Converters
 
             if (typeComponent == null) return null;
 
-            string uriString = $"/SteveCadwallader.CodeMaid;component/UI/ToolWindows/Spade/Images/{ImagePath}/{typeComponent}{accessComponent}.png";
+            string uriString = $"/Waodng.CodeMaid;component/UI/ToolWindows/Spade/Images/{ImagePath}/{typeComponent}{accessComponent}.png";
 
             return uriString;
         }

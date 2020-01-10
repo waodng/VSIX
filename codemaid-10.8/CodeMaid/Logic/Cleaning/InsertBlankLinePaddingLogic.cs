@@ -1,12 +1,12 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Logic.Cleaning
+namespace Waodng.CodeMaid.Logic.Cleaning
 {
     /// <summary>
     /// A class for encapsulating insertion of blank line padding logic.

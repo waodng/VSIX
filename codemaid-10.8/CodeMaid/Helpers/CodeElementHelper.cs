@@ -3,7 +3,7 @@ using EnvDTE80;
 using System;
 using System.Text.RegularExpressions;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A static helper class for common CodeElement requests.

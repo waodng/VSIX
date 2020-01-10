@@ -1,9 +1,9 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
 using System.Threading;
 
-namespace SteveCadwallader.CodeMaid.Model
+namespace Waodng.CodeMaid.Model
 {
     /// <summary>
     /// This class encapsulates the representation of a document, including its code items and

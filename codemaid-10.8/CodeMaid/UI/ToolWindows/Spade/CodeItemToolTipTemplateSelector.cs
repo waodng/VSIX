@@ -1,8 +1,8 @@
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeItems;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace SteveCadwallader.CodeMaid.UI.ToolWindows.Spade
+namespace Waodng.CodeMaid.UI.ToolWindows.Spade
 {
     /// <summary>
     /// A template selector for code item tool tips.

@@ -1,11 +1,11 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
+using Waodng.CodeMaid.Helpers;
 using System;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Xml.Linq;
 
-namespace SteveCadwallader.CodeMaid.Model.Comments
+namespace Waodng.CodeMaid.Model.Comments
 {
     /// <summary>
     /// A <c>CodeComment</c> contains one or more <see cref="CodeCommentPhrase">phrases</see> which

@@ -1,7 +1,7 @@
 using EnvDTE;
 using System;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeItems
+namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// An interface for code items that support having children.

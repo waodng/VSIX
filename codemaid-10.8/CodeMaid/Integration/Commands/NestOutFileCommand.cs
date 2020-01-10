@@ -1,9 +1,9 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Logic.NestIn;
+using Waodng.CodeMaid.Logic.NestIn;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for cleaning up

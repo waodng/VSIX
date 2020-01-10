@@ -1,7 +1,7 @@
 using EnvDTE;
 using EnvDTE80;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeItems
+namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// A static factory class for generating code items.

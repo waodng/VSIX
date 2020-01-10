@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using SteveCadwallader.CodeMaid.Helpers;
+using Waodng.CodeMaid.Helpers;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  * 创 建 者：wgd
  * 功能描述：BasePack  
  * ==============================================================================*/
-namespace SteveCadwallader.CodeMaid.Integration.Package
+namespace Waodng.CodeMaid.Integration.Package
 {
     /// <summary>
     /// base package

@@ -1,8 +1,8 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeItems;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for finding references of a member within Spade.

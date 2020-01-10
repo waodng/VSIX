@@ -12,7 +12,7 @@ using System.Windows.Forms;
  * 创 建 者：wgd
  * 功能描述：RootSelector  
  * ==============================================================================*/
-namespace SteveCadwallader.CodeMaid.Logic.NestIn
+namespace Waodng.CodeMaid.Logic.NestIn
 {
     public class RootSelector : Form, IRootSelector
     {

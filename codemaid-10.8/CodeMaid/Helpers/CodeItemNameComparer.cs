@@ -1,7 +1,7 @@
-﻿using SteveCadwallader.CodeMaid.Model.CodeItems;
+﻿using Waodng.CodeMaid.Model.CodeItems;
 using System.Collections.Generic;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A helper for comparing code items by name.

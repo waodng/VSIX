@@ -1,12 +1,12 @@
-﻿using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Reorganizing
+namespace Waodng.CodeMaid.UI.Dialogs.Options.Reorganizing
 {
     /// <summary>
     /// The view model for reorganizing types options.

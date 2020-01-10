@@ -1,4 +1,4 @@
-﻿using SteveCadwallader.CodeMaid.UI.Enumerations;
+﻿using Waodng.CodeMaid.UI.Enumerations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Interactivity;
 
-namespace SteveCadwallader.CodeMaid.UI
+namespace Waodng.CodeMaid.UI
 {
     /// <summary>
     /// A behavior for supporting list box drag and drop reordering, and optionally merging.

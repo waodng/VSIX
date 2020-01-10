@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SteveCadwallader.CodeMaid.Model.Comments
+namespace Waodng.CodeMaid.Model.Comments
 {
     internal class CodeCommentMatch
     {

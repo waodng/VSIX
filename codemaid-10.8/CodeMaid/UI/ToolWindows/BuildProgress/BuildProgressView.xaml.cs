@@ -1,4 +1,4 @@
-namespace SteveCadwallader.CodeMaid.UI.ToolWindows.BuildProgress
+namespace Waodng.CodeMaid.UI.ToolWindows.BuildProgress
 {
     /// <summary>
     /// Interaction logic for BuildProgressView.xaml

@@ -1,9 +1,9 @@
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:SteveCadwallader.CodeMaid.UI.Dialogs.Options.Digging"
-        xmlns:cnv="clr-namespace:SteveCadwallader.CodeMaid.UI.Converters"
-        xmlns:p="clr-namespace:SteveCadwallader.CodeMaid.Properties"
-        xmlns:codeTree="clr-namespace:SteveCadwallader.CodeMaid.Model.CodeTree">
+        xmlns:local="clr-namespace:Waodng.CodeMaid.UI.Dialogs.Options.Digging"
+        xmlns:cnv="clr-namespace:Waodng.CodeMaid.UI.Converters"
+        xmlns:p="clr-namespace:Waodng.CodeMaid.Properties"
+        xmlns:codeTree="clr-namespace:Waodng.CodeMaid.Model.CodeTree">
     <DataTemplate DataType="{x:Type local:DiggingViewModel}">
         <StackPanel>
             <GroupBox Header="{x:Static p:Resources.General}">

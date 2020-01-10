@@ -1,8 +1,8 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
+using Waodng.CodeMaid.Helpers;
 using System;
 
-namespace SteveCadwallader.CodeMaid.Integration.Events
+namespace Waodng.CodeMaid.Integration.Events
 {
     /// <summary>
     /// A class that encapsulates listening for document events.

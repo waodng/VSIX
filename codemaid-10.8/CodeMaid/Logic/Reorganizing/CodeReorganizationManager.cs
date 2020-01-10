@@ -1,15 +1,15 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Logic.Cleaning;
-using SteveCadwallader.CodeMaid.Model;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Model.CodeTree;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Logic.Cleaning;
+using Waodng.CodeMaid.Model;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeTree;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Logic.Reorganizing
+namespace Waodng.CodeMaid.Logic.Reorganizing
 {
     /// <summary>
     /// A manager class for reorganizing code.

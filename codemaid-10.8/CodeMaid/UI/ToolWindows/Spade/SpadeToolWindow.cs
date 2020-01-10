@@ -6,11 +6,11 @@ using Microsoft.VisualStudio;
 using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using SteveCadwallader.CodeMaid.Model;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Model.CodeTree;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Model.CodeTree;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
@@ -19,12 +19,12 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Threading;
 using System.Threading.Tasks;
-using CodeModel = SteveCadwallader.CodeMaid.Model.CodeModel;
+using CodeModel = Waodng.CodeMaid.Model.CodeModel;
 
 using Microsoft.VisualStudio.TextTemplating;
 using Microsoft.VisualStudio.TextTemplating.VSHost;
 
-namespace SteveCadwallader.CodeMaid.UI.ToolWindows.Spade
+namespace Waodng.CodeMaid.UI.ToolWindows.Spade
 {
     /// <summary>
     /// The Spade tool window pane.

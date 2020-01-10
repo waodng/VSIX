@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.Win32;
 //using Task = System.Threading.Tasks.Task;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     internal sealed class FilesDifferentCommand: BaseCommand
     {

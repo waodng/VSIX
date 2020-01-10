@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Data;
 using System.Xml.Linq;
 
-namespace SteveCadwallader.CodeMaid.UI.Converters
+namespace Waodng.CodeMaid.UI.Converters
 {
     /// <summary>
     /// Converts the specified doc comment into a simpler string.

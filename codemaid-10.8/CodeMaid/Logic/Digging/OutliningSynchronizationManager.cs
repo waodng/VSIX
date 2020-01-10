@@ -5,13 +5,13 @@ using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Outlining;
 using Microsoft.VisualStudio.TextManager.Interop;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Logic.Digging
+namespace Waodng.CodeMaid.Logic.Digging
 {
     /// <summary>
     /// A manager class for controlling the synchronization of outlining states between the code

@@ -1,10 +1,10 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Logic.Cleaning;
-using SteveCadwallader.CodeMaid.Model;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Logic.Cleaning;
+using Waodng.CodeMaid.Model;
+using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for removing region(s).

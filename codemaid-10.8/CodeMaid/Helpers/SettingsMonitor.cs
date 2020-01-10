@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// 监控配置改变类

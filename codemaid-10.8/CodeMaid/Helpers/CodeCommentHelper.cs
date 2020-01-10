@@ -1,12 +1,12 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A set of helper methods focused around code comments.

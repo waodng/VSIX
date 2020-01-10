@@ -1,4 +1,4 @@
-﻿namespace SteveCadwallader.CodeMaid.Model.CodeItems
+﻿namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// An interface for code items that support complexity calculations.

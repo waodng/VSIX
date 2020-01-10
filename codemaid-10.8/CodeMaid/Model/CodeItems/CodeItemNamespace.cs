@@ -1,7 +1,7 @@
 using EnvDTE;
 using System;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeItems
+namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// The representation of a code namespace.

@@ -1,6 +1,6 @@
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Progressing
+namespace Waodng.CodeMaid.UI.Dialogs.Options.Progressing
 {
     /// <summary>
     /// The view model for progressing options.

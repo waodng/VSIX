@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
 
 /* ==============================================================================
  * 创建日期：2019/8/24 0:57:15
  * 创 建 者：wgd
  * 功能描述：HtmlTagFormter
  * ==============================================================================*/
-namespace SteveCadwallader.CodeMaid.Logic.Cleaning
+namespace Waodng.CodeMaid.Logic.Cleaning
 {
     /// <summary>
     /// 此方法用于对HTML文件中标签样式进行格式化， 主要针对于CSSDMS旗舰版改版

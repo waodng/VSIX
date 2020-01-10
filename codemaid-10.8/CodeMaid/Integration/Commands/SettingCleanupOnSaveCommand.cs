@@ -1,6 +1,6 @@
-﻿using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for changing the setting for cleanup on save.

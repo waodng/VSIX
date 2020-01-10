@@ -1,6 +1,6 @@
-using SteveCadwallader.CodeMaid.UI.Dialogs.About;
+using Waodng.CodeMaid.UI.Dialogs.About;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for launching the CodeMaid about window.

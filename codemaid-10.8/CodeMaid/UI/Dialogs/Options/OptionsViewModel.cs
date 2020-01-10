@@ -1,15 +1,15 @@
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Cleaning;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Collapsing;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Digging;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Finding;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Formatting;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.General;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Progressing;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Reorganizing;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Switching;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.ThirdParty;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Dialogs.Options.Cleaning;
+using Waodng.CodeMaid.UI.Dialogs.Options.Collapsing;
+using Waodng.CodeMaid.UI.Dialogs.Options.Digging;
+using Waodng.CodeMaid.UI.Dialogs.Options.Finding;
+using Waodng.CodeMaid.UI.Dialogs.Options.Formatting;
+using Waodng.CodeMaid.UI.Dialogs.Options.General;
+using Waodng.CodeMaid.UI.Dialogs.Options.Progressing;
+using Waodng.CodeMaid.UI.Dialogs.Options.Reorganizing;
+using Waodng.CodeMaid.UI.Dialogs.Options.Switching;
+using Waodng.CodeMaid.UI.Dialogs.Options.ThirdParty;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,7 +18,7 @@ using System.IO;
 using System.Linq;
 using System.Windows;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options
+namespace Waodng.CodeMaid.UI.Dialogs.Options
 {
     /// <summary>
     /// The view model representing the state and commands available for configuring options.

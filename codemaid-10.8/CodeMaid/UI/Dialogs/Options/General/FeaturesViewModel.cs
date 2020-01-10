@@ -1,7 +1,7 @@
-﻿using SteveCadwallader.CodeMaid.Properties;
-using Mapping = SteveCadwallader.CodeMaid.UI.Dialogs.Options.SettingToOptionMapping<bool, bool>;
+﻿using Waodng.CodeMaid.Properties;
+using Mapping = Waodng.CodeMaid.UI.Dialogs.Options.SettingToOptionMapping<bool, bool>;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.General
+namespace Waodng.CodeMaid.UI.Dialogs.Options.General
 {
     public class FeaturesViewModel : OptionsPageViewModel
     {

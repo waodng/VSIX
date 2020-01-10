@@ -1,6 +1,6 @@
 using System;
 
-namespace SteveCadwallader.CodeMaid.Integration.Events
+namespace Waodng.CodeMaid.Integration.Events
 {
     /// <summary>
     /// The base implementation of an event listener.

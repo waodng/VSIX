@@ -1,8 +1,8 @@
-﻿using SteveCadwallader.CodeMaid.Logic.Cleaning;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+﻿using Waodng.CodeMaid.Logic.Cleaning;
+using Waodng.CodeMaid.Model.CodeItems;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for removing a region within Spade.

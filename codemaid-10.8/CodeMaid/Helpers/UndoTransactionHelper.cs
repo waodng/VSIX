@@ -1,7 +1,7 @@
-﻿using SteveCadwallader.CodeMaid.Properties;
+﻿using Waodng.CodeMaid.Properties;
 using System;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A helper class for performing actions within the context of an undo transaction.

@@ -1,7 +1,7 @@
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 using System.Collections.Generic;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options
+namespace Waodng.CodeMaid.UI.Dialogs.Options
 {
     /// <summary>
     /// The abstract base class for option pages.

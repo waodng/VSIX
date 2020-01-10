@@ -1,4 +1,4 @@
-﻿namespace SteveCadwallader.CodeMaid.Model.Comments
+﻿namespace Waodng.CodeMaid.Model.Comments
 {
     /// <summary>
     /// Document wide options for the comment formatter.

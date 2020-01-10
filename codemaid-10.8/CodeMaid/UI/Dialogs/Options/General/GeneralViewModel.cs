@@ -1,7 +1,7 @@
-﻿using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Enumerations;
+﻿using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Enumerations;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.General
+namespace Waodng.CodeMaid.UI.Dialogs.Options.General
 {
     /// <summary>
     /// The view model for general options.

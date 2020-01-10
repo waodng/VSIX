@@ -1,8 +1,8 @@
-using SteveCadwallader.CodeMaid.Model.Comments;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Model.Comments;
+using Waodng.CodeMaid.Properties;
 using System.Windows.Media;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options.Formatting
+namespace Waodng.CodeMaid.UI.Dialogs.Options.Formatting
 {
     /// <summary>
     /// The view model for comment formatting options.

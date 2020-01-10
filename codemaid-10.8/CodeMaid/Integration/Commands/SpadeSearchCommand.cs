@@ -1,4 +1,4 @@
-﻿namespace SteveCadwallader.CodeMaid.Integration.Commands
+﻿namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for setting focus on the search bar in the Spade tool window.

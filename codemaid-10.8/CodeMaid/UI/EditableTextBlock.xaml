@@ -1,8 +1,8 @@
-﻿<UserControl x:Class="SteveCadwallader.CodeMaid.UI.EditableTextBlock"
+﻿<UserControl x:Class="Waodng.CodeMaid.UI.EditableTextBlock"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:ui="clr-namespace:SteveCadwallader.CodeMaid.UI"
-             xmlns:cnv="clr-namespace:SteveCadwallader.CodeMaid.UI.Converters"
+             xmlns:ui="clr-namespace:Waodng.CodeMaid.UI"
+             xmlns:cnv="clr-namespace:Waodng.CodeMaid.UI.Converters"
              KeyDown="OnKeyDown" LostFocus="OnLostFocus" MouseDoubleClick="OnMouseDoubleClick">
     <Grid>
         <TextBlock x:Name="TextBlock"

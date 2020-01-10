@@ -1,7 +1,7 @@
 using EnvDTE;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace SteveCadwallader.CodeMaid.UI.ToolWindows.BuildProgress
+namespace Waodng.CodeMaid.UI.ToolWindows.BuildProgress
 {
     /// <summary>
     /// This class implements the build progress tool window and hosts a user control.

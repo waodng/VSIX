@@ -1,14 +1,14 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Enumerations;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace SteveCadwallader.CodeMaid.Logic.Cleaning
+namespace Waodng.CodeMaid.Logic.Cleaning
 {
     /// <summary>
     /// A class for encapsulating the logic of removing regions.

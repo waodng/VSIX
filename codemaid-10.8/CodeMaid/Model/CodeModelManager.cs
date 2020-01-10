@@ -1,11 +1,11 @@
 ﻿using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
+using Waodng.CodeMaid.Properties;
 using System;
 using System.Threading.Tasks;
 
-namespace SteveCadwallader.CodeMaid.Model
+namespace Waodng.CodeMaid.Model
 {
     /// <summary>
     /// A manager class for centralizing code model creation and life cycles.

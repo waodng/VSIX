@@ -1,11 +1,11 @@
-﻿using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Model.CodeItems;
+﻿using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Model.CodeItems;
 using System;
 using System.Globalization;
 using System.Linq;
 using System.Windows.Data;
 
-namespace SteveCadwallader.CodeMaid.UI.Converters
+namespace Waodng.CodeMaid.UI.Converters
 {
     /// <summary>
     /// A converter that finds the highest complexity item for a specified parent.

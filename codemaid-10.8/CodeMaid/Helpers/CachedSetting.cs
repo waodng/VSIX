@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SteveCadwallader.CodeMaid.Helpers
+namespace Waodng.CodeMaid.Helpers
 {
     /// <summary>
     /// A class that encapsulates caching a setting expression that can be parsed.

@@ -1,4 +1,4 @@
-namespace SteveCadwallader.CodeMaid
+namespace Waodng.CodeMaid
 {
     static class Vsix
     {

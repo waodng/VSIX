@@ -3,7 +3,7 @@ using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
 
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.About
+namespace Waodng.CodeMaid.UI.Dialogs.About
 {
     /// <summary>
     /// Interaction logic for AboutWindow.xaml
@@ -68,7 +68,7 @@ namespace SteveCadwallader.CodeMaid.UI.Dialogs.About
         /// </param>
         private void OnVisualStudioMarketplaceLinkClick(object sender, RoutedEventArgs e)
         {
-            LaunchLink(@"https://marketplace.visualstudio.com/items?itemName=SteveCadwallader.CodeMaid");
+            LaunchLink(@"https://marketplace.visualstudio.com/items?itemName=Waodng.CodeMaid");
         }
 
         /// <summary>

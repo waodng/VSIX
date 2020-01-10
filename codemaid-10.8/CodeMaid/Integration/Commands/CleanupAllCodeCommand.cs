@@ -1,13 +1,13 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Logic.Cleaning;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Dialogs.CleanupProgress;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Logic.Cleaning;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Dialogs.CleanupProgress;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for cleaning up code in all documents.

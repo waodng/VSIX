@@ -1,4 +1,4 @@
-namespace SteveCadwallader.CodeMaid
+namespace Waodng.CodeMaid
 {
     using System;
     

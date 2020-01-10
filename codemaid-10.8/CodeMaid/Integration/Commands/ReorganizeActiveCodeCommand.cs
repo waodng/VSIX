@@ -1,6 +1,6 @@
-using SteveCadwallader.CodeMaid.Logic.Reorganizing;
+using Waodng.CodeMaid.Logic.Reorganizing;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for reorganizing code in the active document.

@@ -1,4 +1,4 @@
-namespace SteveCadwallader.CodeMaid.UI.Dialogs.Options
+namespace Waodng.CodeMaid.UI.Dialogs.Options
 {
     /// <summary>
     /// Interaction logic for OptionsWindow.xaml

@@ -1,16 +1,16 @@
 using EnvDTE;
 using Microsoft.VisualStudio.Package;
-using SteveCadwallader.CodeMaid.Helpers;
-using SteveCadwallader.CodeMaid.Properties;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Prompts;
-using SteveCadwallader.CodeMaid.UI.Enumerations;
+using Waodng.CodeMaid.Helpers;
+using Waodng.CodeMaid.Properties;
+using Waodng.CodeMaid.UI.Dialogs.Prompts;
+using Waodng.CodeMaid.UI.Enumerations;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace SteveCadwallader.CodeMaid.Logic.Cleaning
+namespace Waodng.CodeMaid.Logic.Cleaning
 {
     /// <summary>
     /// A class for determining if cleanup can/should occur on specified items.

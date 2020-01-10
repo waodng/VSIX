@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.Shell;
-using SteveCadwallader.CodeMaid.Helpers;
+using Waodng.CodeMaid.Helpers;
 using System;
 using System.ComponentModel.Design;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// The base implementation of a command.

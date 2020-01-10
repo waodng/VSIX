@@ -1,4 +1,4 @@
-﻿namespace SteveCadwallader.CodeMaid.UI.Dialogs.Prompts
+﻿namespace Waodng.CodeMaid.UI.Dialogs.Prompts
 {
     /// <summary>
     /// Interaction logic for YesNoPromptWindow.xaml

@@ -1,8 +1,8 @@
 using EnvDTE;
-using SteveCadwallader.CodeMaid.UI;
+using Waodng.CodeMaid.UI;
 using System.Diagnostics;
 
-namespace SteveCadwallader.CodeMaid.Model.CodeItems
+namespace Waodng.CodeMaid.Model.CodeItems
 {
     /// <summary>
     /// A base class representation of all code items. Includes VSX supported CodeElements as well

@@ -1,8 +1,8 @@
 using EnvDTE;
 using Microsoft.VisualStudio.Shell.Interop;
-using SteveCadwallader.CodeMaid.Properties;
+using Waodng.CodeMaid.Properties;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for launching the build progress tool window.

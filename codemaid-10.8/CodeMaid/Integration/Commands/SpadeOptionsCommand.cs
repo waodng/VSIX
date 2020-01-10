@@ -1,7 +1,7 @@
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options;
-using SteveCadwallader.CodeMaid.UI.Dialogs.Options.Digging;
+using Waodng.CodeMaid.UI.Dialogs.Options;
+using Waodng.CodeMaid.UI.Dialogs.Options.Digging;
 
-namespace SteveCadwallader.CodeMaid.Integration.Commands
+namespace Waodng.CodeMaid.Integration.Commands
 {
     /// <summary>
     /// A command that provides for launching the CodeMaid Options to the Spade page.
