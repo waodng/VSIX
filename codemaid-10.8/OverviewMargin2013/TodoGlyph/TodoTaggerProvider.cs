@@ -20,43 +20,32 @@ using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Projection;
 using Microsoft.VisualStudio.Text.Editor;
-using Microsoft.VisualStudio.Text.Operations;
 
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
-    
     /// <summary>
     /// Export a <see cref="ITaggerProvider"/>
     /// </summary>
-    [Export(typeof(IViewTaggerProvider))]
-    [ContentType("any")]
+    [Export(typeof(ITaggerProvider))]
+    [ContentType("CSharp")]//any 
+    [ContentType("HTML")]
     [TagType(typeof(ToDoTag))]
-    public class SelectionTaggerProvider : IViewTaggerProvider
+    class ToDoTaggerProvider : ITaggerProvider
     {
-        [Import]
-        internal IClassifierAggregatorService AggregatorFactory;
-        [Import]
-        internal ITextSearchService TextSearchService { get; set; }
         /// <summary>
         /// Creates an instance of our custom TodoTagger for a given buffer.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="buffer">The buffer we are creating the tagger for.</param>
         /// <returns>An instance of our custom TodoTagger.</returns>
-        public ITagger<T> CreateTagger<T>(ITextView textView,ITextBuffer buffer) where T : ITag
+        public ITagger<T> CreateTagger<T>(ITextBuffer buffer) where T : ITag
         {
             if (buffer == null)
             {
                 throw new ArgumentNullException("buffer");
             }
 
-            if (textView.TextBuffer != buffer)
-			{
-				return null;
-			}
-
-            return new SelectionTagger(textView, buffer, this.AggregatorFactory.GetClassifier(buffer), this.TextSearchService) as ITagger<T>;
+            return new ToDoTagger() as ITagger<T>;
         }
-
     }
 }

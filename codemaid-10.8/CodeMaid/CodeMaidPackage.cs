@@ -195,15 +195,8 @@ namespace SteveCadwallader.CodeMaid
             Trace.WriteLine(string.Format(CultureInfo.CurrentCulture, "Entering Initialize() of: {0}", this));
             base.Initialize();
 
-            #region 初始化业务
-            //vs菜单隐藏
-            if (Settings.Default.Feature_HideVsMenu)
-	        {
-                HideVsMenuPack.Initialize(this);
-	        }
-
-	        #endregion
-
+            //注册其他的第三方vsix包
+            RegisterOtherPackage();
             //注册所有的命令
             RegisterCommands();
             //注册所有的监听和事件
@@ -289,6 +282,18 @@ namespace SteveCadwallader.CodeMaid
             if (!Settings.Default.General_ShowStartPageOnSolutionClose) return;
 
             IDE.ExecuteCommand("View.StartPage");
+        }
+
+        /// <summary>
+        /// 注册其他的vsix包
+        /// </summary>
+        private void RegisterOtherPackage()
+        {
+            //vs菜单隐藏
+            //if (Settings.Default.Feature_HideVsMenu)
+	        //{
+                HideVsMenuPack.Initialize(this);
+	        //}   
         }
 
         /// <summary 包的命令>

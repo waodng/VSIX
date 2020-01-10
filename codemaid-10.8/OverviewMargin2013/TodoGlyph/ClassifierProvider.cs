@@ -20,7 +20,7 @@ using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Text;
 using System.Windows.Media;
 
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
     /// <summary>
     /// Export a <see cref="IClassifierProvider"/>

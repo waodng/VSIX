@@ -16,7 +16,7 @@ using System.Windows.Media;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Formatting;
 
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
     /// <summary>
     /// This class implements IGlyphFactory, which provides the visual
@@ -48,8 +48,8 @@ namespace Outline.TodoGlyph
                     Fill=Brushes.Orange,
                     StrokeThickness=1.2,
                     Stroke = Brushes.OrangeRed,
-                    Height = 12.0,
-                    Width = 12.0
+                    Height = _height,
+                    Width = _width
                 };
             }
             else
@@ -60,11 +60,10 @@ namespace Outline.TodoGlyph
                     Fill = new SolidColorBrush(Colors.DarkOrchid),
                     StrokeThickness = 1.0,
                     Stroke = Brushes.Black,
-                    Height = 10.0,
-                    Width = 10.0
+                    Height = _height,
+                    Width = _width
                 };
             }
         }
-
     }
 }

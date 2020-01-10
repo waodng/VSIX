@@ -14,7 +14,7 @@ using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Utilities;
 using Microsoft.VisualStudio.Text.Tagging;
 
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
     /// <summary>
     /// Export a <see cref="IGlyphFactoryProvider"/>

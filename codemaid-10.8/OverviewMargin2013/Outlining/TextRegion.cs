@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.Text.Classification;
 using System.ComponentModel.Composition;
 using Microsoft.VisualStudio.Text.Editor;
 
-namespace Outline
+namespace Microsoft.VisualStudio.Extensions.Outlining
 {
     internal enum TextRegionType
     {
@@ -18,7 +18,7 @@ namespace Outline
         Block // {}
     }
 
-    class TextRegion
+    internal class TextRegion
     {
         #region Props
         public SnapshotPoint StartPoint { get; set; }
@@ -27,7 +27,7 @@ namespace Outline
         /// <summary>
         /// tagger which created a region
         /// </summary>
-        public CSharpOutliningTagger Tagger { get; set; }
+        public OutliningTagger Tagger { get; set; }
 
         /// <summary>
         /// whether region has endpoint

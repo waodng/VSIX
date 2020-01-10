@@ -6,6 +6,10 @@ using System.Linq.Expressions;
 
 namespace SteveCadwallader.CodeMaid.Helpers
 {
+    /// <summary>
+    /// 监控配置改变类
+    /// </summary>
+    /// <typeparam name="TSetting"></typeparam>
     public sealed class SettingsMonitor<TSetting>
         where TSetting : ApplicationSettingsBase
     {

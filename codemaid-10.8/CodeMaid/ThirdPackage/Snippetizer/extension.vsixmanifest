@@ -1,0 +1,22 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="2d7c0eed-dc22-449d-8df9-64b05977a2e2" Version="1.0" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Snippetizer</DisplayName>
+    <Description xml:space="preserve">Snippetizer is a Visual Studio extension which allows the user to create and edit snippets with minimal knowledge of the underlying snippet technology and syntax.</Description>
+    <License>EULA.rtf</License>
+    <Icon>SnippetIcon_7312_32x.png</Icon>
+    <PreviewImage>SnippetizerPreview.png</PreviewImage>
+    <Tags>snippet creation, snippet editing, snippet</Tags>
+  </Metadata>
+  <Installation InstalledByMsi="false">
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Pro" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="4.5" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.11.0" DisplayName="Visual Studio MPF 11.0" Version="11.0" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="Snippetizer.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="Snippetizer.dll" />
+  </Assets>
+</PackageManifest>

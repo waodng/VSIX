@@ -14,7 +14,7 @@ using System.Threading.Tasks;
  * 创 建 者：wgd
  * 功能描述：SelectionHighlightFactory  
  * ==============================================================================*/
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
     [TextViewRole("DOCUMENT")]
     [ContentType("text")]

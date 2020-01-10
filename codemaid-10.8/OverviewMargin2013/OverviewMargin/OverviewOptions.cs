@@ -8,6 +8,7 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin
 
     /// <summary>
     /// Names of common <see cref="ITextView"/> host-related options.
+    /// 该选项被存储在注册表中
     /// </summary>
     public static class DefaultOverviewMarginOptions
     {
@@ -31,7 +32,7 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin
         /// <summary>
         /// Determines size of the preview popup when the mouse enters the overview margin (0 == disabled)
         /// </summary>
-        public static readonly EditorOptionKey<int> PreviewSizeId = new EditorOptionKey<int>("OverviewMargin/PreviewSize");
+        public static readonly EditorOptionKey<int> PreviewSizeId = new EditorOptionKey<int>("OverviewMargin/PreviewSize1");
 
         #endregion
     }

@@ -21,8 +21,8 @@ namespace SteveCadwallader.CodeMaid.Integration.Package
         public static void Initialize(CodeMaidPackage package)
         {
             Instance = new HideVsMenuPack(package);
-            //package.SettingsMonitor.Watch(s => s.Feature_HideVsMenu, Instance.Switch);
-            Instance.Execute();
+            package.SettingsMonitor.Watch(s => s.Feature_HideVsMenu, Instance.Switch);
+            Instance.OnExecute();
         }
 
         #endregion Singleton
@@ -54,9 +54,9 @@ namespace SteveCadwallader.CodeMaid.Integration.Package
         /// <summary>
         /// Called to execute the Hide menu.
         /// </summary>
-        private void Execute()
+        public override void OnExecute()
         {
-            OutputWindowHelper.DiagnosticWriteLine("Entering Initialize() of Hide Menu.");
+            base.OnExecute();
 
             EventManager.RegisterClassHandler(typeof(UIElement), UIElement.LostKeyboardFocusEvent, new KeyboardFocusChangedEventHandler(this.PopupLostKeyboardFocus));
             Window mainWindow = Application.Current.MainWindow;

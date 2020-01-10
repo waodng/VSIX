@@ -20,7 +20,7 @@ using Microsoft.VisualStudio.Text.Tagging;
 using Microsoft.VisualStudio.Text;
 using System.Windows.Media;
 
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
     /// <summary>
     /// ToDo tag classifier finds every instance of ToDoTag within a given span.

@@ -10,13 +10,13 @@ using Microsoft.VisualStudio.Text.Classification;
 using Microsoft.VisualStudio.Text.Projection;
 using Microsoft.VisualStudio.Text.Editor;
 
-namespace Outline
+namespace Microsoft.VisualStudio.Extensions.Outlining
 {
     [Export(typeof(ITaggerProvider))]
     [TagType(typeof(IOutliningRegionTag))]
     [ContentType("CSharp")]
     [ContentType("RazorCSharp")]
-    internal sealed class CSOutliningTaggerProvider : ITaggerProvider
+    internal sealed class OutliningTaggerProvider : ITaggerProvider
     {
         [Import]
         IClassifierAggregatorService classifierAggregator = null;
@@ -33,7 +33,7 @@ namespace Outline
             //var spans = c.GetClassificationSpans(new SnapshotSpan(buffer.CurrentSnapshot, 0, buffer.CurrentSnapshot.Length));
             //create a single tagger for each buffer.
 
-            return buffer.Properties.GetOrCreateSingletonProperty<ITagger<T>>(() => new CSharpOutliningTagger(buffer, classifier, editorOptions) as ITagger<T>);
+            return buffer.Properties.GetOrCreateSingletonProperty<ITagger<T>>(() => new OutliningTagger(buffer, classifier, editorOptions) as ITagger<T>);
         }
     }
 }

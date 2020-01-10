@@ -5,12 +5,12 @@ using System.Text;
 using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Classification;
 
-namespace Outline
+namespace Microsoft.VisualStudio.Extensions.Outlining
 {
     /// <summary>
     /// sequential parser for ITextSnapshot
     /// </summary>
-    class SnapshotParser
+    internal class SnapshotParser
     {
         private ITextSnapshot Snapshot;
         public SnapshotPoint CurrentPoint { get; private set; }

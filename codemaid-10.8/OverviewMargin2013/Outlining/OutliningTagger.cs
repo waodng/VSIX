@@ -12,9 +12,9 @@ using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Editor.OptionsExtensionMethods;
 using System.Windows.Threading;
 
-namespace Outline
+namespace Microsoft.VisualStudio.Extensions.Outlining
 {
-    class CSharpOutliningTagger : ITagger<IOutliningRegionTag>, IDisposable
+    class OutliningTagger : ITagger<IOutliningRegionTag>, IDisposable
     {
         //Add some fields to track the text buffer and snapshot and to accumulate the sets of lines that should be tagged as outlining regions. 
         //This code includes a list of Region objects (to be defined later) that represent the outlining regions.		
@@ -28,7 +28,7 @@ namespace Outline
 
         public event EventHandler<SnapshotSpanEventArgs> TagsChanged;
 
-        public CSharpOutliningTagger(ITextBuffer buffer, IClassifier classifier, IEditorOptions editorOptions)
+        public OutliningTagger(ITextBuffer buffer, IClassifier classifier, IEditorOptions editorOptions)
         {
             this.Buffer = buffer;
             this.Snapshot = buffer.CurrentSnapshot;

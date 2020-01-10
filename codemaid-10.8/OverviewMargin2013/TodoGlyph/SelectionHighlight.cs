@@ -15,7 +15,7 @@ using System.Windows.Media;
  * 创 建 者：wgd
  * 功能描述：SelectionHighlight  
  * ==============================================================================*/
-namespace Outline.TodoGlyph
+namespace Microsoft.VisualStudio.Extensions.TodoGlyph
 {
     internal class SelectionHighlight
     {
@@ -86,6 +86,7 @@ namespace Outline.TodoGlyph
                     }
                 }
                 this.FindWordsInDocument();
+                //set color
                 this.ColorWords();
             }
         }

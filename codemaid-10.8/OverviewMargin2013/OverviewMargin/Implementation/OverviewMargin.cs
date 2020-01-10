@@ -18,6 +18,7 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin.Implementation
     using Microsoft.VisualStudio.Text.Projection;
     using Microsoft.VisualStudio.Utilities;
 
+    #region 编辑器选项配置定义
     [Export(typeof(EditorOptionDefinition))]
     public sealed class ElisionColor : ViewOptionDefinition<Color>
     {
@@ -40,7 +41,8 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin.Implementation
         public override Color Default { get { return Color.FromArgb(0x00, 0xff, 0xff, 0xff); } }
 
         public override EditorOptionKey<Color> Key { get { return OverviewMargin.VisibleColorId; } }
-    }
+    } 
+    #endregion
 
     /// <summary>
     /// Manages the logical content of the OverviewMargin, which displays information
@@ -184,7 +186,7 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin.Implementation
                 if (_tipBuffer == null)
                 {
                     _tipBuffer = _provider.ProjectionFactory.CreateProjectionBuffer(null, new List<object>(0), ProjectionBufferOptions.None);
-
+                    //TODO： 此处在选择html，cshtml页面时鼠标悬停到margin区域会引发System.NullReferenceException错误
                     _tipView = _provider.EditorFactory.CreateTextView(new VacuousTextViewModel(_tipBuffer, base.TextViewHost.TextView.TextViewModel.DataModel),
                                                                       base.TextViewHost.TextView.Roles, _provider.EditorOptionsFactoryService.GlobalOptions);
                     _tipView.Options.SetOptionValue(DefaultTextViewOptions.IsViewportLeftClippedId, false);
