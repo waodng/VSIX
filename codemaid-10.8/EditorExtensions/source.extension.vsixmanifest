@@ -1,14 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="EditorExtensions..0fed234f-e632-4133-b6f5-8ef973f2eb6f" Version="1.0" Language="en-US" Publisher="" />
+    <Identity Id="EditorExtensions..0fed234f-e632-4133-b6f5-8ef973f2eb6f" Version="2.0" Language="en-US" Publisher="waodng" />
     <DisplayName>EditorExtensions</DisplayName>
-    <Description>Empty VSIX Project.</Description>
+    <Description xml:space="preserve">This extension contains the EditorExtensions,Zencodings, OverviewMargin, StructureAdornment extensions, updated for VisualStudio 2013.</Description>
+    <License>MS-PL.txt</License>
+    <ReleaseNotes>ReadMe.txt</ReleaseNotes>
+    <PreviewImage>AllMargins.png</PreviewImage>
   </Metadata>
   <Installation>
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0]" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Ultimate" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Pro" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
   </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" />
+  </Assets>
 </PackageManifest>

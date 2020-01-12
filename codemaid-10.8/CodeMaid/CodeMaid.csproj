@@ -423,9 +423,9 @@
     <None Include="ThirdPackage\Snippetizer.vsix" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\OverviewMargin2013\OverviewMargin2013.csproj">
-      <Project>{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}</Project>
-      <Name>OverviewMargin2013</Name>
+    <ProjectReference Include="..\EditorExtensions\EditorExtensions.csproj">
+      <Project>{01196963-563C-4DD5-BC19-F5A5173D2BF9}</Project>
+      <Name>EditorExtensions</Name>
       <IncludeOutputGroupsInVSIX>BuiltProjectOutputGroup%3bBuiltProjectOutputGroupDependencies%3bGetCopyToOutputDirectoryItems%3bSatelliteDllsProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
       <IncludeOutputGroupsInVSIXLocalOnly>DebugSymbolsProjectOutputGroup%3b</IncludeOutputGroupsInVSIXLocalOnly>
     </ProjectReference>
