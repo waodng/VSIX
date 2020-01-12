@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.Text;
+﻿using EnvDTE;
+using Microsoft.VisualStudio.Shell;
+using Microsoft.VisualStudio.Text;
 using Microsoft.VisualStudio.Text.Editor;
 using Microsoft.VisualStudio.Text.Operations;
 using Microsoft.VisualStudio.Text.Tagging;
@@ -20,8 +22,8 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
     internal class SelectionHighlight
     {
         private IAdornmentLayer _layer;
-
         private IWpfTextView _view;
+        private static DTE _dte;
 
         private ITextSelection _selection;
 
@@ -47,6 +49,15 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
             this._tagAggregator = tagAggregator;
             this._view.LayoutChanged += this.OnLayoutChanged;
             this._selection.SelectionChanged += new EventHandler(this.OnSelectionChanged);
+            //不可启用，有可能会与StructureAdornmentManager 类中的注册的Closed事件冲突
+            //this._view.Closed += TextView_Closed;
+
+            ThreadHelper.ThrowIfNotOnUIThread();
+            if (_dte == null)
+            {
+                _dte = ServiceProvider.GlobalProvider.GetService(typeof(DTE)) as DTE;
+            }
+
             //选中单词区域背景色
             Brush brush = new SolidColorBrush(Colors.DarkOrchid);
             //Brush brush = new SolidColorBrush(Colors.OrangeRed);
@@ -85,10 +96,19 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
                         return;
                     }
                 }
+                //在文档中查找选中单词
                 this.FindWordsInDocument();
                 //set color
                 this.ColorWords();
             }
+            //选区长度状态栏显示异步事件
+            SelectionLenght(sender);
+        }
+
+        private void TextView_Closed(object sender, EventArgs e)
+        {
+            this._selection.SelectionChanged -= new EventHandler(this.OnSelectionChanged);
+            this._view.LayoutChanged -= this.OnLayoutChanged;   
         }
 
         private void OnLayoutChanged(object sender, TextViewLayoutChangedEventArgs e)
@@ -107,6 +127,9 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
             }
         }
 
+        /// <summary>
+        /// 设置单词颜色
+        /// </summary>
         private void ColorWords()
         {
             IWpfTextViewLineCollection textViewLines = this._view.TextViewLines;
@@ -132,6 +155,40 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
                 {
                 }
             }
+        }
+
+        /// <summary>
+        /// 选区单词长度
+        /// </summary>
+        private void SelectionLenght(object sender)
+        {
+            ThreadHelper.JoinableTaskFactory.RunAsync(async delegate
+            {
+                var selection = (ITextSelection)sender;
+
+                if (selection.IsEmpty)
+                {
+                    await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+                    _dte.StatusBar.Clear();
+
+                    return;
+                }
+
+                int length = 0;
+
+                foreach (SnapshotSpan snapshotSpan in selection.SelectedSpans)
+                {
+                    length += snapshotSpan.Length;
+                }
+
+                if (length > 0)
+                {
+                    await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
+
+                    _dte.StatusBar.Text = string.Format("Selection {0}", length);
+                }
+            });
+            //.FileAndForget("ShowSelectionLength");
         }
     }
 }

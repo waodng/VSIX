@@ -36,6 +36,7 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
         public void TextViewCreated(IWpfTextView textView)
         {
             ITagAggregator<ToDoTag> tagAggregator = this.AggregatorFactory.CreateTagAggregator<ToDoTag>(textView);
+            //高亮和选区长度状态栏业务类
             new SelectionHighlight(textView, this.TextSearchService, tagAggregator);
         }
     }

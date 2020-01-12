@@ -14,7 +14,10 @@ namespace Waodng.CodeMaid.Integration.Events
         public static TextEditorEventListener Instance { get; private set; }
 
         public static void Intialize(CodeMaidPackage package)
-            => Instance = new TextEditorEventListener(package);
+        {
+            Instance = new TextEditorEventListener(package);
+        }
+          
 
         #endregion Singleton
 
@@ -63,7 +66,8 @@ namespace Waodng.CodeMaid.Integration.Events
         /// <param name="hint">A hint as to the type of change that has occurred.</param>
         private void TextEditorEvents_LineChanged(TextPoint startPoint, TextPoint endPoint, int hint)
         {
-            var textDocument = startPoint?.Parent;
+            if(startPoint == null) return;
+            var textDocument = startPoint.Parent;
             if (textDocument == null) return;
 
             var document = startPoint.Parent.Parent;
@@ -71,7 +75,7 @@ namespace Waodng.CodeMaid.Integration.Events
             var onLineChanged = OnLineChanged;
             if (onLineChanged != null && document != null)
             {
-                OutputWindowHelper.DiagnosticWriteLine($"TextEditorEventListener.OnLineChanged raised for '{document.FullName}'");
+                OutputWindowHelper.DiagnosticWriteLine(string.Format("TextEditorEventListener.OnLineChanged raised for '{0}'",document.FullName));
 
                 onLineChanged(document);
             }

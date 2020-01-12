@@ -7,15 +7,14 @@ visual studio  the Managed Package Framework (MPF)
 
 基于CodeMaid二次开发的VS 2013插件项目，其中包含outline，Emmet语法，OverviewMargin2012预览方法虚线连接，hightWord，TODO高亮等个性化的功能.
 
-### 2010-01-09
+### 2020-01-09
 
 * 新增特性文件比较功能，支持两个文件比较；
 * 新增特性打开VS加载完全加载解决方案后会隐藏菜单栏；
 * 新增插件OverviewMargin功能；
 * 新增第三方包代码段添加和编辑等；
-* 优化outline和高亮代码显示；
-
-
+* 优化outline和高亮代码显示并且显示选区长度；
+* 新增ZenCoding语法插件；
 
 ### 2020-01-06
 
@@ -60,73 +59,6 @@ You can then build the project, then double-click the VSIX file from the bin fol
 ### TODO
 
 ......正在扩展中...
-
-
-
-
-
-## ZenCodingVS
-
-
-
-[![Build status](https://ci.appveyor.com/api/projects/status/p6lyd0fetoa1amgy?svg=true)](https://ci.appveyor.com/project/madskristensen/zencodingvs)https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ZenCoding)
-
-Download this extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.ZenCoding)
-or get the [CI build](http://vsixgallery.com/extension/9514d70e-a7b1-4876-847d-b0d2ad0962bf/).
-
-------
-
-Provides ZenCoding for the HTML Editor - full support for static HTML, Razor and WebForms.
-
-See the [change log](CHANGELOG.md) for changes and road map.
-
-## Features
-
-- HTML ZenCoding
-- Lorem Ipsum generator
-- Lorem Pixel image generator
-- PlaceHold.it image generator
-
-### HTML ZenCoding
-
-ZenCoding is a quick way to generate HTML markup by using a CSS based syntax.
-
-To invoke ZenCoding, write the syntax and hit the `TAB` key to generate the markup.
-
-#### Examples:
-
-Syntax __ul>li\*3__ generates:
-
-![Example1](E:/OpenSource/VSIX/ZenCodingVS/art/example1.png)
-
-Syntax __#foo>span__ generates:
-
-![Example2](E:/OpenSource/VSIX/ZenCodingVS/art/example2.png)
-
-Syntax __ul>li\*4>a{test $}__ generates:
-
-![Example3](E:/OpenSource/VSIX/ZenCodingVS/art/example3.png)
-
-### Lorem Ipsum generator
-
-As part of ZenCoding, you can now generate Lorem Ipsum code directly in the HTML editor. Simply type `lorem` and hit `TAB` and a 30 word Lorem Ipsum text is inserted. 
-
-Type `lorem10` and a 10 word Lorem Ipsum text is inserted. 
-This can be used in conjuction with ZenCoding like so: `ul>li*5>lorem3`
-
-### Lorem Pixel generator
-
-As part of ZenCoding, you can also generate Lorem Pixel code directly in the HTML editor. Simply type `pix-200x200-animals` and hit `TAB` and a img tag with a 200x200 image of an animal is inserted:
-
-![Example4](E:/OpenSource/VSIX/ZenCodingVS/art/example4.png)
-
-### PlaceHold.it generator
-
-ZenCoding also support [PlaceHold.it](http://placehold.it/) if you prefer blank images. Type `place-50` and hit `TAB` to have a 50 pixels square image. Use `place-200x100` to insert a rectangular image:
-
-![Example5](E:/OpenSource/VSIX/ZenCodingVS/art/example5.png)
-
-You can choose the background color by adding the hexadecimal value after the size like this `place-150x240-EEEDDD`. You can even add text to the image by using `place-150x240-EEE-t=This%20is%20some%20text`.
 
 
 

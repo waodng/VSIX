@@ -24,7 +24,7 @@
   <Assets>
     <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
     <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="Project" d:ProjectName="OverviewMargin2013" Path="|OverviewMargin2013|" />
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="File" Path="ThirdPackage\Snippetizer\Snippetizer.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" d:Source="File" Path="Snippetizer.dll" />
   </Assets>
   <Prerequisites>
     <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.25904.2,17.0)" DisplayName="Visual Studio core editor" />

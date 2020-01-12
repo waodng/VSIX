@@ -20,8 +20,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetMvcScaffolder", "AspN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatDocumentOnSave", "FormatDocumentOnSave\FormatDocumentOnSave.csproj", "{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenCoding", "ZenCoding\ZenCoding.csproj", "{C8438DA3-0325-46EA-9D67-9736FBE2F871}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3A16D490-BF8E-47C5-9668-63C535B1435D}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
@@ -30,6 +28,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3A16D4
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverviewMargin2013", "OverviewMargin2013\OverviewMargin2013.csproj", "{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorExtensions", "EditorExtensions\EditorExtensions.csproj", "{01196963-563C-4DD5-BC19-F5A5173D2BF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E445140D-D416-4514-A3CC-CAEFCA418EE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenCoding", "Common\ZenCoding\ZenCoding.csproj", "{C8438DA3-0325-46EA-9D67-9736FBE2F871}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,17 +53,24 @@ Global
 		{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C8438DA3-0325-46EA-9D67-9736FBE2F871} = {E445140D-D416-4514-A3CC-CAEFCA418EE5}
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CodeMaid.vsmdi

@@ -198,7 +198,7 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin.Implementation
                 {
                     //Track the entire buffer (we use a projection buffer rather than simply the TextView's TextBuffer because -- when the preview isn't visible --
                     //we don't want to spend time reacting to text changes, etc.).
-                    _tipBuffer.InsertSpan(0, base.TextViewHost.TextView.TextSnapshot.CreateTrackingSpan(0, base.TextViewHost.TextView.TextSnapshot.Length, SpanTrackingMode.EdgeInclusive));
+                     _tipBuffer.InsertSpan(0, base.TextViewHost.TextView.TextSnapshot.CreateTrackingSpan(0, base.TextViewHost.TextView.TextSnapshot.Length, SpanTrackingMode.EdgeInclusive));
                 }
 
                 double viewHeight = ((double)tipSize) * _tipView.LineHeight;
@@ -444,7 +444,7 @@ namespace Microsoft.VisualStudio.Extensions.OverviewMargin.Implementation
 
                     _tipWindow.VerticalAlignment = VerticalAlignment.Top;
                     _tipWindow.VerticalContentAlignment = VerticalAlignment.Top;
-
+                 
                     _tipWindow.HorizontalOffset = 0.0;
                     _tipWindow.VerticalOffset = 0.0;
                 }
