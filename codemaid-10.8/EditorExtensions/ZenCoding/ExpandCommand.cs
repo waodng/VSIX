@@ -25,7 +25,6 @@ namespace Waodng.CodeMaid.Integration.ZenCoding
         private ITextBufferUndoManager _undoManager;
         private IClassifier _classifier;
         private static Span _emptySpan = new Span();
-        private readonly DTE _dte;
 
         public ExpandCommand(IWpfTextView view, ICompletionBroker broker, ITextBufferUndoManagerProvider undoProvider, IClassifier classifier)
         {
@@ -34,7 +33,6 @@ namespace Waodng.CodeMaid.Integration.ZenCoding
             _broker = broker;
             _undoManager = undoProvider.GetTextBufferUndoManager(view.TextBuffer);
             _classifier = classifier;
-            _dte = ServiceProvider.GlobalProvider.GetService(typeof(DTE)) as DTE;
         }
 
         public override int Exec(ref Guid pguidCmdGroup, uint nCmdID, uint nCmdexecopt, IntPtr pvaIn, IntPtr pvaOut)
@@ -82,7 +80,7 @@ namespace Waodng.CodeMaid.Integration.ZenCoding
 
                     var newSpan = new Span(zenSpan.Start, selection.SelectedSpans[0].Length);
                     //选区内容格式化命令
-                    _dte.ExecuteCommand("Edit.FormatSelection");
+                    EditorExtensions.EditorExtensionsPackage.DTE.ExecuteCommand("Edit.FormatSelection");
                     SetCaret(newSpan, false);
 
                     selection.Clear();

@@ -27,8 +27,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3A16D4
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OverviewMargin2013", "OverviewMargin2013\OverviewMargin2013.csproj", "{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditorExtensions", "EditorExtensions\EditorExtensions.csproj", "{01196963-563C-4DD5-BC19-F5A5173D2BF9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E445140D-D416-4514-A3CC-CAEFCA418EE5}"
@@ -53,10 +51,6 @@ Global
 		{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F4BBF49-B61A-4DD9-8057-EADBECE02EE6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A41C96F6-E5DB-408C-B5F7-7A6628F756CC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{01196963-563C-4DD5-BC19-F5A5173D2BF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -71,6 +65,9 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C8438DA3-0325-46EA-9D67-9736FBE2F871} = {E445140D-D416-4514-A3CC-CAEFCA418EE5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4
 	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CodeMaid.vsmdi

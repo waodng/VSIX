@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Media;
+using Waodng.EditorExtensions;
 
 /* ==============================================================================
  * 创建日期：2019/5/5 23:24:24
@@ -23,7 +24,6 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
     {
         private IAdornmentLayer _layer;
         private IWpfTextView _view;
-        private static DTE _dte;
 
         private ITextSelection _selection;
 
@@ -53,11 +53,7 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
             //this._view.Closed += TextView_Closed;
 
             ThreadHelper.ThrowIfNotOnUIThread();
-            if (_dte == null)
-            {
-                _dte = ServiceProvider.GlobalProvider.GetService(typeof(DTE)) as DTE;
-            }
-
+           
             //选中单词区域背景色
             Brush brush = new SolidColorBrush(Colors.DarkOrchid);
             //Brush brush = new SolidColorBrush(Colors.OrangeRed);
@@ -169,7 +165,7 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
                 if (selection.IsEmpty)
                 {
                     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
-                    _dte.StatusBar.Clear();
+                    EditorExtensionsPackage.DTE.StatusBar.Clear();
 
                     return;
                 }
@@ -185,7 +181,7 @@ namespace Microsoft.VisualStudio.Extensions.TodoGlyph
                 {
                     await ThreadHelper.JoinableTaskFactory.SwitchToMainThreadAsync();
 
-                    _dte.StatusBar.Text = string.Format("Selection {0}", length);
+                    EditorExtensionsPackage.DTE.StatusBar.Text = string.Format("Selection {0}", length);
                 }
             });
             //.FileAndForget("ShowSelectionLength");
