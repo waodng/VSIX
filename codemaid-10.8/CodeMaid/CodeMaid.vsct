@@ -843,7 +843,6 @@
       <IDSymbol name="CmdIDCodeMaidRefactoringCode" value="0x4200" />
       <!--比较文件-->
       <IDSymbol name="CmdIDCodeMaidFilesDifferent" value="0x4300" />
-      
     </GuidSymbol>
 
     <!-- These are the guids for images -->

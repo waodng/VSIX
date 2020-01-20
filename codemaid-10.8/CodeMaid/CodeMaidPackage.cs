@@ -6,13 +6,14 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Waodng.CodeMaid.Helpers;
 using Waodng.CodeMaid.Integration.Commands;
-using Waodng.CodeMaid.Integration.Package;
+using Waodng.CodeMaid.Integration.Pack;
 using Waodng.CodeMaid.Integration.Events;
 using Waodng.CodeMaid.Model;
 using Waodng.CodeMaid.Properties;
 using Waodng.CodeMaid.UI;
 using Waodng.CodeMaid.UI.ToolWindows.BuildProgress;
 using Waodng.CodeMaid.UI.ToolWindows.Spade;
+using Waodng.CodeMaid.Integration.BrowserLink;
 using System;
 using System.ComponentModel.Design;
 using System.Diagnostics;
@@ -39,6 +40,7 @@ namespace Waodng.CodeMaid
     [InstalledProductRegistration("#110", "#112", Vsix.Version, IconResourceID = 400, LanguageIndependentName = "CodeMaid")] // VS Help/About details (Name, Description, Version, Icon).
     [ProvideAutoLoad(VSConstants.UICONTEXT.SolutionExistsAndFullyLoaded_string)] // Force CodeMaid to load so menu items can determine their state. CodeMaid插件在什么情况下加载
     [ProvideBindingPath]
+    [ProvideOptionPage(typeof(Options), "Web", Vsix.Name, 101, 102, true, new string[0], ProvidesLocalizedCategoryName = false)]
     [ProvideMenuResource("Menus.ctmenu", 1)] // This attribute is needed to let the shell know that this package exposes some menus.
     [ProvideToolWindow(typeof(BuildProgressToolWindow), MultiInstances = false, Height = 40, Width = 500, Style = VsDockStyle.Tabbed, Orientation = ToolWindowOrientation.Bottom, Window = EnvDTE.Constants.vsWindowKindMainWindow)]
     [ProvideToolWindow(typeof(SpadeToolWindow), MultiInstances = false, Style = VsDockStyle.Tabbed, Orientation = ToolWindowOrientation.Left, Window = EnvDTE.Constants.vsWindowKindSolutionExplorer)]
@@ -46,6 +48,7 @@ namespace Waodng.CodeMaid
     public sealed class CodeMaidPackage : Package, IVsInstalledProduct
     {
         #region Fields
+        private const string _activationContextGuid = "{4b6c8d76-4918-45aa-9b26-8f246c1773aa}";
 
         /// <summary>
         /// The build progress tool window.
@@ -71,6 +74,15 @@ namespace Waodng.CodeMaid
         /// The theme manager.
         /// </summary>
         private ThemeManager _themeManager;
+
+        /// <summary>
+        /// 配置工具-->选项
+        /// </summary>
+        public static Options Options
+        {
+            get;
+            private set;
+        }
 
         #endregion Fields
 
@@ -339,7 +351,8 @@ namespace Waodng.CodeMaid
             NestOutFileCommand.Initialize(this);//移出嵌入文件按钮注册
             RefactoringCodeCommand.Initialize(this);//重构代码
             FilesDifferentCommand.Initialize(this);//文件比较
-            
+            //浏览器刷新页面
+            Options = (Options)GetDialogPage(typeof(Options));//选项配置
         }
 
         /// <summary>

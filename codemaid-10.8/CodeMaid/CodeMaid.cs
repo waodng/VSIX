@@ -38,6 +38,7 @@ namespace Waodng.CodeMaid
         public const string GuidImageSpadeString = "24791b87-377a-4661-8c0a-3754eadaff5c";
         public const string GuidImageSwitchString = "f86e7cf5-34e4-4f45-a8c3-9528b6e49a12";
         public const string GuidImageUnlockString = "6c3e76ea-326a-4201-aa74-fb2b9b8ccb0f";
+
         public static Guid GuidVisualStudioCSSWindowContextMenu = new Guid(GuidVisualStudioCSSWindowContextMenuString);
         public static Guid GuidVisualStudioCSSDocumentContextMenu = new Guid(GuidVisualStudioCSSDocumentContextMenuString);
         public static Guid GuidVisualStudioHTMLWindowContextMenu = new Guid(GuidVisualStudioHTMLWindowContextMenuString);
@@ -69,6 +70,7 @@ namespace Waodng.CodeMaid
         public static Guid GuidImageSpade = new Guid(GuidImageSpadeString);
         public static Guid GuidImageSwitch = new Guid(GuidImageSwitchString);
         public static Guid GuidImageUnlock = new Guid(GuidImageUnlockString);
+
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
@@ -186,7 +188,6 @@ namespace Waodng.CodeMaid
         public const int CmdIDCodeMaidRefactoringCode = 0x4200;
         //比较文件
         public const int CmdIDCodeMaidFilesDifferent = 0x4300;
-        
 
         public const int IconCleanup = 0x0001;
         public const int IconCleanupAll = 0x0001;

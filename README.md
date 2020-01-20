@@ -7,6 +7,12 @@ visual studio  the Managed Package Framework (MPF)
 
 基于CodeMaid二次开发的VS 2013插件项目，其中包含outline，Emmet语法，OverviewMargin2012预览方法虚线连接，hightWord，TODO高亮等个性化的功能.
 
+### 2020-01-20
+
+* 新增BrowserLink浏览器自动刷新html页面的功能；
+
+
+
 ### 2020-01-09
 
 * 新增特性文件比较功能，支持两个文件比较；

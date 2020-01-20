@@ -394,6 +394,7 @@
           <ButtonText>FilesCompare</ButtonText>
         </Strings>
       </Button>
+
     </Buttons>
   </Commands>
 </CommandTable>

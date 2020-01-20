@@ -10,7 +10,7 @@ using System.Threading.Tasks;
  * 创 建 者：wgd
  * 功能描述：BasePack  
  * ==============================================================================*/
-namespace Waodng.CodeMaid.Integration.Package
+namespace Waodng.CodeMaid.Integration.Pack
 {
     /// <summary>
     /// base package

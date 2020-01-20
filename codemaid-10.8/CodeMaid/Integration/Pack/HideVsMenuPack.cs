@@ -7,7 +7,7 @@ using System.Windows.Input;
 using Microsoft.VisualStudio.PlatformUI;
 using Microsoft.VisualStudio.Shell;
 
-namespace Waodng.CodeMaid.Integration.Package
+namespace Waodng.CodeMaid.Integration.Pack
 {
     /// <summary>
     /// A package that provides for hide vs menu .  shortcut key ALT Show 
