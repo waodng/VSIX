@@ -36,6 +36,12 @@
   <PropertyGroup>
     <StartupObject />
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.Words, Version=18.7.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -78,6 +84,7 @@
     <Compile Include="Text\XmlUtils.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="key.pfx" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>

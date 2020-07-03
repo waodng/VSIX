@@ -51,6 +51,10 @@
     <DeployExtension>False</DeployExtension>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit, Version=4.5.0.0, Culture=neutral, PublicKeyToken=a87e673e9ecb6e8e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DBCHM\lib\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
     <Reference Include="envdte, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>
@@ -144,6 +148,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -159,6 +164,10 @@
     <Reference Include="WindowsBase">
       <RequiredTargetFramework>3.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="ZetaLongPaths, Version=1.0.0.37, Culture=neutral, PublicKeyToken=b764f59068f31f38, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DBCHM\lib\ZetaLongPaths.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\GlobalAssemblyInfo.cs">
@@ -172,6 +181,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>CodeMaid.vsct</DependentUpon>
     </Compile>
+    <Compile Include="DBCHM\AboutBox.cs" />
+    <Compile Include="DBCHM\AboutBox.designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCHM\CHM\ChmHelp.cs" />
+    <Compile Include="DBCHM\CHM\ChmHtmlHelper.cs" />
+    <Compile Include="DBCHM\Common\ConfigUtils.cs" />
+    <Compile Include="DBCHM\Common\DBCHMConfig.cs" />
+    <Compile Include="DBCHM\Common\DBUtils.cs" />
+    <Compile Include="DBCHM\Common\EnumExtension.cs" />
+    <Compile Include="DBCHM\Common\Enums.cs" />
+    <Compile Include="DBCHM\Common\FormUtils.cs" />
+    <Compile Include="DBCHM\Common\LogUtils.cs" />
+    <Compile Include="DBCHM\Common\ProgressArg.cs" />
+    <Compile Include="DBCHM\Common\XmlAnalyze.cs" />
+    <Compile Include="DBCHM\DBForm.cs" />
+    <Compile Include="DBCHM\DBForm.designer.cs">
+      <DependentUpon>DBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCHM\FrmProcessing.cs" />
+    <Compile Include="DBCHM\FrmProcessing.designer.cs">
+      <DependentUpon>FrmProcessing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCHM\GridFormMgr.cs" />
+    <Compile Include="DBCHM\GridFormMgr.designer.cs">
+      <DependentUpon>GridFormMgr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCHM\ImportForm.cs" />
+    <Compile Include="DBCHM\ImportForm.designer.cs">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCHM\MainForm.cs" />
+    <Compile Include="DBCHM\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBCHM\PdmModels\ColumnInfo.cs" />
+    <Compile Include="DBCHM\PdmModels\PdmKey.cs" />
+    <Compile Include="DBCHM\PdmModels\PdmModels.cs" />
+    <Compile Include="DBCHM\PdmModels\TableInfo.cs" />
+    <Compile Include="DBCHM\PDM\PdmReader.cs" />
+    <Compile Include="DBCHM\PerformanceChart.cs" />
     <Compile Include="Helpers\CodeLanguageHelper.cs" />
     <Compile Include="Helpers\CodeLanguage.cs" />
     <Compile Include="Helpers\CodeMaidSettingsProvider.cs" />
@@ -428,9 +478,18 @@
     <Compile Include="UI\Bindable.cs" />
     <Compile Include="UI\TreeViewMultipleSelectionBehavior.cs" />
     <Compile Include="UI\WindowAttachedProperties.cs" />
+    <Resource Include="DBCHM\Fonts\msyh.ttf" />
     <None Include="ThirdPackage\Snippetizer.vsix" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\MJTop.Data\MJTop.Data.csproj">
+      <Project>{3d36cdc9-e989-465b-a9f1-ad85dc42f242}</Project>
+      <Name>MJTop.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\TryOpenXml.Text.Core\TryOpenXml.Text.Core.csproj">
+      <Project>{0461b8aa-baf6-4ed0-9826-046e86463b4e}</Project>
+      <Name>TryOpenXml.Text.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\EditorExtensions\EditorExtensions.csproj">
       <Project>{01196963-563C-4DD5-BC19-F5A5173D2BF9}</Project>
       <Name>EditorExtensions</Name>
@@ -444,7 +503,49 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="DBCHM\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCHM\DBForm.resx">
+      <DependentUpon>DBForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCHM\FrmProcessing.resx">
+      <DependentUpon>FrmProcessing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCHM\GridFormMgr.resx">
+      <DependentUpon>GridFormMgr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCHM\ImportForm.resx">
+      <DependentUpon>ImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DBCHM\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Integration\BrowserLink\Reload.js" />
+    <Content Include="DBCHM\htmlhelp.exe" />
+    <Resource Include="DBCHM\ico\about.png" />
+    <Resource Include="DBCHM\ico\connect.png" />
+    <Resource Include="DBCHM\ico\DBCHM.ico" />
+    <Resource Include="DBCHM\ico\empty.png" />
+    <Resource Include="DBCHM\ico\excel.png" />
+    <Resource Include="DBCHM\ico\exp.png" />
+    <Resource Include="DBCHM\ico\html.png" />
+    <Resource Include="DBCHM\ico\logo.png" />
+    <Resource Include="DBCHM\ico\md.png" />
+    <Resource Include="DBCHM\ico\pdf.png" />
+    <Resource Include="DBCHM\ico\refresh_reload.png" />
+    <Resource Include="DBCHM\ico\upload.png" />
+    <Resource Include="DBCHM\ico\word.png" />
+    <Resource Include="DBCHM\ico\xml.png" />
+    <Resource Include="DBCHM\Images\DBCHM001.png" />
+    <Resource Include="DBCHM\Images\DBCHM002.png" />
+    <Resource Include="DBCHM\Images\DBCHM003.png" />
+    <Resource Include="DBCHM\Images\DBCHM004.png" />
+    <Resource Include="DBCHM\Images\DBCHM005.png" />
+    <Resource Include="DBCHM\Images\loading.gif" />
+    <Content Include="DBCHM\lib\ComponentFactory.Krypton.Toolkit.dll" />
+    <Content Include="DBCHM\lib\ZetaLongPaths.dll" />
+    <Content Include="DBCHM\lib\ZetaLongPaths.pdb" />
     <Content Include="Integration\BrowserLink\_intellisense\browserlink.intellisense.js" />
     <Content Include="Integration\BrowserLink\_intellisense\jquery-1.8.2.intellisense.js" />
     <Content Include="Integration\BrowserLink\_intellisense\jquery-1.8.2.js" />
