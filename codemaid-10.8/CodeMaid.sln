@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{E44514
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenCoding", "Common\ZenCoding\ZenCoding.csproj", "{C8438DA3-0325-46EA-9D67-9736FBE2F871}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryOpenXml.Text.Core", "Common\TryOpenXml.Text.Core\TryOpenXml.Text.Core.csproj", "{0461B8AA-BAF6-4ED0-9826-046E86463B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MJTop.Data", "Common\MJTop.Data\MJTop.Data.csproj", "{3D36CDC9-E989-465B-A9F1-AD85DC42F242}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,12 +63,22 @@ Global
 		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8438DA3-0325-46EA-9D67-9736FBE2F871}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0461B8AA-BAF6-4ED0-9826-046E86463B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0461B8AA-BAF6-4ED0-9826-046E86463B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0461B8AA-BAF6-4ED0-9826-046E86463B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0461B8AA-BAF6-4ED0-9826-046E86463B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D36CDC9-E989-465B-A9F1-AD85DC42F242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D36CDC9-E989-465B-A9F1-AD85DC42F242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D36CDC9-E989-465B-A9F1-AD85DC42F242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D36CDC9-E989-465B-A9F1-AD85DC42F242}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C8438DA3-0325-46EA-9D67-9736FBE2F871} = {E445140D-D416-4514-A3CC-CAEFCA418EE5}
+		{0461B8AA-BAF6-4ED0-9826-046E86463B4E} = {E445140D-D416-4514-A3CC-CAEFCA418EE5}
+		{3D36CDC9-E989-465B-A9F1-AD85DC42F242} = {E445140D-D416-4514-A3CC-CAEFCA418EE5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		EnterpriseLibraryConfigurationToolBinariesPath = packages\TransientFaultHandling.Core.5.1.1209.1\lib\NET4

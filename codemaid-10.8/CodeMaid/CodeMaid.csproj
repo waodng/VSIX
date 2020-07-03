@@ -672,7 +672,9 @@
     <Resource Include="Integration\Images\IDE\commentformat.bmp" />
     <Resource Include="Integration\Images\IDE\removeRegion.bmp" />
     <Content Include="Interface.tt" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>PublicSettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
