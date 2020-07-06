@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Dynamic;
 using System.Windows.Forms;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     public static class FormUtils
     {

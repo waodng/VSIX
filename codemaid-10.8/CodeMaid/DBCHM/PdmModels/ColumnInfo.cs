@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DBCHM.PdmModels
+namespace Waodng.CodeMaid.DBCHM.PdmModels
 {
     /// <summary>  
     /// 表列信息  

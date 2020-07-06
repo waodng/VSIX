@@ -3,7 +3,7 @@ using MJTop.Data;
 using System;
 using System.Windows.Forms;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     public partial class GridFormMgr : KryptonForm
     {

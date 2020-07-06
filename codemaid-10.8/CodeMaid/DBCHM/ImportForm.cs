@@ -1,5 +1,5 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
-using DBCHM.Common;
+using Waodng.CodeMaid.DBCHM.Common;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +13,7 @@ using System.Xml;
 using TryOpenXml.Dtos;
 using TryOpenXml.Text;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     public partial class ImportForm : KryptonForm
     {

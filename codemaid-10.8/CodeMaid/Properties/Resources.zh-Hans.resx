@@ -942,4 +942,7 @@
   <data name="HideVsMenu" xml:space="preserve">
     <value>隐藏Visual Studio菜单栏 ( 显示快捷键 ALT,重启vs生效)</value>
   </data>
+  <data name="DataBaseWordExport" xml:space="preserve">
+    <value>数据库文档导出</value>
+  </data>
 </root>

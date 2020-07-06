@@ -942,4 +942,7 @@
   <data name="HideVsMenu" xml:space="preserve">
     <value>hide visual studio menu ( vs menu show shortcut ALT , restart use )</value>
   </data>
+  <data name="DataBaseWordExport" xml:space="preserve">
+    <value>DataBaseWordExport</value>
+  </data>
 </root>

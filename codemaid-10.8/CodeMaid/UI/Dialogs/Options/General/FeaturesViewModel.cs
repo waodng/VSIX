@@ -31,7 +31,8 @@ namespace Waodng.CodeMaid.UI.Dialogs.Options.General
                 new Mapping(x => ActiveSettings.Refactoring, x => Refactoring), //重构代码
                 new Mapping(x => ActiveSettings.NestInOutFile, x => NestInOutFile),   //嵌入嵌出文件
                 new Mapping(x => ActiveSettings.Feature_HideVsMenu, x => HideVsMenu),   //隐藏vs菜单栏
-                new Mapping(x => ActiveSettings.Feature_FileDifferent, x => FileDifferent)   //文件比较
+                new Mapping(x => ActiveSettings.Feature_FileDifferent, x => FileDifferent),   //文件比较
+                new Mapping(x => ActiveSettings.Feature_DataBaseWordWindow, x => DataBaseWordToolWindow) //数据库文档导出
             };
         }
 
@@ -178,6 +179,14 @@ namespace Waodng.CodeMaid.UI.Dialogs.Options.General
         /// 隐藏vs菜单
         /// </summary>
         public bool HideVsMenu
+        {
+            get => GetPropertyValue<bool>();
+            set => SetPropertyValue(value);
+        }
+        /// <summary>
+        /// 数据库文档导出
+        /// </summary>
+        public bool DataBaseWordToolWindow
         {
             get => GetPropertyValue<bool>();
             set => SetPropertyValue(value);

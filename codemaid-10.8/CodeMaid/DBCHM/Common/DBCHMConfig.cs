@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     public class DBCHMConfig
     {

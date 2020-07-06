@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     /// <summary>
     /// 进度条参数类

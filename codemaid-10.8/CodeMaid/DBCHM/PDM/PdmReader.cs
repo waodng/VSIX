@@ -2,9 +2,9 @@
 using System.Linq;
 using System.Xml;
 using System.Collections.Generic;
-using DBCHM.PdmModels;
+using Waodng.CodeMaid.DBCHM.PdmModels;
 
-namespace DBCHM.PDM
+namespace Waodng.CodeMaid.DBCHM.PDM
 {
     /// <summary>  
     /// PDM实体集合  

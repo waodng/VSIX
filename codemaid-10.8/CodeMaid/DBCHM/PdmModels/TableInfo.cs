@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DBCHM.PdmModels
+namespace Waodng.CodeMaid.DBCHM.PdmModels
 {
 /// <summary>  
     /// 表信息  

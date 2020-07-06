@@ -7,7 +7,7 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Security.AccessControl;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     /// <summary>
     /// 管理 配置的连接字符串

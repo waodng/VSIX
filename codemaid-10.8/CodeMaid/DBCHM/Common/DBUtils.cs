@@ -1,6 +1,6 @@
 ﻿using MJTop.Data;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     public static class DBUtils
     {

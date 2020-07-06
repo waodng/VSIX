@@ -637,6 +637,11 @@
     <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidFilesDifferent" priority="0x0400">
       <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidContextWebItemNodeGroup" />
     </CommandPlacement>
+
+    <!--新增数据库文档导出按钮-->
+    <CommandPlacement guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" priority="0x0400">
+      <Parent guid="GuidCodeMaidMenuSet" id="GroupIDCodeMaidMenuVisualizeGroup" />
+    </CommandPlacement>
   </CommandPlacements>
 
   <KeyBindings>
@@ -680,6 +685,9 @@
 
     <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidSwitchFile" editor="guidVSStd97" key1="M" mod1="Control" key2="0xBC" mod2="Control" />
     <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidSwitchFile" editor="guidVSStd97" key1="M" mod1="Control" key2="0xBC" />
+    <!--新增数据库文档导出按钮快捷键-->
+    <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" editor="guidVSStd97" key1="M" mod1="Control" key2="E" mod2="Control" />
+    <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" editor="guidVSStd97" key1="M" mod1="Control" key2="E" />
   </KeyBindings>
 
   <Symbols>
@@ -843,6 +851,8 @@
       <IDSymbol name="CmdIDCodeMaidRefactoringCode" value="0x4200" />
       <!--比较文件-->
       <IDSymbol name="CmdIDCodeMaidFilesDifferent" value="0x4300" />
+      <!--新增数据库文档导出-->
+      <IDSymbol name="CmdIDCodeMaidDataBaseWordExportWindow" value="0x4400" />
     </GuidSymbol>
 
     <!-- These are the guids for images -->

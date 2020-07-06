@@ -4,7 +4,7 @@ using System.Collections.Specialized;
 using System.IO;
 using System.Text;
 
-namespace DBCHM.CHM
+namespace Waodng.CodeMaid.DBCHM.CHM
 {
     public static class StringExt
     {
@@ -18,7 +18,7 @@ namespace DBCHM.CHM
 
 
 
-namespace DBCHM.CHM
+namespace Waodng.CodeMaid.DBCHM.CHM
 {
     /// <summary>
     /// 常用功能类

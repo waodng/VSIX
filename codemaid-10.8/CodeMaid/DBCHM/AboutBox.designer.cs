@@ -1,4 +1,4 @@
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     partial class AboutBox
     {

@@ -1,7 +1,7 @@
 namespace Waodng.CodeMaid
 {
     using System;
-    
+
     /// <summary>
     /// Helper class that exposes all GUIDs used across VS Package.
     /// </summary>
@@ -70,7 +70,6 @@ namespace Waodng.CodeMaid
         public static Guid GuidImageSpade = new Guid(GuidImageSpadeString);
         public static Guid GuidImageSwitch = new Guid(GuidImageSwitchString);
         public static Guid GuidImageUnlock = new Guid(GuidImageUnlockString);
-
     }
     /// <summary>
     /// Helper class that encapsulates all CommandIDs uses across VS Package.
@@ -188,6 +187,8 @@ namespace Waodng.CodeMaid
         public const int CmdIDCodeMaidRefactoringCode = 0x4200;
         //比较文件
         public const int CmdIDCodeMaidFilesDifferent = 0x4300;
+        //数据库文档导出
+        public const int CmdIDCodeMaidDataBaseWordExportWindow = 0x4400;
 
         public const int IconCleanup = 0x0001;
         public const int IconCleanupAll = 0x0001;

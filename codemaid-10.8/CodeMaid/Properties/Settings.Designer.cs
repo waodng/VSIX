@@ -2342,5 +2342,17 @@ namespace Waodng.CodeMaid.Properties {
                 this["Feature_HideVsMenu"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool Feature_DataBaseWordWindow {
+            get {
+                return ((bool)(this["Feature_DataBaseWordWindow"]));
+            }
+            set {
+                this["Feature_DataBaseWordWindow"] = value;
+            }
+        }
     }
 }

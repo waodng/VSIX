@@ -10,7 +10,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     public partial class FrmProcessing : Form
     {

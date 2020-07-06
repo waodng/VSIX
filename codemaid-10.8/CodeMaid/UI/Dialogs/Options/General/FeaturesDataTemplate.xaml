@@ -44,6 +44,7 @@
                 <StackPanel>
                     <CheckBox Content="{x:Static p:Resources.BuildProgress}" IsChecked="{Binding BuildProgressToolWindow}" />
                     <CheckBox Content="{x:Static p:Resources.Spade}" IsChecked="{Binding SpadeToolWindow}" />
+                    <CheckBox Content="{x:Static p:Resources.DataBaseWordExport}" IsChecked="{Binding DataBaseWordToolWindow}" />
                 </StackPanel>
             </GroupBox>
         </StackPanel>

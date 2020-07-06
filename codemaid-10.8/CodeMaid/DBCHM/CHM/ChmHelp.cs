@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 
 
-namespace DBCHM.CHM
+namespace Waodng.CodeMaid.DBCHM.CHM
 {
 
     /// <summary>

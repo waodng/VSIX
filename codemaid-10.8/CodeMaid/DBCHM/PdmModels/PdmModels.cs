@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace DBCHM.PdmModels
+namespace Waodng.CodeMaid.DBCHM.PdmModels
 {
     /// <summary>  
     /// PDM实体集合  

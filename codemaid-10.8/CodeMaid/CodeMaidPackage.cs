@@ -186,6 +186,7 @@ namespace Waodng.CodeMaid
         public SpadeToolWindow SpadeForceLoad =>
             _spade ?? (_spade = (FindToolWindow(typeof(SpadeToolWindow), 0, true) as SpadeToolWindow));
 
+        
         /// <summary>
         /// Gets the theme manager.
         /// </summary>
@@ -353,6 +354,8 @@ namespace Waodng.CodeMaid
             FilesDifferentCommand.Initialize(this);//文件比较
             //浏览器刷新页面
             Options = (Options)GetDialogPage(typeof(Options));//选项配置
+            //数据库文档导出
+            DataBaseWordExportWindowCommand.Initialize(this);
         }
 
         /// <summary>

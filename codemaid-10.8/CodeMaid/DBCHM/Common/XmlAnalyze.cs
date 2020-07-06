@@ -7,7 +7,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace DBCHM.Common
+namespace Waodng.CodeMaid.DBCHM.Common
 {
     /// <summary>
     /// 解析VS生成的 XML文档文件

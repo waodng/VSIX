@@ -6,7 +6,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using ComponentFactory.Krypton.Toolkit;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     partial class AboutBox : KryptonForm
     {

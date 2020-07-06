@@ -944,6 +944,15 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找类似 DataBaseWordExport 的本地化字符串。
+        /// </summary>
+        public static string DataBaseWordExport {
+            get {
+                return ResourceManager.GetString("DataBaseWordExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Deploying 的本地化字符串。
         /// </summary>
         public static string Deploying {

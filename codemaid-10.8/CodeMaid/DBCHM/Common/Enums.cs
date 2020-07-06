@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     /// <summary>
     /// 操作类型

@@ -3,7 +3,7 @@
 //     Copyright (c) YuGuan Corporation. All rights reserved.
 // </copyright>
 //-----------------------------------------------------------------------
-namespace DBCHM
+namespace Waodng.CodeMaid.DBCHM
 {
     using CHM;
     using ComponentFactory.Krypton.Toolkit;

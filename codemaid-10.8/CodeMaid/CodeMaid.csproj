@@ -222,6 +222,7 @@
     <Compile Include="DBCHM\PdmModels\TableInfo.cs" />
     <Compile Include="DBCHM\PDM\PdmReader.cs" />
     <Compile Include="DBCHM\PerformanceChart.cs" />
+    <Compile Include="DBCHM\Startup.cs" />
     <Compile Include="Helpers\CodeLanguageHelper.cs" />
     <Compile Include="Helpers\CodeLanguage.cs" />
     <Compile Include="Helpers\CodeMaidSettingsProvider.cs" />
@@ -245,6 +246,7 @@
     <Compile Include="Integration\BrowserLink\ReloadExtension.cs" />
     <Compile Include="Integration\BrowserLink\ReloadFactory.cs" />
     <Compile Include="Integration\Commands\FilesDifferentCommand.cs" />
+    <Compile Include="Integration\Commands\DataBaseWordExportWindowCommand.cs" />
     <Compile Include="Integration\Pack\BasePack.cs" />
     <Compile Include="Integration\Pack\HideVsMenuPack.cs" />
     <Compile Include="Integration\Commands\RefactoringCodeCommand.cs" />

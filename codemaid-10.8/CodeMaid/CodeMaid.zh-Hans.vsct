@@ -394,6 +394,17 @@
           <ButtonText>文件比较</ButtonText>
         </Strings>
       </Button>
+
+      <!--新增数据库文档导出按钮-->
+      <Button guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" priority="0x0100" type="Button">
+        <Icon guid="GuidImageReorganize" id="IconReorganize" />
+        <CommandFlag>DefaultInvisible</CommandFlag>
+        <CommandFlag>DynamicVisibility</CommandFlag>
+        <Strings>
+          <ButtonText>数据库文档导出(&amp;E)</ButtonText>
+        </Strings>
+      </Button>
+
     </Buttons>
   </Commands>
 </CommandTable>
