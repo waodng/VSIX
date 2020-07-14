@@ -1,5 +1,6 @@
 using EnvDTE;
 using Microsoft.VisualStudio.Shell.Interop;
+using Waodng.CodeMaid.UI.Dialogs.DBCHM;
 
 namespace Waodng.CodeMaid.Integration.Commands
 {
@@ -42,7 +43,8 @@ namespace Waodng.CodeMaid.Integration.Commands
         {
             base.OnExecute();
 
-            DBCHM.Startup.Show();
+            new DBCHMWindow().ShowModal(); 
+            //DBCHM.Startup.Show();
             //var dataBaseWord = Package.SpadeForceLoad;
             //if (dataBaseWord != null)
             //{
@@ -67,19 +69,6 @@ namespace Waodng.CodeMaid.Integration.Commands
         #endregion BaseCommand Methods
 
         #region Internal Methods
-
-        /// <summary>
-        /// Called when a document has been saved.
-        /// </summary>
-        /// <param name="document">The document that was saved.</param>
-        internal void OnAfterDocumentSave(Document document)
-        {
-            var spade = Package.Spade;
-            if (spade != null)
-            {
-                spade.NotifyDocumentSave(document);
-            }
-        }
 
         /// <summary>
         /// Called when a window change has occurred, potentially to be used by the Spade tool window.

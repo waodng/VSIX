@@ -414,6 +414,10 @@
     <Compile Include="UI\Dialogs\CleanupProgress\CleanupProgressWindow.xaml.cs">
       <DependentUpon>CleanupProgressWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UI\Dialogs\DBCHM\DBCHMViewModel.cs" />
+    <Compile Include="UI\Dialogs\DBCHM\DBCHMWindow.xaml.cs">
+      <DependentUpon>DBCHMWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UI\Dialogs\Options\Cleaning\CleaningFileTypesViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\Cleaning\CleaningGeneralViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\Cleaning\CleaningInsertViewModel.cs" />
@@ -796,6 +800,10 @@
     <Page Include="UI\Dialogs\CleanupProgress\CleanupProgressWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UI\Dialogs\DBCHM\DBCHMWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UI\Dialogs\Options\Cleaning\CleaningFileTypesDataTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
