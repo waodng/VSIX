@@ -20,6 +20,19 @@ namespace Waodng.CodeMaid.UI.Dialogs.DBCHM
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="package"></param>
+        public DBCHMViewModel (CodeMaidPackage package)
+	    {
+              Package=package;  
+	    }
+         /// <summary>
+        /// Gets or sets the hosting package.
+        /// </summary>
+        public CodeMaidPackage Package { get; private set; }
+
+        /// <summary>
+        /// 
+        /// </summary>
         private DelegateCommand _connectCommand;
 
         /// <summary>

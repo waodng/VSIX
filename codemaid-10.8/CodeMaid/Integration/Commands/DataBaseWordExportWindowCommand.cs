@@ -42,18 +42,8 @@ namespace Waodng.CodeMaid.Integration.Commands
         protected override void OnExecute()
         {
             base.OnExecute();
-
-            new DBCHMWindow().ShowModal(); 
+            new DBCHMWindow { DataContext = new DBCHMViewModel(Package) }.ShowModal(); 
             //DBCHM.Startup.Show();
-            //var dataBaseWord = Package.SpadeForceLoad;
-            //if (dataBaseWord != null)
-            //{
-            //    var wordFrame = dataBaseWord.Frame as IVsWindowFrame;
-            //    if (wordFrame != null)
-            //    {
-            //        wordFrame.Show();
-            //    }
-            //}
         }
 
         public override void Switch(bool on)
