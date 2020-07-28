@@ -70,6 +70,16 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap about {
+            get {
+                object obj = ResourceManager.GetObject("about", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Access levels should be ordered by 的本地化字符串。
         /// </summary>
         public static string AccessLevelsShouldBeOrderedBy {
@@ -925,6 +935,16 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap connect {
+            get {
+                object obj = ResourceManager.GetObject("connect", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 {0} contains preprocessor conditionals (e.g. #if, #pragma) which reorganization does not currently support.\r\n\r\nDo you want to reorganize anyways (DANGEROUS)? 的本地化字符串。
         /// </summary>
         public static string ContainsPreprocessorConditionalsEGIfPragmaWhichReorganizationDoesNotCurrentlySupportRNRNDoYouWantToReorganizeAnywaysDANGEROUS {
@@ -949,6 +969,16 @@ namespace Waodng.CodeMaid.Properties {
         public static string DataBaseWordExport {
             get {
                 return ResourceManager.GetString("DataBaseWordExport", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似于 (Icon) 的 System.Drawing.Icon 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Icon DBCHM {
+            get {
+                object obj = ResourceManager.GetObject("DBCHM", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
@@ -1043,11 +1073,31 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap empty1 {
+            get {
+                object obj = ResourceManager.GetObject("empty1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Everything else (ex: .txt, README) 的本地化字符串。
         /// </summary>
         public static string EverythingElseExTxtREADME {
             get {
                 return ResourceManager.GetString("EverythingElseExTxtREADME", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap excel {
+            get {
+                object obj = ResourceManager.GetObject("excel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -1066,6 +1116,16 @@ namespace Waodng.CodeMaid.Properties {
         public static string ExEndregionMethods {
             get {
                 return ResourceManager.GetString("ExEndregionMethods", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap exp {
+            get {
+                object obj = ResourceManager.GetObject("exp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -1246,6 +1306,16 @@ namespace Waodng.CodeMaid.Properties {
         public static string HideVsMenu {
             get {
                 return ResourceManager.GetString("HideVsMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap html {
+            get {
+                object obj = ResourceManager.GetObject("html", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -1457,6 +1527,26 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap logo {
+            get {
+                object obj = ResourceManager.GetObject("logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap md {
+            get {
+                object obj = ResourceManager.GetObject("md", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Member type order, grouping and preferred names 的本地化字符串。
         /// </summary>
         public static string MemberTypeOrderGroupingAndPreferredNames {
@@ -1579,6 +1669,16 @@ namespace Waodng.CodeMaid.Properties {
         public static string OtherCleaningCommandsExReSharperReSharper_SilentCleanupCode {
             get {
                 return ResourceManager.GetString("OtherCleaningCommandsExReSharperReSharper_SilentCleanupCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap pdf {
+            get {
+                object obj = ResourceManager.GetObject("pdf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -1723,6 +1823,16 @@ namespace Waodng.CodeMaid.Properties {
         public static string Refactoring {
             get {
                 return ResourceManager.GetString("Refactoring", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap refresh_reload {
+            get {
+                object obj = ResourceManager.GetObject("refresh_reload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -2402,6 +2512,16 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap upload {
+            get {
+                object obj = ResourceManager.GetObject("upload", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 User Settings 的本地化字符串。
         /// </summary>
         public static string UserSettings {
@@ -2519,11 +2639,31 @@ namespace Waodng.CodeMaid.Properties {
         }
         
         /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap word {
+            get {
+                object obj = ResourceManager.GetObject("word", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Wrap comments at column 的本地化字符串。
         /// </summary>
         public static string WrapCommentsAtColumn {
             get {
                 return ResourceManager.GetString("WrapCommentsAtColumn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        public static System.Drawing.Bitmap xml {
+            get {
+                object obj = ResourceManager.GetObject("xml", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

@@ -686,8 +686,8 @@
     <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidSwitchFile" editor="guidVSStd97" key1="M" mod1="Control" key2="0xBC" mod2="Control" />
     <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidSwitchFile" editor="guidVSStd97" key1="M" mod1="Control" key2="0xBC" />
     <!--新增数据库文档导出按钮快捷键-->
-    <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" editor="guidVSStd97" key1="M" mod1="Control" key2="E" mod2="Control" />
-    <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" editor="guidVSStd97" key1="M" mod1="Control" key2="E" />
+    <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" editor="guidVSStd97" key1="M" mod1="Control" key2="D" mod2="Control" />
+    <KeyBinding guid="GuidCodeMaidMenuSet" id="CmdIDCodeMaidDataBaseWordExportWindow" editor="guidVSStd97" key1="M" mod1="Control" key2="D" />
   </KeyBindings>
 
   <Symbols>

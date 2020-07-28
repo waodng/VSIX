@@ -30,7 +30,7 @@ namespace Waodng.CodeMaid.DBCHM
         public static void Show()
         {
             //如果是管理员，则直接运行
-            new MainForm().Show();
+            new MainForm().ShowDialog();
         }
     }
     

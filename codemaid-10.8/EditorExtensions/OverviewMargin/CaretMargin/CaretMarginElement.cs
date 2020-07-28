@@ -73,7 +73,6 @@ namespace Microsoft.VisualStudio.Extensions.CaretMargin
         private Brush adornmentMatchBrush;
 
         private bool hasEvents = false;
-
         const double MarkPadding = 1.0;
         const double MarkThickness = 4.0;
 

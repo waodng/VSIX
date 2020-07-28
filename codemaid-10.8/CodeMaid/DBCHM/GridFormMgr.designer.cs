@@ -156,7 +156,7 @@
             this.Controls.Add(this.linkRemove);
             this.Controls.Add(this.linkEdit);
             this.Controls.Add(this.linkAdd);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

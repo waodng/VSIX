@@ -401,7 +401,7 @@
         <CommandFlag>DefaultInvisible</CommandFlag>
         <CommandFlag>DynamicVisibility</CommandFlag>
         <Strings>
-          <ButtonText>数据库文档导出(&amp;E)</ButtonText>
+          <ButtonText>数据库文档导出(&amp;D)</ButtonText>
         </Strings>
       </Button>
 

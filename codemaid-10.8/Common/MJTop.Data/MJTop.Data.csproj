@@ -47,12 +47,13 @@
     <AssemblyOriginatorKeyFile>key.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DDTek.Oracle, Version=4.3.0.0, Culture=neutral, PublicKeyToken=c84cd5c63851e072, processorArchitecture=MSIL">
+    <Reference Include="DDTek.Oracle, Version=3.5.0.0, Culture=neutral, PublicKeyToken=c84cd5c63851e072, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>lib\DDTek.Oracle.dll</HintPath>
     </Reference>
     <Reference Include="IBM.Data.DB2, Version=9.7.4.4, Culture=neutral, PublicKeyToken=7c307b91aa13d208, processorArchitecture=AMD64">
-      <HintPath>..\..\packages\IBM.Data.DB.Provider.11.1.4040.4\lib\net451\x64\IBM.Data.DB2.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\IBM.Data.DB.Provider.11.1.4040.4\build\net451\x86\IBM.Data.DB2.dll</HintPath>
     </Reference>
     <Reference Include="MySql.Data, Version=6.9.12.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MySql.Data.6.9.12\lib\net45\MySql.Data.dll</HintPath>
@@ -153,7 +154,7 @@
     <Compile Include="TypeInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="lib\DDTek.Oracle.dll" />
+    <EmbeddedResource Include="lib\DDTek.Oracle.NoPub.dll" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="lib\System.Data.SQLite.dll" />
@@ -167,6 +168,9 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\DDTek.Oracle.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

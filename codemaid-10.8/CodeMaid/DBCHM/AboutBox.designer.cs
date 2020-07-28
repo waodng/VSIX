@@ -112,7 +112,7 @@ namespace Waodng.CodeMaid.DBCHM
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(271, 16);
             this.labelCopyright.TabIndex = 21;
-            this.labelCopyright.Text = "Copyright   2018 , lztkdr";
+            this.labelCopyright.Text = "Copyright   2020 , lztkdr";
             this.labelCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // labelCompanyName
@@ -124,7 +124,7 @@ namespace Waodng.CodeMaid.DBCHM
             this.labelCompanyName.Name = "labelCompanyName";
             this.labelCompanyName.Size = new System.Drawing.Size(271, 16);
             this.labelCompanyName.TabIndex = 22;
-            this.labelCompanyName.Text = "QQÈº£º132941648";
+            this.labelCompanyName.Text = "QQÈº£º154475873";
             this.labelCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // textBoxDescription

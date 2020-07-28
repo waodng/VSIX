@@ -128,7 +128,7 @@
             // 
             // toolStripButtonAbout
             // 
-            this.toolStripButtonAbout.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAbout.Image")));
+            this.toolStripButtonAbout.Image = global::Waodng.CodeMaid.Properties.Resources.about;
             this.toolStripButtonAbout.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonAbout.Name = "toolStripButtonAbout";
             this.toolStripButtonAbout.Size = new System.Drawing.Size(52, 67);
@@ -175,7 +175,7 @@
             // 
             // tsbConnect
             // 
-            this.tsbConnect.Image = ((System.Drawing.Image)(resources.GetObject("tsbConnect.Image")));
+            this.tsbConnect.Image = global::Waodng.CodeMaid.Properties.Resources.connect;
             this.tsbConnect.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbConnect.Name = "tsbConnect";
             this.tsbConnect.Size = new System.Drawing.Size(63, 67);
@@ -185,7 +185,7 @@
             // 
             // tsbRefresh
             // 
-            this.tsbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("tsbRefresh.Image")));
+            this.tsbRefresh.Image = global::Waodng.CodeMaid.Properties.Resources.refresh_reload;
             this.tsbRefresh.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbRefresh.Name = "tsbRefresh";
             this.tsbRefresh.Size = new System.Drawing.Size(63, 67);
@@ -195,7 +195,7 @@
             // 
             // tsbPDMUpload
             // 
-            this.tsbPDMUpload.Image = ((System.Drawing.Image)(resources.GetObject("tsbPDMUpload.Image")));
+            this.tsbPDMUpload.Image = global::Waodng.CodeMaid.Properties.Resources.upload;
             this.tsbPDMUpload.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbPDMUpload.Name = "tsbPDMUpload";
             this.tsbPDMUpload.Size = new System.Drawing.Size(63, 67);
@@ -205,7 +205,7 @@
             // 
             // tsbBuild
             // 
-            this.tsbBuild.Image = ((System.Drawing.Image)(resources.GetObject("tsbBuild.Image")));
+            this.tsbBuild.Image = global::Waodng.CodeMaid.Properties.Resources.exp;
             this.tsbBuild.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbBuild.Name = "tsbBuild";
             this.tsbBuild.Size = new System.Drawing.Size(65, 67);
@@ -216,7 +216,7 @@
             // tsWordExp
             // 
             this.tsWordExp.AutoSize = false;
-            this.tsWordExp.Image = ((System.Drawing.Image)(resources.GetObject("tsWordExp.Image")));
+            this.tsWordExp.Image = global::Waodng.CodeMaid.Properties.Resources.word;
             this.tsWordExp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsWordExp.Name = "tsWordExp";
             this.tsWordExp.Size = new System.Drawing.Size(60, 67);
@@ -227,7 +227,7 @@
             // tsExcelExp
             // 
             this.tsExcelExp.AutoSize = false;
-            this.tsExcelExp.Image = ((System.Drawing.Image)(resources.GetObject("tsExcelExp.Image")));
+            this.tsExcelExp.Image = global::Waodng.CodeMaid.Properties.Resources.excel;
             this.tsExcelExp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsExcelExp.Name = "tsExcelExp";
             this.tsExcelExp.Size = new System.Drawing.Size(60, 67);
@@ -238,7 +238,7 @@
             // tsPdfExp
             // 
             this.tsPdfExp.AutoSize = false;
-            this.tsPdfExp.Image = ((System.Drawing.Image)(resources.GetObject("tsPdfExp.Image")));
+            this.tsPdfExp.Image = global::Waodng.CodeMaid.Properties.Resources.pdf;
             this.tsPdfExp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsPdfExp.Name = "tsPdfExp";
             this.tsPdfExp.Size = new System.Drawing.Size(60, 67);
@@ -249,7 +249,7 @@
             // tsHtmlExp
             // 
             this.tsHtmlExp.AutoSize = false;
-            this.tsHtmlExp.Image = ((System.Drawing.Image)(resources.GetObject("tsHtmlExp.Image")));
+            this.tsHtmlExp.Image = global::Waodng.CodeMaid.Properties.Resources.html;
             this.tsHtmlExp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsHtmlExp.Name = "tsHtmlExp";
             this.tsHtmlExp.Size = new System.Drawing.Size(64, 67);
@@ -262,7 +262,7 @@
             // tsXmlExp
             // 
             this.tsXmlExp.AutoSize = false;
-            this.tsXmlExp.Image = ((System.Drawing.Image)(resources.GetObject("tsXmlExp.Image")));
+            this.tsXmlExp.Image = global::Waodng.CodeMaid.Properties.Resources.xml;
             this.tsXmlExp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsXmlExp.Name = "tsXmlExp";
             this.tsXmlExp.Size = new System.Drawing.Size(60, 67);
@@ -526,7 +526,7 @@
             // tsMarkDownExp
             // 
             this.tsMarkDownExp.AutoSize = false;
-            this.tsMarkDownExp.Image = ((System.Drawing.Image)(resources.GetObject("tsMarkDownExp.Image")));
+            this.tsMarkDownExp.Image = global::Waodng.CodeMaid.Properties.Resources.md;
             this.tsMarkDownExp.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsMarkDownExp.Name = "tsMarkDownExp";
             this.tsMarkDownExp.Size = new System.Drawing.Size(60, 67);
@@ -544,7 +544,7 @@
             this.Controls.Add(this.RibbonTabContainer);
             this.Controls.Add(this.statusStripMain);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MaximizeBox = false;
             this.Name = "MainForm";

@@ -97,7 +97,7 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 Assembly assy = Assembly.GetExecutingAssembly();
                 //获取要加载的gif动画文件
-                m_Image = Image.FromStream(assy.GetManifestResourceStream(assy.GetName().Name + ".Images.loading.gif"));
+                m_Image = Image.FromStream(assy.GetManifestResourceStream(assy.GetName().Name + ".DBCHM.Images.loading.gif"));
             }
             //调用开始动画方法
             BeginAnimate();

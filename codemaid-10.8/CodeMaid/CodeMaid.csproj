@@ -414,10 +414,6 @@
     <Compile Include="UI\Dialogs\CleanupProgress\CleanupProgressWindow.xaml.cs">
       <DependentUpon>CleanupProgressWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UI\Dialogs\DBCHM\DBCHMViewModel.cs" />
-    <Compile Include="UI\Dialogs\DBCHM\DBCHMWindow.xaml.cs">
-      <DependentUpon>DBCHMWindow.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UI\Dialogs\Options\Cleaning\CleaningFileTypesViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\Cleaning\CleaningGeneralViewModel.cs" />
     <Compile Include="UI\Dialogs\Options\Cleaning\CleaningInsertViewModel.cs" />
@@ -511,6 +507,7 @@
   <ItemGroup>
     <EmbeddedResource Include="DBCHM\AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DBCHM\DBForm.resx">
       <DependentUpon>DBForm.cs</DependentUpon>
@@ -529,6 +526,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Integration\BrowserLink\Reload.js" />
     <Content Include="DBCHM\htmlhelp.exe" />
+    <Resource Include="DBCHM\Images\DBCHM001.png" />
+    <Resource Include="DBCHM\Images\DBCHM002.png" />
+    <Resource Include="DBCHM\Images\DBCHM003.png" />
+    <Resource Include="DBCHM\Images\DBCHM004.png" />
+    <Resource Include="DBCHM\Images\DBCHM005.png" />
+    <EmbeddedResource Include="DBCHM\Images\loading.gif" />
     <Resource Include="DBCHM\ico\about.png" />
     <Resource Include="DBCHM\ico\connect.png" />
     <Resource Include="DBCHM\ico\DBCHM.ico" />
@@ -543,12 +546,6 @@
     <Resource Include="DBCHM\ico\upload.png" />
     <Resource Include="DBCHM\ico\word.png" />
     <Resource Include="DBCHM\ico\xml.png" />
-    <Resource Include="DBCHM\Images\DBCHM001.png" />
-    <Resource Include="DBCHM\Images\DBCHM002.png" />
-    <Resource Include="DBCHM\Images\DBCHM003.png" />
-    <Resource Include="DBCHM\Images\DBCHM004.png" />
-    <Resource Include="DBCHM\Images\DBCHM005.png" />
-    <Resource Include="DBCHM\Images\loading.gif" />
     <Content Include="DBCHM\lib\ComponentFactory.Krypton.Toolkit.dll" />
     <Content Include="DBCHM\lib\ZetaLongPaths.dll" />
     <Content Include="DBCHM\lib\ZetaLongPaths.pdb" />
@@ -801,10 +798,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="UI\Dialogs\DBCHM\DBCHMWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="UI\Dialogs\Options\Cleaning\CleaningFileTypesDataTemplate.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -981,7 +974,9 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UI\Dialogs\DBCHM\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
