@@ -202,7 +202,8 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
                 {
-                    checkedListBox1.DataSource = DBUtils.Instance.Info.TableNames;
+                    //checkedListBox1.DataSource = DBUtils.Instance.Info.TableNames;//此方法在Winform中正常，但此框架中抛NULL异常
+                    checkedListBox1.Items.AddRange(DBUtils.Instance.Info.TableNames.ToArray());
                 }
                 FormUtils.IsOK_Close = false;
             }
@@ -298,7 +299,8 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
                 {
-                   checkedListBox1.DataSource = DBUtils.Instance.Info.TableNames;
+                    //checkedListBox1.DataSource = DBUtils.Instance.Info.TableNames;//此方法在Winform中正常，但此框架中抛NULL异常
+                    checkedListBox1.Items.AddRange(DBUtils.Instance.Info.TableNames.ToArray());
                 }
             }
 
@@ -726,7 +728,8 @@ namespace Waodng.CodeMaid.DBCHM
                     try
                     {
                         // TODO 中文ttf字体库文件（微软雅黑）
-                        string baseFontPath = System.Windows.Forms.Application.StartupPath + "\\Fonts\\msyh.ttf";
+                        string rootPath = Path.GetDirectoryName(this.GetType().Assembly.Location);
+                        string baseFontPath = Path.Combine(rootPath, "Fonts\\msyh.ttf");
                         System.Collections.Generic.List<TableDto> tableDtos = DBInstanceTransToDto();
                         TryOpenXml.Text.PdfUtils.ExportPdfByITextSharp(saveDia.FileName, baseFontPath, DBUtils.Instance.Info.DBName, tableDtos);
 
@@ -971,7 +974,8 @@ namespace Waodng.CodeMaid.DBCHM
                     var diaRes = MessageBox.Show("很抱歉，执行过程出现错误，出错原因：\r\n" + e.UserState.ToString() + "\r\n\r\n是否打开错误日志目录？", "程序执行出错", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
                     if (diaRes == DialogResult.Yes)
                     {
-                        string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
+                        //string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
+                        string dir = "Log";
                         System.Diagnostics.Process.Start(dir);
                     }
                 }

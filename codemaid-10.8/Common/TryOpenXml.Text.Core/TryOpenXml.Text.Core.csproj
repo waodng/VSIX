@@ -91,6 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Library\Aspose.Words.dll" />
+    <Content Include="Library\Aspose.Words.NoName.dll" />
     <Content Include="Library\EPPlus.dll" />
     <Content Include="Library\itextsharp.dll" />
     <Content Include="Library\Microsoft.Office.Interop.Word.dll" />

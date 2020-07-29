@@ -122,7 +122,7 @@ namespace TryOpenXml.Text
             doc.BuiltInDocumentProperties.ContentType = "数据库字典";
             doc.BuiltInDocumentProperties.Title = "数据库字典文档";
             doc.BuiltInDocumentProperties.Author = doc.BuiltInDocumentProperties.LastSavedBy = doc.BuiltInDocumentProperties.Manager = "trycache";
-            doc.BuiltInDocumentProperties.Company = "51Try.Top";
+            doc.BuiltInDocumentProperties.Company = "waodng";
             doc.BuiltInDocumentProperties.Version = doc.BuiltInDocumentProperties.RevisionNumber = 1;
             doc.BuiltInDocumentProperties.ContentStatus = "初稿";
             doc.BuiltInDocumentProperties.NameOfApplication = "DBCHM";
@@ -132,12 +132,12 @@ namespace TryOpenXml.Text
             Aspose.Words.HeaderFooter header = new Aspose.Words.HeaderFooter(doc, Aspose.Words.HeaderFooterType.HeaderPrimary);
             doc.FirstSection.HeadersFooters.Add(header);
             // Add a paragraph with text to the header.
-            header.AppendParagraph("51Try.Top数据库字典文档").ParagraphFormat.Alignment =
+            header.AppendParagraph("数据库字典文档").ParagraphFormat.Alignment =
                 Aspose.Words.ParagraphAlignment.Right;
             Aspose.Words.HeaderFooter footer = new Aspose.Words.HeaderFooter(doc, Aspose.Words.HeaderFooterType.FooterPrimary);
             doc.FirstSection.HeadersFooters.Add(footer);
             // Add a paragraph with text to the footer.
-            footer.AppendParagraph("DBCHM-51Try.Top  https://gitee.com/lztkdr/DBCHM").ParagraphFormat.Alignment = 
+            footer.AppendParagraph(" 版权所有 @ waodng  ").ParagraphFormat.Alignment = 
                 Aspose.Words.ParagraphAlignment.Center;
 
             Aspose.Words.DocumentBuilder builder = new Aspose.Words.DocumentBuilder(doc);

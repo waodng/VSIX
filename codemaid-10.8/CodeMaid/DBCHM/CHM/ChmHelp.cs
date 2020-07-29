@@ -16,7 +16,8 @@ namespace Waodng.CodeMaid.DBCHM.CHM
 
         public ChmHelp()
         {
-            string logDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
+            //string logDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
+            string logDir = "Log";
             if (!ZetaLongPaths.ZlpIOHelper.DirectoryExists(logDir))
             {
                 ZetaLongPaths.ZlpIOHelper.CreateDirectory(logDir);

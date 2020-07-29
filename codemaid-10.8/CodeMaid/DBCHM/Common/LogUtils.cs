@@ -54,7 +54,8 @@ public class LogUtils
         //这里写入根目录 log文件夹
         string logText = Log.GetModelData(log) + "\r\n----------------------------------------------------------------------------------------------------\r\n";
         string fileName = DateTime.Now.ToString("yyyyMMdd") + ".log";
-        string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
+        //string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
+        string dir = "Log";
         if (!ZetaLongPaths.ZlpIOHelper.DirectoryExists(dir))
         {
             ZetaLongPaths.ZlpIOHelper.CreateDirectory(dir);
