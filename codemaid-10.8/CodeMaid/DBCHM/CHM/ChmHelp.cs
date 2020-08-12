@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Text;
-
+using Waodng.CodeMaid.DBCHM.Common;
 
 namespace Waodng.CodeMaid.DBCHM.CHM
 {

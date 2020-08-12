@@ -3,20 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
 using System.Text;
-
-namespace Waodng.CodeMaid.DBCHM.CHM
-{
-    public static class StringExt
-    {
-        public static string FormatString(this string s, params object[] args)
-        {
-            return string.Format(s, args);
-        }
-    }
-}
-
-
-
+using Waodng.CodeMaid.DBCHM.Common;
 
 namespace Waodng.CodeMaid.DBCHM.CHM
 {
@@ -109,7 +96,7 @@ namespace Waodng.CodeMaid.DBCHM.CHM
 
 
             //构建表头
-            int j = 1;          
+            int j = 1;
             //构建数据行
             foreach (var tableName in dict_tabs.AllKeys)
             {
@@ -388,7 +375,7 @@ namespace Waodng.CodeMaid.DBCHM.CHM
 
         public static void CreateHtml(Dictionary<string, TableInfo> dictTabs, string tabsdir)
         {
-            
+
             foreach (var tab in dictTabs)
             {
                 string tableName = tab.Key;
@@ -513,6 +500,6 @@ namespace Waodng.CodeMaid.DBCHM.CHM
         }
 
 
-       
+
     }
 }

@@ -1,12 +1,9 @@
-﻿using MJTop.Data.SPI;
+﻿﻿using MJTop.Data.SPI;
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Data;
-using System.Data.Common;
 using System.Linq;
-using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -35,6 +32,23 @@ namespace MJTop.Data.DatabaseInfo
         public string DBName
         {
             get { return (Db.ConnectionStringBuilder as MySql.Data.MySqlClient.MySqlConnectionStringBuilder).Database; }
+        }
+
+        public string Version
+        {
+            get;
+            private set;
+        }
+
+        // 8.0.19 => 8.0
+        public double VersionNumber
+        {
+            get
+            {
+                var mat = Regex.Match(Version, @"\D*(\d{1,}\.\d{1,})\D*", RegexOptions.Compiled);
+                double.TryParse(mat?.Groups[1]?.Value, out var res);
+                return res;
+            }
         }
 
         public NameValueCollection TableComments { get; private set; } = new NameValueCollection();
@@ -97,11 +111,13 @@ namespace MJTop.Data.DatabaseInfo
             {
                 this.DBNames = Db.ReadList<string>(dbSql);
 
+                this.Version = Db.Scalar("select @@version", string.Empty);
+
                 this.TableComments = Db.ReadNameValues(strSql);
 
-                //this.Views = Db.ReadNameValues(viewSql);
+                this.Views = Db.ReadNameValues(viewSql);
 
-                //this.Procs = Db.ReadNameValues(procSql);
+                this.Procs = Db.ReadNameValues(procSql);
 
                 if (this.TableComments != null && this.TableComments.Count > 0)
                 {
@@ -348,12 +364,18 @@ from information_schema.columns where table_schema = ?DBName and table_name = ?t
                 {
                     setSql += " not null ";
                 }
+
+                if (colInfo.IsIdentity)
+                {
+                    setSql += " auto_increment ";
+                }
+
                 if (!string.IsNullOrWhiteSpace(colInfo.DefaultVal))
                 {
                     setSql += " default '" + colInfo.DefaultVal + "' ";
                 }
 
-                selsql = "USE INFORMATION_SCHEMA;SELECT COLUMN_TYPE,EXTRA FROM COLUMNS WHERE TABLE_NAME = '" + tableName + "' AND COLUMN_NAME = '" + columnName + "';";
+                selsql = "use information_schema;SELECT COLUMN_TYPE,EXTRA FROM COLUMNS WHERE TABLE_SCHEMA='" + DBName + "' and TABLE_NAME = '" + tableName + "' AND COLUMN_NAME = '" + columnName + "';";
                 var dict = Db.GetFirstRow(selsql);
                 if (colInfo.DefaultVal != null && colInfo.DefaultVal.Equals("CURRENT_TIMESTAMP", StringComparison.OrdinalIgnoreCase))
                 {

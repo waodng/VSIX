@@ -21,6 +21,9 @@ namespace Waodng.CodeMaid.DBCHM
     /// </summary>
     public partial class MainForm : KryptonForm
     {
+        // TODO 已选择的表
+        private string selectedTableDesc = "已选择{0}张表";
+
         /// <summary>
         /// Initializes a new instance of the <see cref="MainForm" /> class.
         /// </summary>
@@ -202,9 +205,9 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
                 {
-                    //checkedListBox1.DataSource = DBUtils.Instance.Info.TableNames;//此方法在Winform中正常，但此框架中抛NULL异常
+					//checkedListBox1.DataSource = DBUtils.Instance?.Info?.TableNames;//此方法在Winform中正常，但此框架中抛NULL异常
                     checkedListBox1.Items.AddRange(DBUtils.Instance.Info.TableNames.ToArray());
-                }
+				}
                 FormUtils.IsOK_Close = false;
             }
             else
@@ -215,25 +218,25 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 checkedListBox1.SelectedIndex = 0;
                 LabCurrTabName.Text = checkedListBox1.SelectedItems[0].ToString();
-                if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                {
-                   TxtCurrTabComment.Text = DBUtils.Instance.Info.TableComments[LabCurrTabName.Text];
-                }
+
+
+                TxtCurrTabComment.Text = DBUtils.Instance?.Info?.TableComments[LabCurrTabName.Text];
+
             }
             else//无数据表时，清空 Gird列表
             {
                 GV_ColComments.Rows.Clear();
             }
 
-            string strDbName=string.Empty;
-            if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-            {
-                strDbName=DBUtils.Instance.Info.DBName;
-            }
 
-            if (!string.IsNullOrWhiteSpace(strDbName))
+
+
+            if (!string.IsNullOrWhiteSpace(DBUtils.Instance?.Info?.DBName))
+
+
+
             {
-                this.Text = strDbName + "(" + DBUtils.Instance.DBType.ToString() + ") - " + "DBCHM v" + Assembly.GetExecutingAssembly().GetName().Version.ToString().Replace(".0.0", "");
+                this.Text = DBUtils.Instance?.Info?.DBName + "(" + DBUtils.Instance.DBType.ToString() + ") - " + "DBCHM v" + Assembly.GetExecutingAssembly().GetName().Version.ToString().Replace(".0.0", "");
             }
 
             //Sqlite 数据库自身 不支持 数据库批注 功能
@@ -269,28 +272,57 @@ namespace Waodng.CodeMaid.DBCHM
         private void TxtTabName_TextChanged(object sender, EventArgs e)
         {
             string strName = TxtTabName.Text.Trim().ToLower();
-            List<string> lstTableName=new List<string>();
-            if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-            {
-               lstTableName = DBUtils.Instance.Info.TableNames;
-            }
 
-            string strDbName=string.Empty;
-            if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-            {
-                strDbName=DBUtils.Instance.Info.DBName;
-            }
+
+
+            var lstTableName = DBUtils.Instance?.Info?.TableNames;
+
+
+
+
+
+
+
 
             checkedListBox1.DataSource = null;
             checkedListBox1.Items.Clear();
+            this.label3.Text = string.Format(selectedTableDesc, 0);
 
             if (!string.IsNullOrWhiteSpace(strName))
             {
                 lstTableName.ForEach(t =>
                 {
-                    if (t.ToLower().Contains(strName))//模糊匹配
+
+                    if (strName.Contains(","))
                     {
-                        checkedListBox1.Items.Add(t);
+                        // TODO 多个关键词模糊匹配
+                        Dictionary<string, string> tableDic = new Dictionary<string, string>();
+                        string[] keys = strName.Split(',');
+                        foreach (string key in keys)
+                        {
+                            if (string.IsNullOrWhiteSpace(key)) {
+                                continue;
+                            }
+                            if (t.ToLower().Contains(key) && !tableDic.ContainsKey(t))
+                            {
+                                tableDic.Add(t, t);
+                            }
+                        }
+                        if (null != tableDic || tableDic.Count > 0)
+                        {
+                            foreach (KeyValuePair<string, string> kvp in tableDic)
+                            {
+                                checkedListBox1.Items.Add(kvp.Key);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // TODO 单个关键词模糊匹配
+                        if (t.ToLower().Contains(strName))
+                        {
+                            checkedListBox1.Items.Add(t);
+                        }
                     }
 
                 });
@@ -299,19 +331,20 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
                 {
-                    //checkedListBox1.DataSource = DBUtils.Instance.Info.TableNames;//此方法在Winform中正常，但此框架中抛NULL异常
+					//checkedListBox1.DataSource = DBUtils.Instance?.Info?.TableNames;//此方法在Winform中正常，但此框架中抛NULL异常
                     checkedListBox1.Items.AddRange(DBUtils.Instance.Info.TableNames.ToArray());
-                }
+                
+				}
             }
 
             if (checkedListBox1.Items.Count > 0)//默认选择第一张表
             {
                 checkedListBox1.SelectedIndex = 0;
                 LabCurrTabName.Text = checkedListBox1.SelectedItems[0].ToString();
-                if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                {
-                   TxtCurrTabComment.Text = DBUtils.Instance.Info.TableComments[LabCurrTabName.Text];
-                }
+
+
+                TxtCurrTabComment.Text = DBUtils.Instance?.Info?.TableComments[LabCurrTabName.Text];
+
             }
         }
 
@@ -325,16 +358,16 @@ namespace Waodng.CodeMaid.DBCHM
                 GV_ColComments.Rows.Clear();
 
                 LabCurrTabName.Text = checkedListBox1.SelectedItems[0].ToString();
-                if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                {
-                    TxtCurrTabComment.Text = DBUtils.Instance.Info.TableComments[LabCurrTabName.Text];
-                }
 
-                List<MJTop.Data.ColumnInfo> columnInfos=new List<MJTop.Data.ColumnInfo>();
-                if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                {
-                    columnInfos = DBUtils.Instance.Info.GetColumns(LabCurrTabName.Text);
-                }
+
+                TxtCurrTabComment.Text = DBUtils.Instance?.Info?.TableComments[LabCurrTabName.Text];
+
+
+
+
+
+                var columnInfos = DBUtils.Instance?.Info?.GetColumns(LabCurrTabName.Text);
+
                 
                 if (columnInfos != null)
                 {
@@ -345,10 +378,10 @@ namespace Waodng.CodeMaid.DBCHM
                 }
                 else
                 {
-                    if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                    {
-                        DBUtils.Instance.Info.Refresh();
-                    }
+
+
+                    DBUtils.Instance?.Info?.Refresh();
+
                     TxtTabName_TextChanged(sender, e);
                 }
             }
@@ -377,6 +410,7 @@ namespace Waodng.CodeMaid.DBCHM
             {
                 checkBox1.CheckState = CheckState.Unchecked;
             }
+            this.label3.Text = string.Format(selectedTableDesc, this.checkedListBox1.CheckedItems.Count + 1);
         }
 
         /// <summary>
@@ -403,6 +437,7 @@ namespace Waodng.CodeMaid.DBCHM
                     checkedListBox1.SetItemChecked(i, false);
                 }
             }
+            this.label3.Text = string.Format(selectedTableDesc, this.checkedListBox1.CheckedItems.Count);
         }
 
         /// <summary>
@@ -425,15 +460,20 @@ namespace Waodng.CodeMaid.DBCHM
         {
             FormUtils.ShowProcessing("正在查询表结构信息，请稍等......", this, arg =>
             {
-                if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                {
-                    DBUtils.Instance.Info.Refresh();
-                }
-                
+
+
+
+
+
+                DBUtils.Instance?.Info?.Refresh();
+
                 TxtTabName_TextChanged(sender, e);
 
             }, null);
 
+            // TODO 重置
+            this.checkBox1.Checked = false;
+            this.label3.Text = string.Format(selectedTableDesc, 0);
         }
 
         /// <summary>
@@ -471,7 +511,7 @@ namespace Waodng.CodeMaid.DBCHM
 
         private void ExportToChm()
         {
-            #region 使用 HTML Help Workshop 的 hhc.exe 编译 ,先判断系统中是否已经安装有  HTML Help Workshop 
+            #region 使用 HTML Help Workshop 的 hhc.exe 编译 ,先判断系统中是否已经安装有  HTML Help Workshop
 
             string hhcPath = string.Empty;
 
@@ -529,6 +569,7 @@ namespace Waodng.CodeMaid.DBCHM
                 catch (Exception ex)
                 {
                     LogUtils.LogError("文件目录创建出错", Developer.SysDefault, ex, dirPath);
+                    MessageBox.Show(ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
@@ -683,7 +724,7 @@ namespace Waodng.CodeMaid.DBCHM
                         System.Collections.Generic.List<TableDto> tableDtos = DBInstanceTransToDto();
                         TryOpenXml.Text.ExcelUtils.ExportExcelByEpplus(saveDia.FileName, DBUtils.Instance.Info.DBName, tableDtos);
 
-                        if(MessageBox.Show("生成数据库字典Excel文档成功，是否打开？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                        if (MessageBox.Show("生成数据库字典Excel文档成功，是否打开？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
                             System.Diagnostics.Process.Start(saveDia.FileName);
                         }
@@ -730,10 +771,11 @@ namespace Waodng.CodeMaid.DBCHM
                         // TODO 中文ttf字体库文件（微软雅黑）
                         string rootPath = Path.GetDirectoryName(this.GetType().Assembly.Location);
                         string baseFontPath = Path.Combine(rootPath, "Fonts\\msyh.ttf");
+
                         System.Collections.Generic.List<TableDto> tableDtos = DBInstanceTransToDto();
                         TryOpenXml.Text.PdfUtils.ExportPdfByITextSharp(saveDia.FileName, baseFontPath, DBUtils.Instance.Info.DBName, tableDtos);
 
-                        if(MessageBox.Show("生成数据库字典PDF文档成功，是否打开？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                        if (MessageBox.Show("生成数据库字典PDF文档成功，是否打开？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
                             System.Diagnostics.Process.Start(saveDia.FileName);
                         }
@@ -770,7 +812,7 @@ namespace Waodng.CodeMaid.DBCHM
                         System.Collections.Generic.List<TableDto> tableDtos = DBInstanceTransToDto();
                         TryOpenXml.Text.XmlUtils.ExportXml(saveDia.FileName, DBUtils.Instance.Info.DBName, tableDtos);
 
-                        if(MessageBox.Show("生成数据库字典XML文档成功，是否打开？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                        if (MessageBox.Show("生成数据库字典XML文档成功，是否打开？", "提示", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                         {
                             System.Diagnostics.Process.Start(saveDia.FileName);
                         }
@@ -962,7 +1004,7 @@ namespace Waodng.CodeMaid.DBCHM
         {
             // 设置 进度位置
             Prog.Value = e.ProgressPercentage;
-            if (e.UserState != null )
+            if (e.UserState != null)
             {
                 lblMsg.Text = "操作失败！";
                 lblMsg.ForeColor = System.Drawing.Color.Red;
@@ -974,8 +1016,8 @@ namespace Waodng.CodeMaid.DBCHM
                     var diaRes = MessageBox.Show("很抱歉，执行过程出现错误，出错原因：\r\n" + e.UserState.ToString() + "\r\n\r\n是否打开错误日志目录？", "程序执行出错", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
                     if (diaRes == DialogResult.Yes)
                     {
-                        //string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
-                        string dir = "Log";
+                        string dir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "log");
+
                         System.Diagnostics.Process.Start(dir);
                     }
                 }
@@ -987,11 +1029,11 @@ namespace Waodng.CodeMaid.DBCHM
             //设置要 滚动条 对应的执行方法，以及滚动条最大值
             FormUtils.ProgArg = new ProgressArg(() =>
             {
-                bool? blRes = null;
-                if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                {
-                    blRes = DBUtils.Instance.Info.SetTableComment(LabCurrTabName.Text, TxtCurrTabComment.Text.Replace("'", "`"));
-                }
+
+
+
+                bool? blRes = DBUtils.Instance?.Info?.SetTableComment(LabCurrTabName.Text, TxtCurrTabComment.Text.Replace("'", "`"));
+
                 if (blRes.HasValue)
                 {
                     if (blRes.Value)
@@ -1017,10 +1059,10 @@ namespace Waodng.CodeMaid.DBCHM
                     if (!string.IsNullOrEmpty(colComment))
                     {
 
-                        if (DBUtils.Instance != null && DBUtils.Instance.Info != null)
-                        {
-                            blRes = DBUtils.Instance.Info.SetColumnComment(LabCurrTabName.Text, columnName, colComment);
-                        }
+
+
+                        blRes = DBUtils.Instance?.Info?.SetColumnComment(LabCurrTabName.Text, columnName, colComment);
+
                     }
 
                     if (string.IsNullOrEmpty(colComment))
@@ -1060,7 +1102,7 @@ namespace Waodng.CodeMaid.DBCHM
             aboutForm.ShowDialog();
         }
 
-        public bool IsExistProcess(string fileName,out Process process)
+        public bool IsExistProcess(string fileName, out Process process)
         {
             var procs = System.Diagnostics.Process.GetProcessesByName("hh");
             foreach (var proc in procs)
@@ -1122,12 +1164,12 @@ namespace Waodng.CodeMaid.DBCHM
                 MJTop.Data.TableInfo tabInfo = null;
                 if (dictTabs.Case == MJTop.Data.KeyCase.Lower)
                 {
-                    tabInfo = dictTabs[tableName.ToLower()]; 
+                    tabInfo = dictTabs[tableName.ToLower()];
                 }
                 else
                 {
                     tabInfo = dictTabs[tableName.ToUpper()];
-                }                
+                }
                 // TODO 添加数据字段行,循环数据库表字段集合
                 foreach (var col in tabInfo.Colnumns)
                 {

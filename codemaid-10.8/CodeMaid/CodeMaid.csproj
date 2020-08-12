@@ -187,6 +187,7 @@
     </Compile>
     <Compile Include="DBCHM\CHM\ChmHelp.cs" />
     <Compile Include="DBCHM\CHM\ChmHtmlHelper.cs" />
+    <Compile Include="DBCHM\Common\CommonExtension.cs" />
     <Compile Include="DBCHM\Common\ConfigUtils.cs" />
     <Compile Include="DBCHM\Common\DBCHMConfig.cs" />
     <Compile Include="DBCHM\Common\DBUtils.cs" />
