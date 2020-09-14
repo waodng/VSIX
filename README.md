@@ -38,6 +38,29 @@ visual studio  the Managed Package Framework (MPF)
 
 
 
+## CodeAnalysis 项目
+
+新增代码分析项目,支持在vs2019项目中可以分析代码是否符合自己的要求，不符合自动出现警告或错误提示，
+
+然后还有小灯泡修复提示等功能；
+
+- 运行环境
+
+  VisualStudio 2019 版本   VSSDK
+
+- 功能说明
+
+  - 1. 项目中代码的提醒分析
+  - 2. 对应的分析结果解决方案
+
+  - 3. 待续。。。。
+
+
+
+
+
+
+
 
 
 ## WebEssentials2013
