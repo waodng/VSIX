@@ -1024,6 +1024,11 @@ namespace Waodng.CodeMaid.DBCHM
             }
         }
 
+        /// <summary>
+        /// 保存按钮
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnSaveGridData_Click(object sender, EventArgs e)
         {
             //设置要 滚动条 对应的执行方法，以及滚动条最大值

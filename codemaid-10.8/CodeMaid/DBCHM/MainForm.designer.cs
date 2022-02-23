@@ -522,7 +522,7 @@
             this.BtnSaveGridData.Name = "BtnSaveGridData";
             this.BtnSaveGridData.Size = new System.Drawing.Size(98, 34);
             this.BtnSaveGridData.TabIndex = 8;
-            this.BtnSaveGridData.Text = "保存";
+            this.BtnSaveGridData.Text = "同步";
             this.BtnSaveGridData.Click += new System.EventHandler(this.BtnSaveGridData_Click);
             // 
             // TxtTabName
